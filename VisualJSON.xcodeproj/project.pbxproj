@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38D3313B1495000000CE3400 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D3313A1495000000CE3400 /* Cocoa.framework */; };
+		38D331451495000000CE3400 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D331431495000000CE3400 /* InfoPlist.strings */; };
+		38D331471495000000CE3400 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D331461495000000CE3400 /* main.m */; };
+		38D3314B1495000000CE3400 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 38D331491495000000CE3400 /* Credits.rtf */; };
+		38D3314E1495000000CE3400 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D3314D1495000000CE3400 /* AppDelegate.m */; };
+		38D331511495000000CE3400 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38D3314F1495000000CE3400 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38D331361495000000CE3400 /* VisualJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D3313A1495000000CE3400 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		38D3313D1495000000CE3400 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		38D3313E1495000000CE3400 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		38D3313F1495000000CE3400 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		38D331421495000000CE3400 /* VisualJSON-Info.plist */ = {isa = PBXFileReference; path = "VisualJSON-Info.plist"; sourceTree = "<group>"; };
+		38D331441495000000CE3400 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		38D331461495000000CE3400 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38D331481495000000CE3400 /* VisualJSON-Prefix.pch */ = {isa = PBXFileReference; path = "VisualJSON-Prefix.pch"; sourceTree = "<group>"; };
+		38D3314A1495000000CE3400 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		38D3314C1495000000CE3400 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		38D3314D1495000000CE3400 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		38D331501495000000CE3400 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38D331331495000000CE3400 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D3313B1495000000CE3400 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38D3312B1495000000CE3400 = {
+			isa = PBXGroup;
+			children = (
+				38D331401495000000CE3400 /* VisualJSON */,
+				38D331391495000000CE3400 /* Frameworks */,
+				38D331371495000000CE3400 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38D331371495000000CE3400 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38D331361495000000CE3400 /* VisualJSON.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38D331391495000000CE3400 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38D3313A1495000000CE3400 /* Cocoa.framework */,
+				38D3313C1495000000CE3400 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38D3313C1495000000CE3400 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38D3313D1495000000CE3400 /* AppKit.framework */,
+				38D3313E1495000000CE3400 /* CoreData.framework */,
+				38D3313F1495000000CE3400 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		38D331401495000000CE3400 /* VisualJSON */ = {
+			isa = PBXGroup;
+			children = (
+				38D3314C1495000000CE3400 /* AppDelegate.h */,
+				38D3314D1495000000CE3400 /* AppDelegate.m */,
+				38D3314F1495000000CE3400 /* MainMenu.xib */,
+				38D331411495000000CE3400 /* Supporting Files */,
+			);
+			path = VisualJSON;
+			sourceTree = "<group>";
+		};
+		38D331411495000000CE3400 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38D331421495000000CE3400 /* VisualJSON-Info.plist */,
+				38D331431495000000CE3400 /* InfoPlist.strings */,
+				38D331461495000000CE3400 /* main.m */,
+				38D331481495000000CE3400 /* VisualJSON-Prefix.pch */,
+				38D331491495000000CE3400 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38D331351495000000CE3400 /* VisualJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38D331541495000000CE3400 /* Build configuration list for PBXNativeTarget "VisualJSON" */;
+			buildPhases = (
+				38D331321495000000CE3400 /* Sources */,
+				38D331331495000000CE3400 /* Frameworks */,
+				38D331341495000000CE3400 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisualJSON;
+			productName = VisualJSON;
+			productReference = 38D331361495000000CE3400 /* VisualJSON.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38D3312D1495000000CE3400 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "3rddev Inc.";
+			};
+			buildConfigurationList = 38D331301495000000CE3400 /* Build configuration list for PBXProject "VisualJSON" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 38D3312B1495000000CE3400;
+			productRefGroup = 38D331371495000000CE3400 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38D331351495000000CE3400 /* VisualJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38D331341495000000CE3400 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D331451495000000CE3400 /* InfoPlist.strings in Resources */,
+				38D3314B1495000000CE3400 /* Credits.rtf in Resources */,
+				38D331511495000000CE3400 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38D331321495000000CE3400 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D331471495000000CE3400 /* main.m in Sources */,
+				38D3314E1495000000CE3400 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		38D331431495000000CE3400 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38D331441495000000CE3400 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		38D331491495000000CE3400 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38D3314A1495000000CE3400 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		38D3314F1495000000CE3400 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38D331501495000000CE3400 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38D331521495000000CE3400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		38D331531495000000CE3400 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		38D331551495000000CE3400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
+				INFOPLIST_FILE = "VisualJSON/VisualJSON-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		38D331561495000000CE3400 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
+				INFOPLIST_FILE = "VisualJSON/VisualJSON-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38D331301495000000CE3400 /* Build configuration list for PBXProject "VisualJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38D331521495000000CE3400 /* Debug */,
+				38D331531495000000CE3400 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38D331541495000000CE3400 /* Build configuration list for PBXNativeTarget "VisualJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38D331551495000000CE3400 /* Debug */,
+				38D331561495000000CE3400 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38D3312D1495000000CE3400 /* Project object */;
+}
