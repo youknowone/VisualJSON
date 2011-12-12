@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		386B79CC14964C09007AF705 /* IdealCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C7A9651495177600381910 /* IdealCocoa.framework */; };
 		38C7A9571495166B00381910 /* VisualWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C7A9561495166B00381910 /* VisualWindow.m */; };
-		38C7A9F214951F8D00381910 /* IdealCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C7A9651495177600381910 /* IdealCocoa.framework */; };
 		38C7AA0D1495B6EF00381910 /* JsonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C7AA0C1495B6EF00381910 /* JsonElement.m */; };
 		38C7AA231495F32900381910 /* Icon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38C7AA221495F32900381910 /* Icon.xib */; };
 		38C7AA271495FD6000381910 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 38C7AA261495FD6000381910 /* Icon.icns */; };
@@ -22,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		386B79CD14964C27007AF705 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38C7A9591495177600381910 /* IdealCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 38C7A9711495181800381910;
+			remoteInfo = IdealCocoa;
+		};
 		38C7A9641495177600381910 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 38C7A9591495177600381910 /* IdealCocoa.xcodeproj */;
@@ -49,13 +56,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 38730441133732DE004C8E89;
 			remoteInfo = IdealUIKitTests;
-		};
-		38C7A9F014951F8800381910 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 38C7A9591495177600381910 /* IdealCocoa.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 38C7A9711495181800381910;
-			remoteInfo = IdealCocoa;
 		};
 		38D334411495128B00CE3400 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -123,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38C7A9F214951F8D00381910 /* IdealCocoa.framework in Frameworks */,
+				386B79CC14964C09007AF705 /* IdealCocoa.framework in Frameworks */,
 				38F62439149513EA00ACA497 /* SBJson.framework in Frameworks */,
 				38D3313B1495000000CE3400 /* Cocoa.framework in Frameworks */,
 			);
@@ -252,7 +252,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				38C7A9F114951F8800381910 /* PBXTargetDependency */,
+				386B79CE14964C27007AF705 /* PBXTargetDependency */,
 				38F62438149513D900ACA497 /* PBXTargetDependency */,
 			);
 			name = "Visual JSON";
@@ -385,10 +385,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		38C7A9F114951F8800381910 /* PBXTargetDependency */ = {
+		386B79CE14964C27007AF705 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IdealCocoa;
-			targetProxy = 38C7A9F014951F8800381910 /* PBXContainerItemProxy */;
+			targetProxy = 386B79CD14964C27007AF705 /* PBXContainerItemProxy */;
 		};
 		38F62438149513D900ACA497 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -475,7 +475,6 @@
 		38D331551495000000CE3400 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				FRAMEWORK_SEARCH_PATHS = (
 					"IdealCocoa/build/$(CONFIGURATION)",
@@ -495,7 +494,6 @@
 		38D331561495000000CE3400 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				FRAMEWORK_SEARCH_PATHS = (
 					"IdealCocoa/build/$(CONFIGURATION)",
