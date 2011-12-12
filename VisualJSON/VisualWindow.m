@@ -78,6 +78,7 @@
     } else {
         ICAssert(NO);
     }
+    return nil;
 }
 
 @end
