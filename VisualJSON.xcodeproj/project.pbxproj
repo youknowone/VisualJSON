@@ -10,6 +10,8 @@
 		38C7A9571495166B00381910 /* VisualWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C7A9561495166B00381910 /* VisualWindow.m */; };
 		38C7A9F214951F8D00381910 /* IdealCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C7A9651495177600381910 /* IdealCocoa.framework */; };
 		38C7AA0D1495B6EF00381910 /* JsonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C7AA0C1495B6EF00381910 /* JsonElement.m */; };
+		38C7AA231495F32900381910 /* Icon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38C7AA221495F32900381910 /* Icon.xib */; };
+		38C7AA271495FD6000381910 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 38C7AA261495FD6000381910 /* Icon.icns */; };
 		38D3313B1495000000CE3400 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D3313A1495000000CE3400 /* Cocoa.framework */; };
 		38D331451495000000CE3400 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D331431495000000CE3400 /* InfoPlist.strings */; };
 		38D331471495000000CE3400 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D331461495000000CE3400 /* main.m */; };
@@ -98,7 +100,9 @@
 		38C7A9591495177600381910 /* IdealCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IdealCocoa.xcodeproj; path = IdealCocoa/IdealCocoa.xcodeproj; sourceTree = SOURCE_ROOT; };
 		38C7AA0B1495B6EF00381910 /* JsonElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonElement.h; sourceTree = "<group>"; };
 		38C7AA0C1495B6EF00381910 /* JsonElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonElement.m; sourceTree = "<group>"; };
-		38D331361495000000CE3400 /* VisualJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38C7AA221495F32900381910 /* Icon.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Icon.xib; sourceTree = "<group>"; };
+		38C7AA261495FD6000381910 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+		38D331361495000000CE3400 /* Visual JSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visual JSON.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D3313A1495000000CE3400 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		38D3313D1495000000CE3400 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		38D3313E1495000000CE3400 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -162,7 +166,7 @@
 		38D331371495000000CE3400 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				38D331361495000000CE3400 /* VisualJSON.app */,
+				38D331361495000000CE3400 /* Visual JSON.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,6 +213,8 @@
 				38D331461495000000CE3400 /* main.m */,
 				38D331481495000000CE3400 /* VisualJSON-Prefix.pch */,
 				38D331491495000000CE3400 /* Credits.rtf */,
+				38C7AA221495F32900381910 /* Icon.xib */,
+				38C7AA261495FD6000381910 /* Icon.icns */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -235,9 +241,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		38D331351495000000CE3400 /* VisualJSON */ = {
+		38D331351495000000CE3400 /* Visual JSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38D331541495000000CE3400 /* Build configuration list for PBXNativeTarget "VisualJSON" */;
+			buildConfigurationList = 38D331541495000000CE3400 /* Build configuration list for PBXNativeTarget "Visual JSON" */;
 			buildPhases = (
 				38D331321495000000CE3400 /* Sources */,
 				38D331331495000000CE3400 /* Frameworks */,
@@ -249,9 +255,9 @@
 				38C7A9F114951F8800381910 /* PBXTargetDependency */,
 				38F62438149513D900ACA497 /* PBXTargetDependency */,
 			);
-			name = VisualJSON;
+			name = "Visual JSON";
 			productName = VisualJSON;
-			productReference = 38D331361495000000CE3400 /* VisualJSON.app */;
+			productReference = 38D331361495000000CE3400 /* Visual JSON.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -285,7 +291,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				38D331351495000000CE3400 /* VisualJSON */,
+				38D331351495000000CE3400 /* Visual JSON */,
 			);
 		};
 /* End PBXProject section */
@@ -357,6 +363,8 @@
 				38D331451495000000CE3400 /* InfoPlist.strings in Resources */,
 				38D3314B1495000000CE3400 /* Credits.rtf in Resources */,
 				38D331511495000000CE3400 /* MainMenu.xib in Resources */,
+				38C7AA231495F32900381910 /* Icon.xib in Resources */,
+				38C7AA271495FD6000381910 /* Icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +475,8 @@
 		38D331551495000000CE3400 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				FRAMEWORK_SEARCH_PATHS = (
 					"IdealCocoa/build/$(CONFIGURATION)",
 					"SBJson/build/$(CONFIGURATION)",
@@ -475,7 +485,9 @@
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
 				INFOPLIST_FILE = "VisualJSON/VisualJSON-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -483,6 +495,8 @@
 		38D331561495000000CE3400 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				FRAMEWORK_SEARCH_PATHS = (
 					"IdealCocoa/build/$(CONFIGURATION)",
 					"SBJson/build/$(CONFIGURATION)",
@@ -491,7 +505,9 @@
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
 				INFOPLIST_FILE = "VisualJSON/VisualJSON-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -508,7 +524,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38D331541495000000CE3400 /* Build configuration list for PBXNativeTarget "VisualJSON" */ = {
+		38D331541495000000CE3400 /* Build configuration list for PBXNativeTarget "Visual JSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38D331551495000000CE3400 /* Debug */,
