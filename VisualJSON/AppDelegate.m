@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  VisualJSON
 //
-//  Created by 윤원 정 on 11. 12. 12..
-//  Copyright (c) 2011년 3rddev Inc. All rights reserved.
+//  Created by youknowone on 11. 12. 12..
+//  Copyright (c) 2011 youknowone.org All rights reserved.
 //
 
 #import "AppDelegate.h"

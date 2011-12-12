@@ -7,28 +7,111 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38C7A9571495166B00381910 /* VisualWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C7A9561495166B00381910 /* VisualWindow.m */; };
+		38C7A9F214951F8D00381910 /* IdealCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C7A9651495177600381910 /* IdealCocoa.framework */; };
+		38C7AA0D1495B6EF00381910 /* JsonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C7AA0C1495B6EF00381910 /* JsonElement.m */; };
 		38D3313B1495000000CE3400 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D3313A1495000000CE3400 /* Cocoa.framework */; };
 		38D331451495000000CE3400 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D331431495000000CE3400 /* InfoPlist.strings */; };
 		38D331471495000000CE3400 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D331461495000000CE3400 /* main.m */; };
 		38D3314B1495000000CE3400 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 38D331491495000000CE3400 /* Credits.rtf */; };
 		38D3314E1495000000CE3400 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D3314D1495000000CE3400 /* AppDelegate.m */; };
 		38D331511495000000CE3400 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38D3314F1495000000CE3400 /* MainMenu.xib */; };
+		38F62439149513EA00ACA497 /* SBJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D334421495128B00CE3400 /* SBJson.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		38C7A9641495177600381910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38C7A9591495177600381910 /* IdealCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 383764D413373154007072FD;
+			remoteInfo = IdealCocoa;
+		};
+		38C7A9661495177600381910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38C7A9591495177600381910 /* IdealCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 383764E113373155007072FD;
+			remoteInfo = IdealCocoaTests;
+		};
+		38C7A9681495177600381910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38C7A9591495177600381910 /* IdealCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 38730437133732DE004C8E89;
+			remoteInfo = IdealUIKit;
+		};
+		38C7A96A1495177600381910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38C7A9591495177600381910 /* IdealCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 38730441133732DE004C8E89;
+			remoteInfo = IdealUIKitTests;
+		};
+		38C7A9F014951F8800381910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38C7A9591495177600381910 /* IdealCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 38C7A9711495181800381910;
+			remoteInfo = IdealCocoa;
+		};
+		38D334411495128B00CE3400 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38D331B31495128700CE3400 /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC12323D1391D5CC00131607;
+			remoteInfo = SBJson;
+		};
+		38D334431495128B00CE3400 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38D331B31495128700CE3400 /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC1232521391D5CC00131607;
+			remoteInfo = SBJsonTests;
+		};
+		38D334451495128B00CE3400 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38D331B31495128700CE3400 /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCC2626913920FC7003D9994;
+			remoteInfo = "sbjson-ios";
+		};
+		38D334471495128B00CE3400 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38D331B31495128700CE3400 /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCC2627313920FC7003D9994;
+			remoteInfo = "sbjson-iosTests";
+		};
+		38F62437149513D900ACA497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38D331B31495128700CE3400 /* SBJson.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC12323C1391D5CC00131607;
+			remoteInfo = SBJson;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		38C7A9551495166B00381910 /* VisualWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualWindow.h; sourceTree = "<group>"; };
+		38C7A9561495166B00381910 /* VisualWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualWindow.m; sourceTree = "<group>"; };
+		38C7A9591495177600381910 /* IdealCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IdealCocoa.xcodeproj; path = IdealCocoa/IdealCocoa.xcodeproj; sourceTree = SOURCE_ROOT; };
+		38C7AA0B1495B6EF00381910 /* JsonElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonElement.h; sourceTree = "<group>"; };
+		38C7AA0C1495B6EF00381910 /* JsonElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonElement.m; sourceTree = "<group>"; };
 		38D331361495000000CE3400 /* VisualJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D3313A1495000000CE3400 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		38D3313D1495000000CE3400 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		38D3313E1495000000CE3400 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		38D3313F1495000000CE3400 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		38D331421495000000CE3400 /* VisualJSON-Info.plist */ = {isa = PBXFileReference; path = "VisualJSON-Info.plist"; sourceTree = "<group>"; };
+		38D331421495000000CE3400 /* VisualJSON-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VisualJSON-Info.plist"; sourceTree = "<group>"; };
 		38D331441495000000CE3400 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		38D331461495000000CE3400 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		38D331481495000000CE3400 /* VisualJSON-Prefix.pch */ = {isa = PBXFileReference; path = "VisualJSON-Prefix.pch"; sourceTree = "<group>"; };
+		38D331481495000000CE3400 /* VisualJSON-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VisualJSON-Prefix.pch"; sourceTree = "<group>"; };
 		38D3314A1495000000CE3400 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		38D3314C1495000000CE3400 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		38D3314C1495000000CE3400 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		38D3314D1495000000CE3400 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		38D331501495000000CE3400 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		38D331B31495128700CE3400 /* SBJson.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SBJson.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38C7A9F214951F8D00381910 /* IdealCocoa.framework in Frameworks */,
+				38F62439149513EA00ACA497 /* SBJson.framework in Frameworks */,
 				38D3313B1495000000CE3400 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,10 +128,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38C7A9581495176500381910 /* IdealCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				38C7A9591495177600381910 /* IdealCocoa.xcodeproj */,
+			);
+			name = IdealCocoa;
+			path = SBJson;
+			sourceTree = "<group>";
+		};
+		38C7A95A1495177600381910 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38C7A9651495177600381910 /* IdealCocoa.framework */,
+				38C7A9671495177600381910 /* IdealCocoaTests.octest */,
+				38C7A9691495177600381910 /* libIdealUIKit.a */,
+				38C7A96B1495177600381910 /* IdealUIKitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		38D3312B1495000000CE3400 = {
 			isa = PBXGroup;
 			children = (
 				38D331401495000000CE3400 /* VisualJSON */,
+				38D331651495128700CE3400 /* SBJson */,
+				38C7A9581495176500381910 /* IdealCocoa */,
 				38D331391495000000CE3400 /* Frameworks */,
 				38D331371495000000CE3400 /* Products */,
 			);
@@ -85,6 +192,10 @@
 				38D3314C1495000000CE3400 /* AppDelegate.h */,
 				38D3314D1495000000CE3400 /* AppDelegate.m */,
 				38D3314F1495000000CE3400 /* MainMenu.xib */,
+				38C7A9551495166B00381910 /* VisualWindow.h */,
+				38C7A9561495166B00381910 /* VisualWindow.m */,
+				38C7AA0B1495B6EF00381910 /* JsonElement.h */,
+				38C7AA0C1495B6EF00381910 /* JsonElement.m */,
 				38D331411495000000CE3400 /* Supporting Files */,
 			);
 			path = VisualJSON;
@@ -102,6 +213,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		38D331651495128700CE3400 /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				38D331B31495128700CE3400 /* SBJson.xcodeproj */,
+			);
+			path = SBJson;
+			sourceTree = "<group>";
+		};
+		38D331B41495128700CE3400 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38D334421495128B00CE3400 /* SBJson.framework */,
+				38D334441495128B00CE3400 /* SBJsonTests.octest */,
+				38D334461495128B00CE3400 /* libsbjson-ios.a */,
+				38D334481495128B00CE3400 /* sbjson-iosTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,6 +246,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				38C7A9F114951F8800381910 /* PBXTargetDependency */,
+				38F62438149513D900ACA497 /* PBXTargetDependency */,
 			);
 			name = VisualJSON;
 			productName = VisualJSON;
@@ -129,7 +261,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
-				ORGANIZATIONNAME = "3rddev Inc.";
+				ORGANIZATIONNAME = youknowone.org;
 			};
 			buildConfigurationList = 38D331301495000000CE3400 /* Build configuration list for PBXProject "VisualJSON" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -141,12 +273,81 @@
 			mainGroup = 38D3312B1495000000CE3400;
 			productRefGroup = 38D331371495000000CE3400 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 38C7A95A1495177600381910 /* Products */;
+					ProjectRef = 38C7A9591495177600381910 /* IdealCocoa.xcodeproj */;
+				},
+				{
+					ProductGroup = 38D331B41495128700CE3400 /* Products */;
+					ProjectRef = 38D331B31495128700CE3400 /* SBJson.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				38D331351495000000CE3400 /* VisualJSON */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		38C7A9651495177600381910 /* IdealCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IdealCocoa.framework;
+			remoteRef = 38C7A9641495177600381910 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		38C7A9671495177600381910 /* IdealCocoaTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IdealCocoaTests.octest;
+			remoteRef = 38C7A9661495177600381910 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		38C7A9691495177600381910 /* libIdealUIKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIdealUIKit.a;
+			remoteRef = 38C7A9681495177600381910 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		38C7A96B1495177600381910 /* IdealUIKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IdealUIKitTests.octest;
+			remoteRef = 38C7A96A1495177600381910 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		38D334421495128B00CE3400 /* SBJson.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SBJson.framework;
+			remoteRef = 38D334411495128B00CE3400 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		38D334441495128B00CE3400 /* SBJsonTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SBJsonTests.octest;
+			remoteRef = 38D334431495128B00CE3400 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		38D334461495128B00CE3400 /* libsbjson-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libsbjson-ios.a";
+			remoteRef = 38D334451495128B00CE3400 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		38D334481495128B00CE3400 /* sbjson-iosTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "sbjson-iosTests.octest";
+			remoteRef = 38D334471495128B00CE3400 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		38D331341495000000CE3400 /* Resources */ = {
@@ -168,10 +369,25 @@
 			files = (
 				38D331471495000000CE3400 /* main.m in Sources */,
 				38D3314E1495000000CE3400 /* AppDelegate.m in Sources */,
+				38C7A9571495166B00381910 /* VisualWindow.m in Sources */,
+				38C7AA0D1495B6EF00381910 /* JsonElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38C7A9F114951F8800381910 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IdealCocoa;
+			targetProxy = 38C7A9F014951F8800381910 /* PBXContainerItemProxy */;
+		};
+		38F62438149513D900ACA497 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SBJson;
+			targetProxy = 38F62437149513D900ACA497 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		38D331431495000000CE3400 /* InfoPlist.strings */ = {
@@ -251,9 +467,14 @@
 		38D331551495000000CE3400 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"IdealCocoa/build/$(CONFIGURATION)",
+					"SBJson/build/$(CONFIGURATION)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
 				INFOPLIST_FILE = "VisualJSON/VisualJSON-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -262,9 +483,14 @@
 		38D331561495000000CE3400 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"IdealCocoa/build/$(CONFIGURATION)",
+					"SBJson/build/$(CONFIGURATION)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
 				INFOPLIST_FILE = "VisualJSON/VisualJSON-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -289,6 +515,7 @@
 				38D331561495000000CE3400 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,13 @@
+.hg
+.hgignore
+
+/build
+.DS_Store
+.git
+*.orig
+*~
+*.xcodeproj/*.mode1v3
+*.xcodeproj/*.pbxuser
+*.xcodeproj/*.perspectivev3
+*xcuserdata
+*.xcworkspace*

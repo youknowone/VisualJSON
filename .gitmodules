@@ -1,0 +1,6 @@
+[submodule "SBJson"]
+	path = SBJson
+	url = git://github.com/stig/json-framework.git
+[submodule "IdealCocoa"]
+	path = IdealCocoa
+	url = git://github.com/youknowone/IdealCocoa.git
