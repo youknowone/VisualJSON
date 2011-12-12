@@ -12,6 +12,7 @@
 @interface VisualWindow : NSWindow<NSOutlineViewDataSource, NSOutlineViewDelegate>
 
 @property(assign) IBOutlet NSTextField *addressTextField;
+@property(assign) IBOutlet NSTextField *postTextField;
 @property(assign) IBOutlet NSTextField *contentTextField;
 @property(assign) IBOutlet NSOutlineView *jsonOutlineView;
 @property(assign) IBOutlet NSTextView *jsonTextView;

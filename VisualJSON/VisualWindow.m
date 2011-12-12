@@ -16,7 +16,7 @@
 @end
 
 @implementation VisualWindow
-@synthesize addressTextField=_addressTextField, contentTextField=_contentTextField;
+@synthesize addressTextField=_addressTextField, postTextField=_postTextField, contentTextField=_contentTextField;
 @synthesize jsonOutlineView=_jsonOutlineView, jsonTextView=_jsonTextView;
 
 @synthesize json=_json;
@@ -24,11 +24,17 @@
 - (void)refresh:(id)sender {
     NSString *addr = self.addressTextField.stringValue;
     NSURL *URL = [addr hasPrefix:@"/"] ? [NSURL fileURLWithPath:addr] : [NSURL URLWithString:addr];
+    NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:URL];
+    if (self.postTextField.stringValue.length > 0) {
+        [req setHTTPMethod:@"POST"];
+        [req setHTTPBody:[self.postTextField.stringValue dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+    
     NSError *error = nil;
-    NSString *raw = [NSString stringWithContentsOfURL:URL encoding:NSUTF8StringEncoding error:&error];
-    if (raw != nil && error == nil) {
-        self.contentTextField.stringValue = raw;
-        [self visualize:sender];
+    NSData *data = [NSData dataWithContentsOfURLRequest:req error:&error];
+    if (data != nil && error == nil) {
+        self.contentTextField.stringValue = [NSString stringWithData:data encoding:NSUTF8StringEncoding];
+        [self performSelector:@selector(visualize:) withObject:sender afterDelay:0.02];
     } else {
         self.contentTextField.stringValue = [NSString stringWithFormat:@"Error on getting raw JSON text: %@", error];
     }
