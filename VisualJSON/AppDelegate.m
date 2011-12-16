@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "VisualWindow.h"
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -23,6 +25,7 @@
 
 - (BOOL)applicationOpenUntitledFile:(NSApplication *)sender {
     [self.window orderFrontRegardless];
+    [(VisualWindow *)self.window clearDocument:nil];
     return YES;
 }
 

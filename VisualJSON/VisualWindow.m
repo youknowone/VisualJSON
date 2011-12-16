@@ -9,12 +9,6 @@
 #import "VisualWindow.h"
 #import "JsonElement.h"
 
-@interface VisualWindow ()
-
-- (void)visualizeBackground;
-
-@end
-
 @implementation VisualWindow
 @synthesize addressTextField=_addressTextField, postTextField=_postTextField, contentTextField=_contentTextField;
 @synthesize jsonOutlineView=_jsonOutlineView, jsonTextView=_jsonTextView;
@@ -23,6 +17,8 @@
 
 - (void)refresh:(id)sender {
     NSString *addr = self.addressTextField.stringValue;
+    if (addr.length == 0) return;
+    
     NSURL *URL = [addr hasPrefix:@"/"] ? [NSURL fileURLWithPath:addr] : [NSURL URLWithString:addr];
     NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:URL];
     [req addValue:@"application/json" forHTTPHeaderField:@"Accept"];
@@ -47,8 +43,27 @@
     self.jsonTextView.string = self.json.description;
 }
 
-- (void)visualizeBackground {
+#pragma mark -
 
+- (void)clearDocument:(id)sender {
+    self.addressTextField.stringValue = @"";
+    self.postTextField.stringValue = @"";
+    self.contentTextField.stringValue = @"";
+    self.json = nil;
+    [self.jsonOutlineView reloadData];
+    self.jsonTextView.string = @"";
+}
+
+- (void)newDocument:(id)sender {
+    if (self.contentTextField.stringValue.length == 0) return;
+    NSAlert *alert = [NSAlert alertWithMessageText:@"New document" defaultButton:@"OK" alternateButton:@"Cancel" otherButton:nil informativeTextWithFormat:@"You may lose working document with this action. Do you want to start new document?"];
+    [alert beginSheetModalForWindow:self modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:NULL];
+}
+
+- (void)alertDidEnd:(NSAlert *)alert returnCode:(NSInteger)code contextInfo:(void *)info {
+    if (code == 1) {
+        [self clearDocument:nil];
+    }
 }
 
 #pragma mark -

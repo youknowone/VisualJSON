@@ -9,7 +9,7 @@
 #import <AppKit/AppKit.h>
 
 @class JsonElement;
-@interface VisualWindow : NSWindow<NSOutlineViewDataSource, NSOutlineViewDelegate>
+@interface VisualWindow : NSWindow<NSOutlineViewDataSource, NSOutlineViewDelegate, NSAlertDelegate>
 
 @property(assign) IBOutlet NSTextField *addressTextField;
 @property(assign) IBOutlet NSTextField *postTextField;
@@ -20,5 +20,6 @@
 
 - (IBAction)refresh:(id)sender;
 - (IBAction)visualize:(id)sender;
+- (IBAction)clearDocument:(id)sender;
 
 @end
