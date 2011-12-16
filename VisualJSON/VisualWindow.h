@@ -20,6 +20,7 @@
 
 - (IBAction)refresh:(id)sender;
 - (IBAction)visualize:(id)sender;
+- (IBAction)newDocument:(id)sender;
 - (IBAction)clearDocument:(id)sender;
 
 @end

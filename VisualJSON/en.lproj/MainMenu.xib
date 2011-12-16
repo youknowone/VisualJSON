@@ -209,7 +209,7 @@
 									<reference key="NSOnImage" ref="35465992"/>
 									<reference key="NSMixedImage" ref="502551668"/>
 								</object>
-								<object class="NSMenuItem" id="559915895">
+								<object class="NSMenuItem" id="629916143">
 									<reference key="NSMenu" ref="720053764"/>
 									<bool key="NSIsDisabled">YES</bool>
 									<bool key="NSIsSeparator">YES</bool>
@@ -220,7 +220,7 @@
 									<reference key="NSOnImage" ref="35465992"/>
 									<reference key="NSMixedImage" ref="502551668"/>
 								</object>
-								<object class="NSMenuItem" id="1006335418">
+								<object class="NSMenuItem" id="205997385">
 									<reference key="NSMenu" ref="720053764"/>
 									<bool key="NSIsHidden">YES</bool>
 									<string key="NSTitle">Open…</string>
@@ -1576,11 +1576,11 @@
 																					<string key="NSFrameSize">{487, 17}</string>
 																					<reference key="NSSuperview" ref="882064465"/>
 																					<reference key="NSWindow"/>
-																					<reference key="NSNextKeyView" ref="946823078"/>
+																					<reference key="NSNextKeyView" ref="478871666"/>
 																					<string key="NSReuseIdentifierKey">_NS:1705</string>
 																					<reference key="NSTableView" ref="353974812"/>
 																				</object>
-																				<object class="_NSCornerView" key="NSCornerView" id="946823078">
+																				<object class="_NSCornerView" key="NSCornerView" id="478871666">
 																					<reference key="NSNextResponder" ref="777471490"/>
 																					<int key="NSvFlags">-2147483392</int>
 																					<string key="NSFrame">{{224, 0}, {16, 17}}</string>
@@ -1730,7 +1730,7 @@
 																		<reference key="NSBGColor" ref="1004794678"/>
 																		<int key="NScvFlags">4</int>
 																	</object>
-																	<reference ref="946823078"/>
+																	<reference ref="478871666"/>
 																</array>
 																<string key="NSFrame">{{17, 17}, {489, 232}}</string>
 																<reference key="NSSuperview" ref="304242596"/>
@@ -1742,7 +1742,7 @@
 																<reference key="NSHScroller" ref="554634141"/>
 																<reference key="NSContentView" ref="449593905"/>
 																<reference key="NSHeaderClipView" ref="882064465"/>
-																<reference key="NSCornerView" ref="946823078"/>
+																<reference key="NSCornerView" ref="478871666"/>
 																<bytes key="NSScrollAmts">QSAAAEEgAABBmAAAQZgAAA</bytes>
 															</object>
 														</array>
@@ -2545,17 +2545,9 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					<object class="IBActionConnection" key="connection">
 						<string key="label">openDocument:</string>
 						<reference key="source" ref="1014"/>
-						<reference key="destination" ref="1006335418"/>
+						<reference key="destination" ref="205997385"/>
 					</object>
 					<int key="connectionID">598</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">newDocument:</string>
-						<reference key="source" ref="1014"/>
-						<reference key="destination" ref="722745758"/>
-					</object>
-					<int key="connectionID">600</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -2686,6 +2678,14 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					<int key="connectionID">532</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">newDocument:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="722745758"/>
+					</object>
+					<int key="connectionID">601</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">dataSource</string>
 						<reference key="source" ref="353974812"/>
@@ -2782,8 +2782,8 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<reference ref="1025936716"/>
 							<reference ref="776162233"/>
 							<reference ref="425164168"/>
-							<reference ref="1006335418"/>
-							<reference ref="559915895"/>
+							<reference ref="205997385"/>
+							<reference ref="629916143"/>
 						</array>
 						<reference key="parent" ref="379814623"/>
 					</object>
@@ -3928,12 +3928,12 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">597</int>
-						<reference key="object" ref="1006335418"/>
+						<reference key="object" ref="205997385"/>
 						<reference key="parent" ref="720053764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">599</int>
-						<reference key="object" ref="559915895"/>
+						<reference key="object" ref="629916143"/>
 						<reference key="parent" ref="720053764"/>
 					</object>
 				</array>
@@ -4130,22 +4130,33 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">600</int>
+			<int key="maxID">601</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">AppDelegate</string>
 					<string key="superclassName">NSObject</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">newDocument:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">newDocument:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">newDocument:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<string key="NS.key.0">window</string>
-						<string key="NS.object.0">NSWindow</string>
+						<string key="NS.object.0">VisualWindow</string>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<string key="NS.key.0">window</string>
 						<object class="IBToOneOutletInfo" key="NS.object.0">
 							<string key="name">window</string>
-							<string key="candidateClassName">NSWindow</string>
+							<string key="candidateClassName">VisualWindow</string>
 						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
@@ -4157,10 +4168,15 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					<string key="className">VisualWindow</string>
 					<string key="superclassName">NSWindow</string>
 					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="clearDocument:">id</string>
 						<string key="refresh:">id</string>
 						<string key="visualize:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="clearDocument:">
+							<string key="name">clearDocument:</string>
+							<string key="candidateClassName">id</string>
+						</object>
 						<object class="IBActionInfo" key="refresh:">
 							<string key="name">refresh:</string>
 							<string key="candidateClassName">id</string>

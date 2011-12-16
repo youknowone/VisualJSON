@@ -15,6 +15,14 @@
 
 @synthesize json=_json;
 
+- (void)awakeFromNib {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    self.addressTextField.stringValue = [userDefaults objectForKey:@"address"];
+    self.postTextField.stringValue = [userDefaults objectForKey:@"postdata"];
+    self.contentTextField.stringValue = [userDefaults objectForKey:@"content"];
+    [self refresh:nil];
+}
+
 - (void)refresh:(id)sender {
     NSString *addr = self.addressTextField.stringValue;
     if (addr.length == 0) return;
@@ -64,6 +72,17 @@
     if (code == 1) {
         [self clearDocument:nil];
     }
+}
+
+#pragma mark -
+
+- (void)close {
+    [super close];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setValue:self.addressTextField.stringValue forKey:@"address"];
+    [userDefaults setValue:self.postTextField.stringValue forKey:@"postdata"];
+    [userDefaults setValue:self.contentTextField.stringValue forKey:@"content"];
+    [userDefaults synchronize];
 }
 
 #pragma mark -

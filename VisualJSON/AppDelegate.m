@@ -14,6 +14,15 @@
 
 @synthesize window = _window;
 
+- (void)newDocument:(id)sender {
+    if(self.window.isVisible) {
+        [self.window newDocument:sender];
+    } else {
+        [self.window orderFrontRegardless];
+        [self.window clearDocument:nil];
+    }
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
@@ -25,7 +34,6 @@
 
 - (BOOL)applicationOpenUntitledFile:(NSApplication *)sender {
     [self.window orderFrontRegardless];
-    [(VisualWindow *)self.window clearDocument:nil];
     return YES;
 }
 
