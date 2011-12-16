@@ -18,6 +18,8 @@
 		38D3314B1495000000CE3400 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 38D331491495000000CE3400 /* Credits.rtf */; };
 		38D3314E1495000000CE3400 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D3314D1495000000CE3400 /* AppDelegate.m */; };
 		38D331511495000000CE3400 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38D3314F1495000000CE3400 /* MainMenu.xib */; };
+		38EBC685149986D400D3ABDF /* IdealCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 38C7A9651495177600381910 /* IdealCocoa.framework */; };
+		38EBC686149986D800D3ABDF /* SBJson.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 38D334421495128B00CE3400 /* SBJson.framework */; };
 		38F62439149513EA00ACA497 /* SBJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D334421495128B00CE3400 /* SBJson.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +95,20 @@
 			remoteInfo = SBJson;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		38EBC684149986C100D3ABDF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				38EBC686149986D800D3ABDF /* SBJson.framework in CopyFiles */,
+				38EBC685149986D400D3ABDF /* IdealCocoa.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		38C7A9551495166B00381910 /* VisualWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualWindow.h; sourceTree = "<group>"; };
@@ -248,6 +264,7 @@
 				38D331321495000000CE3400 /* Sources */,
 				38D331331495000000CE3400 /* Frameworks */,
 				38D331341495000000CE3400 /* Resources */,
+				38EBC684149986C100D3ABDF /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -475,7 +492,6 @@
 		38D331551495000000CE3400 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				FRAMEWORK_SEARCH_PATHS = (
 					"IdealCocoa/build/$(CONFIGURATION)",
 					"SBJson/build/$(CONFIGURATION)",
@@ -486,7 +502,6 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
