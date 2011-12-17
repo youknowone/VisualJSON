@@ -17,6 +17,17 @@
 
 - (void)awakeFromNib {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    if ([userDefaults objectForKey:@"address"] == nil) {
+        [userDefaults setObject:@"" forKey:@"address"];
+    }
+    if ([userDefaults objectForKey:@"postdata"] == nil) {
+        [userDefaults setObject:@"" forKey:@"postdata"];
+    }
+    if ([userDefaults objectForKey:@"content"] == nil) {
+        [userDefaults setObject:@"" forKey:@"content"];
+    }
+    
     self.addressTextField.stringValue = [userDefaults objectForKey:@"address"];
     self.postTextField.stringValue = [userDefaults objectForKey:@"postdata"];
     self.contentTextField.stringValue = [userDefaults objectForKey:@"content"];
