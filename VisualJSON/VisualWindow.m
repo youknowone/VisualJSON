@@ -41,6 +41,7 @@
     NSURL *URL = [addr hasPrefix:@"/"] ? [NSURL fileURLWithPath:addr] : [NSURL URLWithString:addr];
     NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:URL];
     [req addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [req addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     if (self.postTextField.stringValue.length > 0) {
         [req setHTTPMethod:@"POST"];
         [req setHTTPBody:[self.postTextField.stringValue dataUsingEncoding:NSUTF8StringEncoding]];
