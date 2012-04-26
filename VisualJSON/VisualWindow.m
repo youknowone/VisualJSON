@@ -15,6 +15,7 @@
 
 @synthesize json=_json;
 
+// after loading nib assets, load last data from standard user defautls
 - (void)awakeFromNib {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     
@@ -34,19 +35,25 @@
     [self refresh:nil];
 }
 
+// reload data from local/remote address
 - (void)refresh:(id)sender {
     NSString *addr = self.addressTextField.stringValue;
+    // do not touch content if address is blank.
     if (addr.length == 0) return;
     
-    NSURL *URL = [addr hasPrefix:@"/"] ? [NSURL fileURLWithPath:addr] : [NSURL URLWithString:addr];
+    // decide local or remote
+    NSURL *URL = [addr hasPrefix:@"/"] ? addr.fileURL : addr.URL;
     NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:URL];
+    // set mimetype
     [req addValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [req addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    // set post if exists
     if (self.postTextField.stringValue.length > 0) {
         [req setHTTPMethod:@"POST"];
         [req setHTTPBody:[self.postTextField.stringValue dataUsingEncoding:NSUTF8StringEncoding]];
     }
     
+    // set content field with data
     NSError *error = nil;
     NSData *data = [NSData dataWithContentsOfURLRequest:req error:&error];
     if (data != nil && error == nil) {
@@ -74,6 +81,7 @@
     self.jsonTextView.string = @"";
 }
 
+// fake new document. it just clear.
 - (void)newDocument:(id)sender {
     if (self.contentTextField.stringValue.length == 0) return;
     NSAlert *alert = [NSAlert alertWithMessageText:@"New document" defaultButton:@"OK" alternateButton:@"Cancel" otherButton:nil informativeTextWithFormat:@"You may lose working document with this action. Do you want to start new document?"];
@@ -97,7 +105,7 @@
     [userDefaults synchronize];
 }
 
-#pragma mark -
+#pragma mark - outline delegate for 'tree' view
 
 - (NSInteger)outlineView:(NSOutlineView *)outlineView numberOfChildrenOfItem:(id)item {
     if (item == nil) item = self.json;

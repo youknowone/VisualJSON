@@ -15,6 +15,7 @@
 @synthesize window = _window;
 
 - (void)newDocument:(id)sender {
+    // Fake new document. VisualJSON does not support multi windows yet.
     if(self.window.isVisible) {
         [self.window newDocument:sender];
     } else {

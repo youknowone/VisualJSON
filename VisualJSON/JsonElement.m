@@ -10,14 +10,17 @@
 
 @interface JsonElement ()
 
+// internal data form
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 - (id)initWithArray:(NSArray *)array;
 - (id)initWithTerminal:(id)object;
 
+//! @breif  'Text' view string representation
 - (NSString *)descriptionWithDepth:(NSInteger)depth;
 
 @end
 
+//! @brief  'Tree' view internal representation
 @interface JsonElement (OutlineDescription)
 
 - (NSString *)outlineItemDescription:(id)item;
