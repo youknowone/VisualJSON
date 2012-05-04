@@ -122,6 +122,8 @@ NSDictionary *JsonElementInitializers = nil;
             [desc appendString:[[self childAtIndex:i] descriptionWithDepth:depth + 1]];
             [desc appendString:@",\n"];
         }
+        [desc deleteCharactersInRange:NSMakeRange(desc.length-2, 2)];
+        [desc appendString:@"\n"];
         [desc appendString:indent];
         [desc appendString:@"]"];
     } else if ([self.object isKindOfClass:[NSDictionary class]]) {
@@ -132,6 +134,8 @@ NSDictionary *JsonElementInitializers = nil;
             [desc appendString:desc2];
             [desc appendString:@",\n"];
         }
+        [desc deleteCharactersInRange:NSMakeRange(desc.length-2, 2)];
+        [desc appendString:@"\n"];
         [desc appendString:indent];
         [desc appendString:@"}"];
     } else if ([self.object isKindOfClass:[NSString class]]) {
