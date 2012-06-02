@@ -122,7 +122,8 @@ NSDictionary *JsonElementInitializers = nil;
             [desc appendString:[[self childAtIndex:i] descriptionWithDepth:depth + 1]];
             [desc appendString:@",\n"];
         }
-        [desc deleteCharactersInRange:NSMakeRange(desc.length-2, 2)];
+        NSInteger deleteCount = 1 + (self.keys.count != 0);
+        [desc deleteCharactersInRange:NSMakeRange(desc.length - deleteCount, deleteCount)];
         [desc appendString:@"\n"];
         [desc appendString:indent];
         [desc appendString:@"]"];
