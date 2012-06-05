@@ -7,249 +7,260 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		386B79CC14964C09007AF705 /* IdealCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C7A9651495177600381910 /* IdealCocoa.framework */; };
-		38C7A9571495166B00381910 /* VisualWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C7A9561495166B00381910 /* VisualWindow.m */; };
-		38C7AA0D1495B6EF00381910 /* JsonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C7AA0C1495B6EF00381910 /* JsonElement.m */; };
-		38C7AA231495F32900381910 /* Icon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38C7AA221495F32900381910 /* Icon.xib */; };
-		38C7AA271495FD6000381910 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 38C7AA261495FD6000381910 /* Icon.icns */; };
-		38D3313B1495000000CE3400 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D3313A1495000000CE3400 /* Cocoa.framework */; };
-		38D331451495000000CE3400 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D331431495000000CE3400 /* InfoPlist.strings */; };
-		38D331471495000000CE3400 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D331461495000000CE3400 /* main.m */; };
-		38D3314B1495000000CE3400 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 38D331491495000000CE3400 /* Credits.rtf */; };
-		38D3314E1495000000CE3400 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D3314D1495000000CE3400 /* AppDelegate.m */; };
-		38D331511495000000CE3400 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38D3314F1495000000CE3400 /* MainMenu.xib */; };
-		38EBC685149986D400D3ABDF /* IdealCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 38C7A9651495177600381910 /* IdealCocoa.framework */; };
-		38EBC686149986D800D3ABDF /* SBJson.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 38D334421495128B00CE3400 /* SBJson.framework */; };
-		38F62439149513EA00ACA497 /* SBJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D334421495128B00CE3400 /* SBJson.framework */; };
+		382554BF157BE3550099CC24 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382554BE157BE3550099CC24 /* Cocoa.framework */; };
+		382554C9157BE3550099CC24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 382554C7157BE3550099CC24 /* InfoPlist.strings */; };
+		382554CB157BE3550099CC24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 382554CA157BE3550099CC24 /* main.m */; };
+		382554CF157BE3550099CC24 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 382554CD157BE3550099CC24 /* Credits.rtf */; };
+		382554D2157BE3550099CC24 /* VJDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 382554D1157BE3550099CC24 /* VJDocument.m */; };
+		382554D5157BE3550099CC24 /* VJDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382554D3157BE3550099CC24 /* VJDocument.xib */; };
+		382554D8157BE3550099CC24 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382554D6157BE3550099CC24 /* MainMenu.xib */; };
+		382554E3157BE3550099CC24 /* VisualJSONImporter.mdimporter in Resources */ = {isa = PBXBuildFile; fileRef = 382554E0157BE3550099CC24 /* VisualJSONImporter.mdimporter */; };
+		382554E5157BE3550099CC24 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382554E4157BE3550099CC24 /* CoreServices.framework */; };
+		382554E7157BE3550099CC24 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382554E6157BE3550099CC24 /* CoreFoundation.framework */; };
+		382554E9157BE3550099CC24 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382554E8157BE3550099CC24 /* CoreData.framework */; };
+		382554EB157BE3550099CC24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382554EA157BE3550099CC24 /* Foundation.framework */; };
+		382554F1157BE3550099CC24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 382554EF157BE3550099CC24 /* InfoPlist.strings */; };
+		382554F3157BE3550099CC24 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 382554F2157BE3550099CC24 /* main.c */; };
+		382554F5157BE3550099CC24 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 382554F4157BE3550099CC24 /* GetMetadataForFile.m */; };
+		382554F8157BE3550099CC24 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 382554F7157BE3550099CC24 /* MySpotlightImporter.m */; };
+		3825555E157C7F6B0099CC24 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3825555D157C7F6B0099CC24 /* Icon.icns */; };
+		38255567157C94C50099CC24 /* JsonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 38255566157C94C50099CC24 /* JsonElement.m */; };
+		3825556D157C957E0099CC24 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 38255569157C957E0099CC24 /* CHANGELOG.md */; };
+		3825556E157C957E0099CC24 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3825556B157C957E0099CC24 /* JSONKit.m */; };
+		3825556F157C957E0099CC24 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3825556C157C957E0099CC24 /* README.md */; };
+		38255621157C9E1C0099CC24 /* IdealCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38255618157C9AE90099CC24 /* IdealCocoa.framework */; };
+		38A1C035157DD7030034EDC4 /* VJRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C034157DD7030034EDC4 /* VJRequest.m */; };
+		38A1C038157E15240034EDC4 /* VJDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		386B79CD14964C27007AF705 /* PBXContainerItemProxy */ = {
+		38255617157C9AE90099CC24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 38C7A9591495177600381910 /* IdealCocoa.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 38C7A9711495181800381910;
+			containerPortal = 382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 38C7A9721495181800381910;
 			remoteInfo = IdealCocoa;
 		};
-		38C7A9641495177600381910 /* PBXContainerItemProxy */ = {
+		38255619157C9AE90099CC24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 38C7A9591495177600381910 /* IdealCocoa.xcodeproj */;
+			containerPortal = 382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 383764D413373154007072FD;
-			remoteInfo = IdealCocoa;
-		};
-		38C7A9661495177600381910 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 38C7A9591495177600381910 /* IdealCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 383764E113373155007072FD;
+			remoteGlobalIDString = 38C7A9881495181800381910;
 			remoteInfo = IdealCocoaTests;
 		};
-		38C7A9681495177600381910 /* PBXContainerItemProxy */ = {
+		3825561B157C9AE90099CC24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 38C7A9591495177600381910 /* IdealCocoa.xcodeproj */;
+			containerPortal = 382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 38730437133732DE004C8E89;
 			remoteInfo = IdealUIKit;
 		};
-		38C7A96A1495177600381910 /* PBXContainerItemProxy */ = {
+		3825561D157C9AE90099CC24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 38C7A9591495177600381910 /* IdealCocoa.xcodeproj */;
+			containerPortal = 382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 38730441133732DE004C8E89;
 			remoteInfo = IdealUIKitTests;
 		};
-		38D334411495128B00CE3400 /* PBXContainerItemProxy */ = {
+		3825561F157C9E160099CC24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 38D331B31495128700CE3400 /* SBJson.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BC12323D1391D5CC00131607;
-			remoteInfo = SBJson;
-		};
-		38D334431495128B00CE3400 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 38D331B31495128700CE3400 /* SBJson.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BC1232521391D5CC00131607;
-			remoteInfo = SBJsonTests;
-		};
-		38D334451495128B00CE3400 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 38D331B31495128700CE3400 /* SBJson.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCC2626913920FC7003D9994;
-			remoteInfo = "sbjson-ios";
-		};
-		38D334471495128B00CE3400 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 38D331B31495128700CE3400 /* SBJson.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCC2627313920FC7003D9994;
-			remoteInfo = "sbjson-iosTests";
-		};
-		38F62437149513D900ACA497 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 38D331B31495128700CE3400 /* SBJson.xcodeproj */;
+			containerPortal = 382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = BC12323C1391D5CC00131607;
-			remoteInfo = SBJson;
+			remoteGlobalIDString = 38C7A9711495181800381910;
+			remoteInfo = IdealCocoa;
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		38EBC684149986C100D3ABDF /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				38EBC686149986D800D3ABDF /* SBJson.framework in CopyFiles */,
-				38EBC685149986D400D3ABDF /* IdealCocoa.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		38C7A9551495166B00381910 /* VisualWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualWindow.h; sourceTree = "<group>"; };
-		38C7A9561495166B00381910 /* VisualWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualWindow.m; sourceTree = "<group>"; };
-		38C7A9591495177600381910 /* IdealCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IdealCocoa.xcodeproj; path = IdealCocoa/IdealCocoa.xcodeproj; sourceTree = SOURCE_ROOT; };
-		38C7AA0B1495B6EF00381910 /* JsonElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonElement.h; sourceTree = "<group>"; };
-		38C7AA0C1495B6EF00381910 /* JsonElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonElement.m; sourceTree = "<group>"; };
-		38C7AA221495F32900381910 /* Icon.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Icon.xib; sourceTree = "<group>"; };
-		38C7AA261495FD6000381910 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
-		38D331361495000000CE3400 /* Visual JSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visual JSON.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		38D3313A1495000000CE3400 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		38D3313D1495000000CE3400 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		38D3313E1495000000CE3400 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		38D3313F1495000000CE3400 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		38D331421495000000CE3400 /* VisualJSON-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VisualJSON-Info.plist"; sourceTree = "<group>"; };
-		38D331441495000000CE3400 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		38D331461495000000CE3400 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		38D331481495000000CE3400 /* VisualJSON-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VisualJSON-Prefix.pch"; sourceTree = "<group>"; };
-		38D3314A1495000000CE3400 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		38D3314C1495000000CE3400 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		38D3314D1495000000CE3400 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		38D331501495000000CE3400 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		38D331B31495128700CE3400 /* SBJson.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SBJson.xcodeproj; sourceTree = "<group>"; };
+		382554BA157BE3550099CC24 /* VisualJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		382554BE157BE3550099CC24 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		382554C1157BE3550099CC24 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		382554C2157BE3550099CC24 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		382554C3157BE3550099CC24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		382554C6157BE3550099CC24 /* VisualJSON-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VisualJSON-Info.plist"; sourceTree = "<group>"; };
+		382554C8157BE3550099CC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		382554CA157BE3550099CC24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		382554CC157BE3550099CC24 /* VisualJSON-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VisualJSON-Prefix.pch"; sourceTree = "<group>"; };
+		382554CE157BE3550099CC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		382554D0157BE3550099CC24 /* VJDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VJDocument.h; sourceTree = "<group>"; };
+		382554D1157BE3550099CC24 /* VJDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VJDocument.m; sourceTree = "<group>"; };
+		382554D4157BE3550099CC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VJDocument.xib; sourceTree = "<group>"; };
+		382554D7157BE3550099CC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		382554E0157BE3550099CC24 /* VisualJSONImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisualJSONImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		382554E4157BE3550099CC24 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		382554E6157BE3550099CC24 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		382554E8157BE3550099CC24 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		382554EA157BE3550099CC24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		382554EE157BE3550099CC24 /* VisualJSONImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VisualJSONImporter-Info.plist"; sourceTree = "<group>"; };
+		382554F0157BE3550099CC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		382554F2157BE3550099CC24 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		382554F4157BE3550099CC24 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		382554F6157BE3550099CC24 /* MySpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		382554F7157BE3550099CC24 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
+		382554F9157BE3550099CC24 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+		382554FA157BE3550099CC24 /* VisualJSONImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VisualJSONImporter-Prefix.pch"; sourceTree = "<group>"; };
+		38255503157BE3730099CC24 /* VisualJSON.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = VisualJSON.entitlements; sourceTree = "<group>"; };
+		3825555D157C7F6B0099CC24 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+		38255565157C94C50099CC24 /* JsonElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonElement.h; sourceTree = "<group>"; };
+		38255566157C94C50099CC24 /* JsonElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonElement.m; sourceTree = "<group>"; };
+		38255569157C957E0099CC24 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		3825556A157C957E0099CC24 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		3825556B157C957E0099CC24 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		3825556C157C957E0099CC24 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = IdealCocoa.xcodeproj; sourceTree = "<group>"; };
+		38A1C033157DD7030034EDC4 /* VJRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJRequest.h; sourceTree = "<group>"; };
+		38A1C034157DD7030034EDC4 /* VJRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJRequest.m; sourceTree = "<group>"; };
+		38A1C037157E15240034EDC4 /* VJDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VJDocument.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		38D331331495000000CE3400 /* Frameworks */ = {
+		382554B7157BE3550099CC24 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				386B79CC14964C09007AF705 /* IdealCocoa.framework in Frameworks */,
-				38F62439149513EA00ACA497 /* SBJson.framework in Frameworks */,
-				38D3313B1495000000CE3400 /* Cocoa.framework in Frameworks */,
+				38255621157C9E1C0099CC24 /* IdealCocoa.framework in Frameworks */,
+				382554BF157BE3550099CC24 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		382554DD157BE3550099CC24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				382554E5157BE3550099CC24 /* CoreServices.framework in Frameworks */,
+				382554E7157BE3550099CC24 /* CoreFoundation.framework in Frameworks */,
+				382554E9157BE3550099CC24 /* CoreData.framework in Frameworks */,
+				382554EB157BE3550099CC24 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		38C7A9581495176500381910 /* IdealCocoa */ = {
+		382554AF157BE3550099CC24 = {
 			isa = PBXGroup;
 			children = (
-				38C7A9591495177600381910 /* IdealCocoa.xcodeproj */,
-			);
-			name = IdealCocoa;
-			path = SBJson;
-			sourceTree = "<group>";
-		};
-		38C7A95A1495177600381910 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				38C7A9651495177600381910 /* IdealCocoa.framework */,
-				38C7A9671495177600381910 /* IdealCocoaTests.octest */,
-				38C7A9691495177600381910 /* libIdealUIKit.a */,
-				38C7A96B1495177600381910 /* IdealUIKitTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		38D3312B1495000000CE3400 = {
-			isa = PBXGroup;
-			children = (
-				38D331401495000000CE3400 /* VisualJSON */,
-				38D331651495128700CE3400 /* SBJson */,
-				38C7A9581495176500381910 /* IdealCocoa */,
-				38D331391495000000CE3400 /* Frameworks */,
-				38D331371495000000CE3400 /* Products */,
+				382554C4157BE3550099CC24 /* VisualJSON */,
+				38255568157C957E0099CC24 /* JSONKit */,
+				38255570157C9AE90099CC24 /* IdealCocoa */,
+				382554EC157BE3550099CC24 /* VisualJSONImporter */,
+				382554BD157BE3550099CC24 /* Frameworks */,
+				382554BB157BE3550099CC24 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		38D331371495000000CE3400 /* Products */ = {
+		382554BB157BE3550099CC24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				38D331361495000000CE3400 /* Visual JSON.app */,
+				382554BA157BE3550099CC24 /* VisualJSON.app */,
+				382554E0157BE3550099CC24 /* VisualJSONImporter.mdimporter */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		38D331391495000000CE3400 /* Frameworks */ = {
+		382554BD157BE3550099CC24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				38D3313A1495000000CE3400 /* Cocoa.framework */,
-				38D3313C1495000000CE3400 /* Other Frameworks */,
+				382554BE157BE3550099CC24 /* Cocoa.framework */,
+				382554E4157BE3550099CC24 /* CoreServices.framework */,
+				382554E6157BE3550099CC24 /* CoreFoundation.framework */,
+				382554E8157BE3550099CC24 /* CoreData.framework */,
+				382554EA157BE3550099CC24 /* Foundation.framework */,
+				382554C0157BE3550099CC24 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		38D3313C1495000000CE3400 /* Other Frameworks */ = {
+		382554C0157BE3550099CC24 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				38D3313D1495000000CE3400 /* AppKit.framework */,
-				38D3313E1495000000CE3400 /* CoreData.framework */,
-				38D3313F1495000000CE3400 /* Foundation.framework */,
+				382554C1157BE3550099CC24 /* AppKit.framework */,
+				382554C2157BE3550099CC24 /* CoreData.framework */,
+				382554C3157BE3550099CC24 /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		38D331401495000000CE3400 /* VisualJSON */ = {
+		382554C4157BE3550099CC24 /* VisualJSON */ = {
 			isa = PBXGroup;
 			children = (
-				38D3314C1495000000CE3400 /* AppDelegate.h */,
-				38D3314D1495000000CE3400 /* AppDelegate.m */,
-				38D3314F1495000000CE3400 /* MainMenu.xib */,
-				38C7A9551495166B00381910 /* VisualWindow.h */,
-				38C7A9561495166B00381910 /* VisualWindow.m */,
-				38C7AA0B1495B6EF00381910 /* JsonElement.h */,
-				38C7AA0C1495B6EF00381910 /* JsonElement.m */,
-				38D331411495000000CE3400 /* Supporting Files */,
+				38A1C033157DD7030034EDC4 /* VJRequest.h */,
+				38A1C034157DD7030034EDC4 /* VJRequest.m */,
+				38255503157BE3730099CC24 /* VisualJSON.entitlements */,
+				382554D0157BE3550099CC24 /* VJDocument.h */,
+				382554D1157BE3550099CC24 /* VJDocument.m */,
+				38255565157C94C50099CC24 /* JsonElement.h */,
+				38255566157C94C50099CC24 /* JsonElement.m */,
+				382554D3157BE3550099CC24 /* VJDocument.xib */,
+				382554D6157BE3550099CC24 /* MainMenu.xib */,
+				38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */,
+				382554C5157BE3550099CC24 /* Supporting Files */,
 			);
 			path = VisualJSON;
 			sourceTree = "<group>";
 		};
-		38D331411495000000CE3400 /* Supporting Files */ = {
+		382554C5157BE3550099CC24 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				38D331421495000000CE3400 /* VisualJSON-Info.plist */,
-				38D331431495000000CE3400 /* InfoPlist.strings */,
-				38D331461495000000CE3400 /* main.m */,
-				38D331481495000000CE3400 /* VisualJSON-Prefix.pch */,
-				38D331491495000000CE3400 /* Credits.rtf */,
-				38C7AA221495F32900381910 /* Icon.xib */,
-				38C7AA261495FD6000381910 /* Icon.icns */,
+				382554C6157BE3550099CC24 /* VisualJSON-Info.plist */,
+				382554C7157BE3550099CC24 /* InfoPlist.strings */,
+				382554CA157BE3550099CC24 /* main.m */,
+				382554CC157BE3550099CC24 /* VisualJSON-Prefix.pch */,
+				382554CD157BE3550099CC24 /* Credits.rtf */,
+				3825555D157C7F6B0099CC24 /* Icon.icns */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		38D331651495128700CE3400 /* SBJson */ = {
+		382554EC157BE3550099CC24 /* VisualJSONImporter */ = {
 			isa = PBXGroup;
 			children = (
-				38D331B31495128700CE3400 /* SBJson.xcodeproj */,
+				382554F4157BE3550099CC24 /* GetMetadataForFile.m */,
+				382554F6157BE3550099CC24 /* MySpotlightImporter.h */,
+				382554F7157BE3550099CC24 /* MySpotlightImporter.m */,
+				382554F9157BE3550099CC24 /* Importer Read Me.txt */,
+				382554ED157BE3550099CC24 /* Supporting Files */,
 			);
-			path = SBJson;
+			path = VisualJSONImporter;
 			sourceTree = "<group>";
 		};
-		38D331B41495128700CE3400 /* Products */ = {
+		382554ED157BE3550099CC24 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				38D334421495128B00CE3400 /* SBJson.framework */,
-				38D334441495128B00CE3400 /* SBJsonTests.octest */,
-				38D334461495128B00CE3400 /* libsbjson-ios.a */,
-				38D334481495128B00CE3400 /* sbjson-iosTests.octest */,
+				382554EE157BE3550099CC24 /* VisualJSONImporter-Info.plist */,
+				382554EF157BE3550099CC24 /* InfoPlist.strings */,
+				382554F2157BE3550099CC24 /* main.c */,
+				382554FA157BE3550099CC24 /* VisualJSONImporter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38255568157C957E0099CC24 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				38255569157C957E0099CC24 /* CHANGELOG.md */,
+				3825556A157C957E0099CC24 /* JSONKit.h */,
+				3825556B157C957E0099CC24 /* JSONKit.m */,
+				3825556C157C957E0099CC24 /* README.md */,
+			);
+			path = JSONKit;
+			sourceTree = SOURCE_ROOT;
+		};
+		38255570157C9AE90099CC24 /* IdealCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */,
+			);
+			path = IdealCocoa;
+			sourceTree = "<group>";
+		};
+		382555AA157C9AE90099CC24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38255618157C9AE90099CC24 /* IdealCocoa.framework */,
+				3825561A157C9AE90099CC24 /* IdealCocoaTests.octest */,
+				3825561C157C9AE90099CC24 /* libIdealUIKit.a */,
+				3825561E157C9AE90099CC24 /* IdealUIKitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,197 +268,215 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		38D331351495000000CE3400 /* Visual JSON */ = {
+		382554B9157BE3550099CC24 /* VisualJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38D331541495000000CE3400 /* Build configuration list for PBXNativeTarget "Visual JSON" */;
+			buildConfigurationList = 38255500157BE3550099CC24 /* Build configuration list for PBXNativeTarget "VisualJSON" */;
 			buildPhases = (
-				38D331321495000000CE3400 /* Sources */,
-				38D331331495000000CE3400 /* Frameworks */,
-				38D331341495000000CE3400 /* Resources */,
-				38EBC684149986C100D3ABDF /* CopyFiles */,
+				382554B6157BE3550099CC24 /* Sources */,
+				382554B7157BE3550099CC24 /* Frameworks */,
+				382554B8157BE3550099CC24 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				386B79CE14964C27007AF705 /* PBXTargetDependency */,
-				38F62438149513D900ACA497 /* PBXTargetDependency */,
+				38255620157C9E160099CC24 /* PBXTargetDependency */,
 			);
-			name = "Visual JSON";
+			name = VisualJSON;
 			productName = VisualJSON;
-			productReference = 38D331361495000000CE3400 /* Visual JSON.app */;
+			productReference = 382554BA157BE3550099CC24 /* VisualJSON.app */;
 			productType = "com.apple.product-type.application";
+		};
+		382554DF157BE3550099CC24 /* VisualJSONImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 382554FD157BE3550099CC24 /* Build configuration list for PBXNativeTarget "VisualJSONImporter" */;
+			buildPhases = (
+				382554DC157BE3550099CC24 /* Sources */,
+				382554DD157BE3550099CC24 /* Frameworks */,
+				382554DE157BE3550099CC24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisualJSONImporter;
+			productName = VisualJSONImporter;
+			productReference = 382554E0157BE3550099CC24 /* VisualJSONImporter.mdimporter */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		38D3312D1495000000CE3400 /* Project object */ = {
+		382554B1157BE3550099CC24 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = VJ;
 				LastUpgradeCheck = 0430;
-				ORGANIZATIONNAME = youknowone.org;
+				ORGANIZATIONNAME = "3rddev Inc.";
 			};
-			buildConfigurationList = 38D331301495000000CE3400 /* Build configuration list for PBXProject "VisualJSON" */;
+			buildConfigurationList = 382554B4157BE3550099CC24 /* Build configuration list for PBXProject "VisualJSON" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 38D3312B1495000000CE3400;
-			productRefGroup = 38D331371495000000CE3400 /* Products */;
+			mainGroup = 382554AF157BE3550099CC24;
+			productRefGroup = 382554BB157BE3550099CC24 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 38C7A95A1495177600381910 /* Products */;
-					ProjectRef = 38C7A9591495177600381910 /* IdealCocoa.xcodeproj */;
-				},
-				{
-					ProductGroup = 38D331B41495128700CE3400 /* Products */;
-					ProjectRef = 38D331B31495128700CE3400 /* SBJson.xcodeproj */;
+					ProductGroup = 382555AA157C9AE90099CC24 /* Products */;
+					ProjectRef = 382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				38D331351495000000CE3400 /* Visual JSON */,
+				382554B9157BE3550099CC24 /* VisualJSON */,
+				382554DF157BE3550099CC24 /* VisualJSONImporter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		38C7A9651495177600381910 /* IdealCocoa.framework */ = {
+		38255618157C9AE90099CC24 /* IdealCocoa.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = IdealCocoa.framework;
-			remoteRef = 38C7A9641495177600381910 /* PBXContainerItemProxy */;
+			remoteRef = 38255617157C9AE90099CC24 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		38C7A9671495177600381910 /* IdealCocoaTests.octest */ = {
+		3825561A157C9AE90099CC24 /* IdealCocoaTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = IdealCocoaTests.octest;
-			remoteRef = 38C7A9661495177600381910 /* PBXContainerItemProxy */;
+			remoteRef = 38255619157C9AE90099CC24 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		38C7A9691495177600381910 /* libIdealUIKit.a */ = {
+		3825561C157C9AE90099CC24 /* libIdealUIKit.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libIdealUIKit.a;
-			remoteRef = 38C7A9681495177600381910 /* PBXContainerItemProxy */;
+			remoteRef = 3825561B157C9AE90099CC24 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		38C7A96B1495177600381910 /* IdealUIKitTests.octest */ = {
+		3825561E157C9AE90099CC24 /* IdealUIKitTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = IdealUIKitTests.octest;
-			remoteRef = 38C7A96A1495177600381910 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		38D334421495128B00CE3400 /* SBJson.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SBJson.framework;
-			remoteRef = 38D334411495128B00CE3400 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		38D334441495128B00CE3400 /* SBJsonTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SBJsonTests.octest;
-			remoteRef = 38D334431495128B00CE3400 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		38D334461495128B00CE3400 /* libsbjson-ios.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libsbjson-ios.a";
-			remoteRef = 38D334451495128B00CE3400 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		38D334481495128B00CE3400 /* sbjson-iosTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "sbjson-iosTests.octest";
-			remoteRef = 38D334471495128B00CE3400 /* PBXContainerItemProxy */;
+			remoteRef = 3825561D157C9AE90099CC24 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		38D331341495000000CE3400 /* Resources */ = {
+		382554B8157BE3550099CC24 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38D331451495000000CE3400 /* InfoPlist.strings in Resources */,
-				38D3314B1495000000CE3400 /* Credits.rtf in Resources */,
-				38D331511495000000CE3400 /* MainMenu.xib in Resources */,
-				38C7AA231495F32900381910 /* Icon.xib in Resources */,
-				38C7AA271495FD6000381910 /* Icon.icns in Resources */,
+				382554C9157BE3550099CC24 /* InfoPlist.strings in Resources */,
+				382554CF157BE3550099CC24 /* Credits.rtf in Resources */,
+				382554D5157BE3550099CC24 /* VJDocument.xib in Resources */,
+				382554D8157BE3550099CC24 /* MainMenu.xib in Resources */,
+				382554E3157BE3550099CC24 /* VisualJSONImporter.mdimporter in Resources */,
+				3825555E157C7F6B0099CC24 /* Icon.icns in Resources */,
+				3825556D157C957E0099CC24 /* CHANGELOG.md in Resources */,
+				3825556F157C957E0099CC24 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		382554DE157BE3550099CC24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				382554F1157BE3550099CC24 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		38D331321495000000CE3400 /* Sources */ = {
+		382554B6157BE3550099CC24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38D331471495000000CE3400 /* main.m in Sources */,
-				38D3314E1495000000CE3400 /* AppDelegate.m in Sources */,
-				38C7A9571495166B00381910 /* VisualWindow.m in Sources */,
-				38C7AA0D1495B6EF00381910 /* JsonElement.m in Sources */,
+				382554CB157BE3550099CC24 /* main.m in Sources */,
+				382554D2157BE3550099CC24 /* VJDocument.m in Sources */,
+				38255567157C94C50099CC24 /* JsonElement.m in Sources */,
+				3825556E157C957E0099CC24 /* JSONKit.m in Sources */,
+				38A1C035157DD7030034EDC4 /* VJRequest.m in Sources */,
+				38A1C038157E15240034EDC4 /* VJDocument.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		382554DC157BE3550099CC24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				382554F3157BE3550099CC24 /* main.c in Sources */,
+				382554F5157BE3550099CC24 /* GetMetadataForFile.m in Sources */,
+				382554F8157BE3550099CC24 /* MySpotlightImporter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		386B79CE14964C27007AF705 /* PBXTargetDependency */ = {
+		38255620157C9E160099CC24 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IdealCocoa;
-			targetProxy = 386B79CD14964C27007AF705 /* PBXContainerItemProxy */;
-		};
-		38F62438149513D900ACA497 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SBJson;
-			targetProxy = 38F62437149513D900ACA497 /* PBXContainerItemProxy */;
+			targetProxy = 3825561F157C9E160099CC24 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		38D331431495000000CE3400 /* InfoPlist.strings */ = {
+		382554C7157BE3550099CC24 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				38D331441495000000CE3400 /* en */,
+				382554C8157BE3550099CC24 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		38D331491495000000CE3400 /* Credits.rtf */ = {
+		382554CD157BE3550099CC24 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				38D3314A1495000000CE3400 /* en */,
+				382554CE157BE3550099CC24 /* en */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		38D3314F1495000000CE3400 /* MainMenu.xib */ = {
+		382554D3157BE3550099CC24 /* VJDocument.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				38D331501495000000CE3400 /* en */,
+				382554D4157BE3550099CC24 /* en */,
+			);
+			name = VJDocument.xib;
+			sourceTree = "<group>";
+		};
+		382554D6157BE3550099CC24 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				382554D7157BE3550099CC24 /* en */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		382554EF157BE3550099CC24 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				382554F0157BE3550099CC24 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		38D331521495000000CE3400 /* Debug */ = {
+		382554FB157BE3550099CC24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -458,69 +487,88 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = IdealCocoa;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
-		38D331531495000000CE3400 /* Release */ = {
+		382554FC157BE3550099CC24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = IdealCocoa;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
-		38D331551495000000CE3400 /* Debug */ = {
+		382554FE157BE3550099CC24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"IdealCocoa/build/$(CONFIGURATION)",
-					"SBJson/build/$(CONFIGURATION)",
-				);
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VisualJSONImporter/VisualJSONImporter-Prefix.pch";
+				INFOPLIST_FILE = "VisualJSONImporter/VisualJSONImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		382554FF157BE3550099CC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VisualJSONImporter/VisualJSONImporter-Prefix.pch";
+				INFOPLIST_FILE = "VisualJSONImporter/VisualJSONImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+		38255501157BE3550099CC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
 				INFOPLIST_FILE = "VisualJSON/VisualJSON-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		38D331561495000000CE3400 /* Release */ = {
+		38255502157BE3550099CC24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
-				FRAMEWORK_SEARCH_PATHS = (
-					"IdealCocoa/build/$(CONFIGURATION)",
-					"SBJson/build/$(CONFIGURATION)",
-				);
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
 				INFOPLIST_FILE = "VisualJSON/VisualJSON-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -528,25 +576,47 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38D331301495000000CE3400 /* Build configuration list for PBXProject "VisualJSON" */ = {
+		382554B4157BE3550099CC24 /* Build configuration list for PBXProject "VisualJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38D331521495000000CE3400 /* Debug */,
-				38D331531495000000CE3400 /* Release */,
+				382554FB157BE3550099CC24 /* Debug */,
+				382554FC157BE3550099CC24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38D331541495000000CE3400 /* Build configuration list for PBXNativeTarget "Visual JSON" */ = {
+		382554FD157BE3550099CC24 /* Build configuration list for PBXNativeTarget "VisualJSONImporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38D331551495000000CE3400 /* Debug */,
-				38D331561495000000CE3400 /* Release */,
+				382554FE157BE3550099CC24 /* Debug */,
+				382554FF157BE3550099CC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38255500157BE3550099CC24 /* Build configuration list for PBXNativeTarget "VisualJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38255501157BE3550099CC24 /* Debug */,
+				38255502157BE3550099CC24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				38A1C037157E15240034EDC4 /* VJDocument.xcdatamodel */,
+			);
+			currentVersion = 38A1C037157E15240034EDC4 /* VJDocument.xcdatamodel */;
+			path = VJDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 38D3312D1495000000CE3400 /* Project object */;
+	rootObject = 382554B1157BE3550099CC24 /* Project object */;
 }

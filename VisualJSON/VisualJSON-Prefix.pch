@@ -4,7 +4,6 @@
 
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
+    #import <CoreData/CoreData.h>
     #import <IdealCocoa/IdealCocoa.h>
-    #import <IdealCocoa/IdealAdditions.h>
-    #import <SBJson/SBJson.h>
 #endif

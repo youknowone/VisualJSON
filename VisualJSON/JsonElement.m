@@ -109,6 +109,8 @@ NSDictionary *JsonElementInitializers = nil;
 }
 
 - (NSString *)descriptionWithDepth:(NSInteger)depth {
+    if (self.object == nil) return @"";
+    
     NSMutableString *indent = [NSMutableString string];
     for (NSInteger i = 0; i < depth; i++) {
         [indent appendString:@"\t"];

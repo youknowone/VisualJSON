@@ -14,7 +14,13 @@
     JsonElement get parsed NSArray or NSDictionary data as JSON data.
     JsonElement provides representation for data for each view type.
  */
-@interface JsonElement : NSObject
+@interface JsonElement : NSObject {
+    id _parent;
+    id _object;
+    id _key;
+    id _keys;
+    id _children;
+}
 
 @property(assign) id parent;
 @property(retain) id object;

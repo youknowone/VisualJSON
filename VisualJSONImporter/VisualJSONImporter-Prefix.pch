@@ -1,0 +1,6 @@
+//
+// Prefix header for all source files of the 'VisualJSONImporter' target in the 'VisualJSONImporter' project
+//
+
+#ifdef __OBJC__
+#endif
