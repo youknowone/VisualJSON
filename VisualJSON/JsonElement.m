@@ -46,7 +46,7 @@ NSDictionary *JsonElementInitializers = nil;
 }
 
 + (id)elementWithObject:(id)object {
-    return [[self alloc] initWithObject:object];
+    return [[[self alloc] initWithObject:object] autorelease];
 }
 
 - (id)initWithDictionary:(NSDictionary *)object {
@@ -77,6 +77,15 @@ NSDictionary *JsonElementInitializers = nil;
         self.object = object;
     }
     return self;
+}
+
+- (void)dealloc {
+    self.parent = nil;
+    self.object = nil;
+    self.key = nil;
+    self.keys = nil;
+    self.children = nil;
+    [super dealloc];
 }
 
 - (id)childAtIndex:(NSInteger)index {

@@ -117,7 +117,7 @@
 
 - (BOOL)setMetadataForStoreAtURL:(NSURL *)url
 {
-	NSPersistentStoreCoordinator *coordinator = [[self managedObjectContext] persistentStoreCoordinator];
+	NSPersistentStoreCoordinator *coordinator = self.managedObjectContext.persistentStoreCoordinator;
 	
 	id pStore = [coordinator persistentStoreForURL:url];
 	NSString *uniqueKey = [NSString stringWithFormat:@"%@:%@:%@", self.request.address, self.request.postdata, self.request.content];
@@ -128,6 +128,7 @@
 		NSMutableDictionary *metadata = [[coordinator metadataForPersistentStore:pStore] mutableCopy];
 		[metadata setObject:[NSArray arrayWithObject:uniqueKey] forKey:(NSString *)kMDItemKeywords];
 		[coordinator setMetadata:metadata forPersistentStore:pStore];
+        [metadata release];
 		return YES;
 	}
 	return NO;
@@ -164,7 +165,7 @@
     
     // decide local or remote
     NSURL *URL = [addr hasPrefix:@"/"] ? addr.fileURL : addr.URL;
-    NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:URL];
+    NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:URL];
     // set mimetype
     [req addValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [req addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
