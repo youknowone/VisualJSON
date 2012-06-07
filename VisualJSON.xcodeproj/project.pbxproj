@@ -14,7 +14,6 @@
 		382554D2157BE3550099CC24 /* VJDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 382554D1157BE3550099CC24 /* VJDocument.m */; };
 		382554D5157BE3550099CC24 /* VJDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382554D3157BE3550099CC24 /* VJDocument.xib */; };
 		382554D8157BE3550099CC24 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382554D6157BE3550099CC24 /* MainMenu.xib */; };
-		382554E3157BE3550099CC24 /* VisualJSONImporter.mdimporter in Resources */ = {isa = PBXBuildFile; fileRef = 382554E0157BE3550099CC24 /* VisualJSONImporter.mdimporter */; };
 		382554E5157BE3550099CC24 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382554E4157BE3550099CC24 /* CoreServices.framework */; };
 		382554E7157BE3550099CC24 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382554E6157BE3550099CC24 /* CoreFoundation.framework */; };
 		382554E9157BE3550099CC24 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382554E8157BE3550099CC24 /* CoreData.framework */; };
@@ -377,7 +376,6 @@
 				382554CF157BE3550099CC24 /* Credits.rtf in Resources */,
 				382554D5157BE3550099CC24 /* VJDocument.xib in Resources */,
 				382554D8157BE3550099CC24 /* MainMenu.xib in Resources */,
-				382554E3157BE3550099CC24 /* VisualJSONImporter.mdimporter in Resources */,
 				3825555E157C7F6B0099CC24 /* Icon.icns in Resources */,
 				3825556D157C957E0099CC24 /* CHANGELOG.md in Resources */,
 				3825556F157C957E0099CC24 /* README.md in Resources */,
