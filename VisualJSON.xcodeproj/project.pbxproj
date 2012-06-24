@@ -28,6 +28,7 @@
 		3825556E157C957E0099CC24 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3825556B157C957E0099CC24 /* JSONKit.m */; };
 		3825556F157C957E0099CC24 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3825556C157C957E0099CC24 /* README.md */; };
 		38255621157C9E1C0099CC24 /* IdealCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38255618157C9AE90099CC24 /* IdealCocoa.framework */; };
+		385E84F71597839F001562F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 385E84F61597839F001562F6 /* AppDelegate.m */; };
 		388227E515924E6F000AB63D /* IdealCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 38255618157C9AE90099CC24 /* IdealCocoa.framework */; };
 		38A1C035157DD7030034EDC4 /* VJRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C034157DD7030034EDC4 /* VJRequest.m */; };
 		38A1C038157E15240034EDC4 /* VJDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */; };
@@ -122,6 +123,8 @@
 		3825556B157C957E0099CC24 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		3825556C157C957E0099CC24 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = IdealCocoa.xcodeproj; sourceTree = "<group>"; };
+		385E84F51597839F001562F6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		385E84F61597839F001562F6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		38A1C033157DD7030034EDC4 /* VJRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJRequest.h; sourceTree = "<group>"; };
 		38A1C034157DD7030034EDC4 /* VJRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJRequest.m; sourceTree = "<group>"; };
 		38A1C037157E15240034EDC4 /* VJDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VJDocument.xcdatamodel; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 		382554C4157BE3550099CC24 /* VisualJSON */ = {
 			isa = PBXGroup;
 			children = (
+				385E84F51597839F001562F6 /* AppDelegate.h */,
+				385E84F61597839F001562F6 /* AppDelegate.m */,
 				38A1C033157DD7030034EDC4 /* VJRequest.h */,
 				38A1C034157DD7030034EDC4 /* VJRequest.m */,
 				38255503157BE3730099CC24 /* VisualJSON.entitlements */,
@@ -419,6 +424,7 @@
 				3825556E157C957E0099CC24 /* JSONKit.m in Sources */,
 				38A1C035157DD7030034EDC4 /* VJRequest.m in Sources */,
 				38A1C038157E15240034EDC4 /* VJDocument.xcdatamodeld in Sources */,
+				385E84F71597839F001562F6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
