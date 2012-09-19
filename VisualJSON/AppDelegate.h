@@ -11,5 +11,7 @@
 @interface AppDelegate : NSObject
 
 - (IBAction)openIssue:(id)sender;
+- (IBAction)openHelp:(id)sender;
+- (IBAction)openIRC:(id)sender;
 
 @end
