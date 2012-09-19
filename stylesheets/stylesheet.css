@@ -335,7 +335,8 @@ dl dd {
 }
 
 footer {
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
+  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
+  border-top: solid 1px #275da1;
   margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 30px;
