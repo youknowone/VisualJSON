@@ -14,6 +14,13 @@ Visit help wiki ([http://github.com/youknowone/VisualJSON/wiki](http://github.co
 ### Report an issue
 You need github account. Issue tracker is [http://github.com/youknowone/VisualJSON/issues](http://github.com/youknowone/VisualJSON/issues)
 
+### IRC
+You need an IRC client, such as [XChat Azure](http://xchataqua.github.com)
+
+Visit [irc://irc.freenode.org/#youknowone](irc://irc.freenode.org/#youknowone)
+
+NOTE: I am joining always, but don't feedback realtime.
+
 ## For developer
 Fork on project page [http://github.com/youknowone/VisualJSON](http://github.com/youknowone/VisualJSON).
 
