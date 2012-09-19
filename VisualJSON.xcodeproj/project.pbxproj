@@ -22,12 +22,12 @@
 		382554F3157BE3550099CC24 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 382554F2157BE3550099CC24 /* main.c */; };
 		382554F5157BE3550099CC24 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 382554F4157BE3550099CC24 /* GetMetadataForFile.m */; };
 		382554F8157BE3550099CC24 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 382554F7157BE3550099CC24 /* MySpotlightImporter.m */; };
-		3825555E157C7F6B0099CC24 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3825555D157C7F6B0099CC24 /* Icon.icns */; };
 		38255567157C94C50099CC24 /* JsonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 38255566157C94C50099CC24 /* JsonElement.m */; };
 		3825556D157C957E0099CC24 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 38255569157C957E0099CC24 /* CHANGELOG.md */; };
 		3825556E157C957E0099CC24 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3825556B157C957E0099CC24 /* JSONKit.m */; };
 		3825556F157C957E0099CC24 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3825556C157C957E0099CC24 /* README.md */; };
 		38255621157C9E1C0099CC24 /* IdealCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38255618157C9AE90099CC24 /* IdealCocoa.framework */; };
+		38416C0E160A240A0059A916 /* Icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 38416C0D160A240A0059A916 /* Icon.iconset */; };
 		385E84F71597839F001562F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 385E84F61597839F001562F6 /* AppDelegate.m */; };
 		388227E515924E6F000AB63D /* IdealCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 38255618157C9AE90099CC24 /* IdealCocoa.framework */; };
 		38A1C035157DD7030034EDC4 /* VJRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C034157DD7030034EDC4 /* VJRequest.m */; };
@@ -115,7 +115,6 @@
 		382554F9157BE3550099CC24 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
 		382554FA157BE3550099CC24 /* VisualJSONImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VisualJSONImporter-Prefix.pch"; sourceTree = "<group>"; };
 		38255503157BE3730099CC24 /* VisualJSON.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = VisualJSON.entitlements; sourceTree = "<group>"; };
-		3825555D157C7F6B0099CC24 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		38255565157C94C50099CC24 /* JsonElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonElement.h; sourceTree = "<group>"; };
 		38255566157C94C50099CC24 /* JsonElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonElement.m; sourceTree = "<group>"; };
 		38255569157C957E0099CC24 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -123,6 +122,7 @@
 		3825556B157C957E0099CC24 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		3825556C157C957E0099CC24 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = IdealCocoa.xcodeproj; sourceTree = "<group>"; };
+		38416C0D160A240A0059A916 /* Icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icon.iconset; sourceTree = "<group>"; };
 		385E84F51597839F001562F6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		385E84F61597839F001562F6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		38A1C033157DD7030034EDC4 /* VJRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJRequest.h; sourceTree = "<group>"; };
@@ -226,7 +226,7 @@
 				382554CA157BE3550099CC24 /* main.m */,
 				382554CC157BE3550099CC24 /* VisualJSON-Prefix.pch */,
 				382554CD157BE3550099CC24 /* Credits.rtf */,
-				3825555D157C7F6B0099CC24 /* Icon.icns */,
+				38416C0D160A240A0059A916 /* Icon.iconset */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -397,9 +397,9 @@
 				382554CF157BE3550099CC24 /* Credits.rtf in Resources */,
 				382554D5157BE3550099CC24 /* VJDocument.xib in Resources */,
 				382554D8157BE3550099CC24 /* MainMenu.xib in Resources */,
-				3825555E157C7F6B0099CC24 /* Icon.icns in Resources */,
 				3825556D157C957E0099CC24 /* CHANGELOG.md in Resources */,
 				3825556F157C957E0099CC24 /* README.md in Resources */,
+				38416C0E160A240A0059A916 /* Icon.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +514,7 @@
 				HEADER_SEARCH_PATHS = IdealCocoa;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
@@ -533,7 +533,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = IdealCocoa;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};

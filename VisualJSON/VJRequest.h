@@ -8,8 +8,10 @@
 
 @interface VJRequest : NSManagedObject
 
-@property (nonatomic, retain) NSString * address;
-@property (nonatomic, retain) NSString * postdata;
-@property (nonatomic, retain) NSString * content;
+@property (nonatomic, retain) NSString *address;
+@property (nonatomic, retain) NSString *header;
+@property (nonatomic, retain) NSString *method;
+@property (nonatomic, retain) NSString *querydata;
+@property (nonatomic, retain) NSString *content;
 
 @end

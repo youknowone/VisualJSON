@@ -106,9 +106,9 @@ NSDictionary *JsonElementInitializers = nil;
 - (NSString *)outlineDescription {
     if (self.keys == nil) return [self.object description];
     if ([self.object isKindOfClass:[NSArray class]]) {
-        return [NSString stringWithFormat:@"Array(%d): [%@]", [self.keys count], [self outlineArrayItems]];
+        return [NSString stringWithFormat:@"Array(%lu): [%@]", [self.keys count], [self outlineArrayItems]];
     } else if ([self.object isKindOfClass:[NSDictionary class]]) {
-        return [NSString stringWithFormat:@"Dict(%d): {%@}", [self.keys count], [self outlineDictionaryItems]];
+        return [NSString stringWithFormat:@"Dict(%lu): {%@}", [self.keys count], [self outlineDictionaryItems]];
     }
     return [self.object description];
 }
@@ -166,9 +166,9 @@ NSDictionary *JsonElementInitializers = nil;
 
 - (NSString *)outlineItemDescription:(id)item {
     if ([item isKindOfClass:[NSArray class]]) {
-        return [NSString stringWithFormat:@"Array(%d)", [item count]];
+        return [NSString stringWithFormat:@"Array(%lu)", [item count]];
     } else if ([item isKindOfClass:[NSDictionary class]]) {
-        return [NSString stringWithFormat:@"Dict(%d)", [[item allKeys] count]];
+        return [NSString stringWithFormat:@"Dict(%lu)", [[item allKeys] count]];
     } else if ([item isKindOfClass:[NSString class]]) {
         return [NSString stringWithFormat:@"\"%@\"", [item stringByReplacingOccurrencesOfString:@"\"" withString:@"\\\""]];
     } else {

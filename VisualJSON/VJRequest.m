@@ -12,7 +12,9 @@
 @implementation VJRequest
 
 @dynamic address;
-@dynamic postdata;
+@dynamic querydata;
+@dynamic method;
+@dynamic header;
 @dynamic content;
 
 @end
