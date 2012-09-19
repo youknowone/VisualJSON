@@ -1,3 +1,5 @@
+Website: [http://youknowone.github.com/VisualJSON](http://youknowone.github.com/VisualJSON)
+
 VisualJSON is simple JSON pretty-viewer for Mac OS X.
 
 ## For user
