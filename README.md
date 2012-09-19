@@ -1,10 +1,27 @@
-VisualJSON is very simple JSON pretty-viewer for Mac OS X.
+Website: [http://youknowone.github.com/VisualJSON](http://youknowone.github.com/VisualJSON)
 
-# How it works
-1. You can read JSON with Tree view or pretty Text format.
-2. Suggest json text to 'Content' field. Copy & Paste your JSON or input local/remote address.
-3. For http/https, VisualJSON requests 'application/json'.
-4. For http/https, POST data field is available, if you need.
+VisualJSON is simple JSON pretty-viewer for Mac OS X.
 
-# For developers
-Read HACKING.md for tips ;)
+## For user
+### Download
+Download recent VisualJSON on Appstore. ([http://itunes.apple.com/app/id488709442](http://itunes.apple.com/app/id488709442))
+
+Or try preview if available. ([http://github.com/youknowone/VisualJSON/downloads](http://github.com/youknowone/VisualJSON/downloads))
+
+### Help
+Visit help wiki ([http://github.com/youknowone/VisualJSON/wiki](http://github.com/youknowone/VisualJSON/wiki))
+
+### Report an issue
+You need github account. Issue tracker is [http://github.com/youknowone/VisualJSON/issues](http://github.com/youknowone/VisualJSON/issues)
+
+## For developer
+Fork on project page [http://github.com/youknowone/VisualJSON](http://github.com/youknowone/VisualJSON).
+
+Or clone this project.
+```
+git clone git://github.com/youknowone/VisualJSON.git
+cd VisualJSON
+git submodule update --init
+```
+
+HACKING.md for tips ;)
