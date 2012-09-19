@@ -10,8 +10,10 @@
 
 @interface AppDelegate : NSObject
 
+- (IBAction)openWebsite:(id)sender;
 - (IBAction)openIssue:(id)sender;
 - (IBAction)openHelp:(id)sender;
 - (IBAction)openIRC:(id)sender;
+- (IBAction)openTip:(id)sender;
 
 @end

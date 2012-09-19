@@ -10,18 +10,28 @@
 
 @implementation AppDelegate
 
-- (IBAction)openIssue:(id)sender {
-    NSURL *URL = [NSURL URLWithString:@"https://github.com/youknowone/VisualJSON/issues"];
+- (void)openWebsite:(id)sender {
+    NSURL *URL = @"http://youknowone.github.com/VisualJSON".URL;
+    [[NSWorkspace sharedWorkspace] openURL:URL];
+}
+
+- (void)openIssue:(id)sender {
+    NSURL *URL = @"https://github.com/youknowone/VisualJSON/issues".URL;
     [[NSWorkspace sharedWorkspace] openURL:URL];
 }
 
 - (void)openHelp:(id)sender {
-    NSURL *URL = [NSURL URLWithString:@"https://github.com/youknowone/VisualJSON/wiki"];
+    NSURL *URL = @"https://github.com/youknowone/VisualJSON/wiki".URL;
     [[NSWorkspace sharedWorkspace] openURL:URL];
 }
 
 - (void)openIRC:(id)sender {
-    NSURL *URL = [NSURL URLWithString:@"irc://irc.freenode.org/#youknowone"];
+    NSURL *URL = @"irc://irc.freenode.org/#youknowone".URL;
+    [[NSWorkspace sharedWorkspace] openURL:URL];
+}
+
+- (void)openTip:(id)sender {
+    NSURL *URL = @"http://youknowone.github.com/VisualJSON#tipme".URL;
     [[NSWorkspace sharedWorkspace] openURL:URL];
 }
 
