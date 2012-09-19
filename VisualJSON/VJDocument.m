@@ -364,6 +364,11 @@
     [self.drawer toggle:sender];
 }
 
+- (void)openWebsite:(id)sender {
+    NSURL *URL = @"http://youknowone.github.com/VisualJSON#help".URL;
+    [[NSWorkspace sharedWorkspace] openURL:URL];
+}
+
 - (NSString *)title {
     return self.address;
 }

@@ -76,6 +76,8 @@
 - (IBAction)visualize:(id)sender;
 - (IBAction)toggleDrawer:(id)sender;
 
+- (IBAction)openWebsite:(id)sender;
+
 @end
 
 @interface VJHeaderTableViewController : NSObject<NSTableViewDataSource, NSTableViewDelegate> {
