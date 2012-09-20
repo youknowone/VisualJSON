@@ -32,9 +32,16 @@
     NSTableView *_headerTableView;
     NSTextField *_headerTextField;
     
+    NSProgressIndicator *_circularProgressIndicator;
+    
     JsonElement *_json;
     
     VJRequest *_request;
+    
+    id tempContent;
+    NSThread *refreshThread;
+    id tempJson;
+    NSThread *visualizeThread;
 }
 
 @property(retain) NSString *address;
@@ -60,6 +67,8 @@
 @property(assign) IBOutlet NSTextView *querydataTextView;
 @property(assign) IBOutlet NSTableView *headerTableView;
 
+@property(assign) IBOutlet NSProgressIndicator *circularProgressIndicator;
+
 @property(retain) JsonElement *json;
 @property(retain) VJRequest *request;
 
@@ -73,7 +82,12 @@
 - (IBAction)headerTextFieldChanged:(id)sender;
 
 - (IBAction)refresh:(id)sender;
+- (void)refreshBackground;
+- (void)refreshFinished;
 - (IBAction)visualize:(id)sender;
+- (void)visualizeBackground;
+- (void)visualizeFinished;
+
 - (IBAction)toggleDrawer:(id)sender;
 
 - (IBAction)openWebsite:(id)sender;

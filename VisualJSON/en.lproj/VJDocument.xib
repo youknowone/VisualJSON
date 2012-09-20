@@ -20,6 +20,7 @@
 			<string>NSMatrix</string>
 			<string>NSObjectController</string>
 			<string>NSOutlineView</string>
+			<string>NSProgressIndicator</string>
 			<string>NSScrollView</string>
 			<string>NSScroller</string>
 			<string>NSSplitView</string>
@@ -279,7 +280,7 @@
 							</object>
 						</object>
 					</dictionary>
-					<array class="NSMutableArray" key="NSToolbarIBAllowedItems">
+					<array key="NSToolbarIBAllowedItems">
 						<reference ref="266952804"/>
 						<reference ref="919554422"/>
 						<reference ref="870764865"/>
@@ -290,7 +291,7 @@
 						<reference ref="118373549"/>
 						<reference ref="281307740"/>
 					</array>
-					<array key="NSToolbarIBDefaultItems">
+					<array class="NSMutableArray" key="NSToolbarIBDefaultItems">
 						<reference ref="266952804"/>
 						<reference ref="919554422"/>
 						<reference ref="959985870"/>
@@ -368,7 +369,7 @@
 															<string key="NSFrame">{{87, 130}, {394, 22}}</string>
 															<reference key="NSSuperview" ref="664234053"/>
 															<reference key="NSWindow"/>
-															<reference key="NSNextKeyView" ref="480100249"/>
+															<reference key="NSNextKeyView" ref="427591147"/>
 															<string key="NSReuseIdentifierKey">_NS:903</string>
 															<bool key="NSEnabled">YES</bool>
 															<object class="NSTextFieldCell" key="NSCell" id="22317400">
@@ -405,6 +406,7 @@
 															<string key="NSFrame">{{483, 119}, {39, 38}}</string>
 															<reference key="NSSuperview" ref="664234053"/>
 															<reference key="NSWindow"/>
+															<reference key="NSNextKeyView"/>
 															<string key="NSReuseIdentifierKey">_NS:687</string>
 															<bool key="NSEnabled">YES</bool>
 															<object class="NSButtonCell" key="NSCell" id="573451334">
@@ -677,6 +679,7 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 															<string key="NSFrame">{{483, 66}, {39, 38}}</string>
 															<reference key="NSSuperview" ref="664234053"/>
 															<reference key="NSWindow"/>
+															<reference key="NSNextKeyView"/>
 															<string key="NSReuseIdentifierKey">_NS:1574</string>
 															<bool key="NSEnabled">YES</bool>
 															<object class="NSButtonCell" key="NSCell" id="798596050">
@@ -721,6 +724,17 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 																<reference key="NSTextColor" ref="246158034"/>
 															</object>
 															<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
+														</object>
+														<object class="NSProgressIndicator" id="427591147">
+															<reference key="NSNextResponder" ref="664234053"/>
+															<int key="NSvFlags">268</int>
+															<string key="NSFrame">{{250, 28}, {32, 32}}</string>
+															<reference key="NSSuperview" ref="664234053"/>
+															<reference key="NSWindow"/>
+															<reference key="NSNextKeyView" ref="480100249"/>
+															<string key="NSReuseIdentifierKey">_NS:945</string>
+															<int key="NSpiFlags">28682</int>
+															<double key="NSMaxValue">100</double>
 														</object>
 													</array>
 													<string key="NSFrame">{{1, 1}, {533, 157}}</string>
@@ -2240,14 +2254,6 @@ wGw</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">refresh:</string>
-						<reference key="source" ref="512844837"/>
-						<reference key="destination" ref="945007821"/>
-					</object>
-					<int key="connectionID">100490</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
 						<string key="label">querydataTextFieldChanged:</string>
 						<reference key="source" ref="512844837"/>
 						<reference key="destination" ref="603233271"/>
@@ -2341,6 +2347,14 @@ wGw</bytes>
 						<reference key="destination" ref="870764865"/>
 					</object>
 					<int key="connectionID">100540</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">circularProgressIndicator</string>
+						<reference key="source" ref="512844837"/>
+						<reference key="destination" ref="427591147"/>
+					</object>
+					<int key="connectionID">100545</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -2720,6 +2734,7 @@ wGw</bytes>
 							<reference ref="480100249"/>
 							<reference ref="664766486"/>
 							<reference ref="892660960"/>
+							<reference ref="427591147"/>
 						</array>
 						<reference key="parent" ref="984631490"/>
 					</object>
@@ -2933,11 +2948,6 @@ wGw</bytes>
 						<reference key="object" ref="198794514"/>
 						<reference key="parent" ref="0"/>
 						<string key="objectName">Request Controller</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100337</int>
-						<reference key="object" ref="281307740"/>
-						<reference key="parent" ref="273131037"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">100338</int>
@@ -3411,6 +3421,16 @@ wGw</bytes>
 						<reference key="object" ref="870764865"/>
 						<reference key="parent" ref="273131037"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">100337</int>
+						<reference key="object" ref="281307740"/>
+						<reference key="parent" ref="273131037"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">100544</int>
+						<reference key="object" ref="427591147"/>
+						<reference key="parent" ref="107577929"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -3530,6 +3550,7 @@ wGw</bytes>
 				<string key="100531.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="100532.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="100539.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="100544.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="5.IBWindowTemplateEditedContentRect">{{133, 170}, {507, 413}}</string>
 				<boolean value="NO" key="5.NSWindowTemplate.visibleAtLaunch"/>
@@ -3539,7 +3560,7 @@ wGw</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">100540</int>
+			<int key="maxID">100545</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3593,6 +3614,7 @@ wGw</bytes>
 						<string key="headerTextFieldChanged:">id</string>
 						<string key="methodMatrixChanged:">id</string>
 						<string key="methodTextFieldChanged:">id</string>
+						<string key="openWebsite:">id</string>
 						<string key="querydataTextFieldChanged:">id</string>
 						<string key="refresh:">id</string>
 						<string key="setDefaultHeader:">id</string>
@@ -3620,6 +3642,10 @@ wGw</bytes>
 							<string key="name">methodTextFieldChanged:</string>
 							<string key="candidateClassName">id</string>
 						</object>
+						<object class="IBActionInfo" key="openWebsite:">
+							<string key="name">openWebsite:</string>
+							<string key="candidateClassName">id</string>
+						</object>
 						<object class="IBActionInfo" key="querydataTextFieldChanged:">
 							<string key="name">querydataTextFieldChanged:</string>
 							<string key="candidateClassName">id</string>
@@ -3643,6 +3669,7 @@ wGw</bytes>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="addressTextField">NSTextField</string>
+						<string key="circularProgressIndicator">NSProgressIndicator</string>
 						<string key="contentTextField">NSTextField</string>
 						<string key="drawer">NSDrawer</string>
 						<string key="headerTableView">NSTableView</string>
@@ -3659,6 +3686,10 @@ wGw</bytes>
 						<object class="IBToOneOutletInfo" key="addressTextField">
 							<string key="name">addressTextField</string>
 							<string key="candidateClassName">NSTextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="circularProgressIndicator">
+							<string key="name">circularProgressIndicator</string>
+							<string key="candidateClassName">NSProgressIndicator</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="contentTextField">
 							<string key="name">contentTextField</string>

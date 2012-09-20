@@ -24,6 +24,7 @@
 @synthesize jsonOutlineView=_jsonOutlineView, jsonTextView=_jsonTextView;
 @synthesize drawer=_drawer;
 @synthesize querydataTableView=_querydataTableView, querydataTextView=_querydataTextView, headerTableView=_headerTableView, headerTextField=_headerTextField;
+@synthesize circularProgressIndicator=_circularProgressIndicator;
 @synthesize json=_json;
 
 - (NSString *)defaultHeader {
@@ -211,6 +212,8 @@
         [managedObjectContext processPendingChanges];
         [managedObjectContext.undoManager removeAllActions];
         [self updateChangeCount:NSChangeCleared];
+        
+        self->visualizeThread = [[NSThread alloc] initWithTarget:self selector:@selector(visualizeBackground) object:nil];
     }
     return self;
 }
@@ -323,40 +326,97 @@
 - (void)refresh:(id)sender {
     if (self.address.length == 0) return;
     
-    NSString *address = self.address;
+    [self.circularProgressIndicator startAnimation:nil];
     
-    if (self.querydata.length && (self.method.length == 0 || [self.method isEqualToString:@"GET"])) {
-        address = [address stringByAppendingFormat:@"?%@", self.querydata];
+    if (self->refreshThread) {
+        [self->refreshThread cancel];
+        [self->refreshThread release];
     }
+    self->refreshThread = [[NSThread alloc] initWithTarget:self selector:@selector(refreshBackground) object:nil];
+    [self->refreshThread start];
+}
+
+- (void)refreshBackground {
+    @autoreleasepool {
+        if (self->tempContent) {
+            id x = self->tempContent;
+            self->tempContent = nil;
+            [x release];
+        }
         
-    // decide local or remote
-    NSURL *URL = [address hasPrefix:@"/"] ? address.fileURL : address.URL;
-    NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:URL];
-    
-    for (ICTuple *item in self.headerItems) {
-        if ([item.first length] == 0) continue;
-        [req addValue:item.second forHTTPHeaderField:item.first];
-    }
-    
-    if (self.method && ![self.method isEqualToString:@"GET"]) {
-        [req setHTTPMethod:self.method];
-        [req setHTTPBody:self.querydata.dataUsingUTF8Encoding];
-    }
-    
-    // set content field with data
-    NSError *error = nil;
-    NSData *data = [NSData dataWithContentsOfURLRequest:req error:&error];
-    if (data != nil && error == nil) {
-        self.content = [NSString stringWithData:data encoding:NSUTF8StringEncoding];
-        [self performSelector:@selector(visualize:) withObject:sender afterDelay:0.02];
-    } else {
-        self.content = [NSString stringWithFormat:@"Error on getting raw JSON text: %@", error];
+        NSString *address = self.address;
+        
+        if (self.querydata.length && (self.method.length == 0 || [self.method isEqualToString:@"GET"])) {
+            address = [address stringByAppendingFormat:@"?%@", self.querydata];
+        }
+        
+        // decide local or remote
+        NSURL *URL = [address hasPrefix:@"/"] ? address.fileURL : address.URL;
+        NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:URL];
+        
+        for (ICTuple *item in self.headerItems) {
+            if ([item.first length] == 0) continue;
+            [req addValue:item.second forHTTPHeaderField:item.first];
+        }
+        
+        if (self.method && ![self.method isEqualToString:@"GET"]) {
+            [req setHTTPMethod:self.method];
+            [req setHTTPBody:self.querydata.dataUsingUTF8Encoding];
+        }
+        
+        // set content field with data
+        NSError *error = nil;
+        NSData *data = [NSData dataWithContentsOfURLRequest:req error:&error];
+        if (data != nil && error == nil) {
+            tempContent = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        } else {
+            tempContent = [error retain];
+        }
+        [self performSelectorOnMainThread:@selector(refreshFinished) withObject:nil waitUntilDone:NO];
     }
 }
 
+- (void)refreshFinished {
+    if (tempContent == nil) return;
+    if ([tempContent isKindOfClass:[NSError class]]) {
+        self.content = [NSString stringWithFormat:@"Error on getting raw JSON text: %@", tempContent];
+    } else {
+        self.content = tempContent;
+        [self visualize:nil];
+    }
+    id x = tempContent;
+    tempContent = nil;
+    [x release];
+    [self.circularProgressIndicator stopAnimation:nil];
+}
+
 - (void)visualize:(id)sender {
-    self.json = [JsonElement elementWithObject:self.content.objectFromJSONString];
-    [self.jsonOutlineView performSelector:@selector(reloadData) withObject:nil afterDelay:0.02];
+    if (self->visualizeThread) {
+        [self->visualizeThread cancel];
+        [self->visualizeThread release];
+    }
+    self->visualizeThread = [[NSThread alloc] initWithTarget:self selector:@selector(visualizeBackground) object:nil];
+    [self->visualizeThread start];
+}
+
+- (void)visualizeBackground {
+    if (tempJson) {
+        id x = tempJson;
+        tempJson = nil;
+        [x release];
+    }
+    tempJson = [[JsonElement alloc] initWithObject:self.content.objectFromJSONString];
+    [self performSelectorOnMainThread:@selector(visualizeFinished) withObject:nil waitUntilDone:NO];
+}
+
+- (void)visualizeFinished {
+    self.json = tempJson;
+
+    id x = tempJson;
+    tempJson = nil;
+    [x release];
+    
+    [self.jsonOutlineView reloadData];
     self.jsonTextView.string = self.json.description;
 }
 
