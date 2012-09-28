@@ -7,3 +7,6 @@
 [submodule "JSONKit"]
 	path = JSONKit
 	url = git://github.com/johnezang/JSONKit.git
+[submodule "gen_icon"]
+	path = gen_icon
+	url = git://gist.github.com/3800241.git
