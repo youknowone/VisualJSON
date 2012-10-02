@@ -475,7 +475,12 @@
         NSString *item = tuple.first ? [NSString stringWithFormat:@"%@:%@", tuple.first, tuple.second] : tuple.second;
         [array addObject:item];
     }
-    return [array componentsJoinedByString:@"#!;#!;"];
+    
+    NSString *result = [array componentsJoinedByString:@"#!;#!;"];
+    
+    [array release];
+    
+    return result;
 }
 
 - (void)addRow:(id)sender {
@@ -531,7 +536,12 @@
         NSString *item = tuple.first ? [NSString stringWithFormat:@"%@=%@", tuple.first, tuple.second] : tuple.second;
         [array addObject:item];
     }
-    return [array componentsJoinedByString:@"&"];
+    
+    NSString *result = [array componentsJoinedByString:@"&"];
+    
+    [array release];
+    
+    return result;
 }
 
 - (void)addRow:(id)sender {
