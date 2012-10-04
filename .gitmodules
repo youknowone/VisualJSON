@@ -10,3 +10,6 @@
 [submodule "gen_icon"]
 	path = gen_icon
 	url = git://gist.github.com/3800241.git
+[submodule "osxbuildtool"]
+	path = osxbuildtool
+	url = git://github.com/youknowone/osxbuildtool.git
