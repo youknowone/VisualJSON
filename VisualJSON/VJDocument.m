@@ -447,17 +447,23 @@
 #pragma mark - outline delegate for 'tree' view
 
 - (NSInteger)outlineView:(NSOutlineView *)outlineView numberOfChildrenOfItem:(id)item {
-    if (item == nil) item = self.data;
+    if (item == nil) {
+        return 1;
+    }
     return (NSInteger)[self->dataSource document:self outlineChildrenCountForItem:item];
 }
 
 - (BOOL)outlineView:(NSOutlineView *)outlineView isItemExpandable:(id)item {
-    if (item == nil) item = self.data;
+    if (item == nil) {
+        return YES;
+    }
     return [self->dataSource document:self outlineIsItemExpandable:item];
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView child:(NSInteger)index ofItem:(id)item {
-    if (item == nil) item = self.data;
+    if (item == nil) {
+        return self.data;
+    }
     return [self->dataSource document:self outlineChild:index ofItem:item];
 }
 
