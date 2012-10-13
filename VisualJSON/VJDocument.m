@@ -25,7 +25,7 @@
 @synthesize drawer=_drawer;
 @synthesize querydataTableView=_querydataTableView, querydataTextView=_querydataTextView, headerTableView=_headerTableView, headerTextField=_headerTextField;
 @synthesize circularProgressIndicator=_circularProgressIndicator;
-@synthesize json=_json;
+@synthesize data=_data;
 
 - (NSString *)defaultHeader {
     return @"Accept:application/json#!;#!;Content-Type:application/json";
@@ -400,24 +400,33 @@
 }
 
 - (void)visualizeBackground {
-    if (tempJson) {
-        id x = tempJson;
-        tempJson = nil;
+    id x = nil;
+    @synchronized(self) {
+        if (tempData) {
+            x = tempData;
+            tempData = nil;
+        }
+    }
+    if (x) {
         [x release];
     }
-    tempJson = [[JsonElement alloc] initWithObject:self.content.objectFromJSONString];
+    
+    x = [[JsonElement alloc] initWithObject:self.content.objectFromJSONString];
+    @synchronized(self) {
+        tempData = x;
+    }
     [self performSelectorOnMainThread:@selector(visualizeFinished) withObject:nil waitUntilDone:NO];
 }
 
 - (void)visualizeFinished {
-    self.json = tempJson;
+    @synchronized(self) {
+        self.data = tempData;
+        [tempData release];
+        tempData = nil;
+    }
 
-    id x = tempJson;
-    tempJson = nil;
-    [x release];
-    
     [self.jsonOutlineView reloadData];
-    self.jsonTextView.string = self.json.description;
+    self.jsonTextView.string = [self.data description];
 }
 
 - (void)toggleDrawer:(id)sender {
@@ -436,22 +445,22 @@
 #pragma mark - outline delegate for 'tree' view
 
 - (NSInteger)outlineView:(NSOutlineView *)outlineView numberOfChildrenOfItem:(id)item {
-    if (item == nil) item = self.json;
+    if (item == nil) item = self.data;
     return [[item keys] count];
 }
 
 - (BOOL)outlineView:(NSOutlineView *)outlineView isItemExpandable:(id)item {
-    if (item == nil) item = self.json;
+    if (item == nil) item = self.data;
     return [item keys] != nil;
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView child:(NSInteger)index ofItem:(id)item {
-    if (item == nil) item = self.json;
+    if (item == nil) item = self.data;
     return [item childAtIndex:index];
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView objectValueForTableColumn:(NSTableColumn *)tableColumn byItem:(id)item {
-    if (item == nil) item = self.json;
+    if (item == nil) item = self.data;
     NSString *title = [tableColumn.headerCell title];
     if ([title isEqualToString:@"node"]) {
         return [item key];

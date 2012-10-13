@@ -8,7 +8,6 @@
 
 @class VJTabController;
 @class VJRequest;
-@class JsonElement;
 
 @interface VJDocument : NSPersistentDocument<NSMatrixDelegate> {
     NSString *_header;
@@ -34,13 +33,13 @@
     
     NSProgressIndicator *_circularProgressIndicator;
     
-    JsonElement *_json;
+    id _data;
     
     VJRequest *_request;
     
     id tempContent;
     NSThread *refreshThread;
-    id tempJson;
+    id tempData;
     NSThread *visualizeThread;
 }
 
@@ -69,7 +68,7 @@
 
 @property(assign) IBOutlet NSProgressIndicator *circularProgressIndicator;
 
-@property(retain) JsonElement *json;
+@property(retain) id data;
 @property(retain) VJRequest *request;
 
 - (IBAction)setDefaultHeader:(id)sender;
