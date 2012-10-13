@@ -8,8 +8,6 @@
 
 #import "VJDocument.h"
 #import "VJRequest.h"
-#import "JSONKit.h"
-#import "JsonElement.h"
 
 @interface VJDocument()
 
@@ -21,7 +19,7 @@
 
 @synthesize headerItems=_headerItems, querydataItems=_querydataItems;
 @synthesize addressTextField=_addressTextField, methodMatrix=_methodMatrix, methodTextField=_methodTextField, querydataTextField=_querydataTextField, contentTextField=_contentTextField;
-@synthesize jsonOutlineView=_jsonOutlineView, jsonTextView=_jsonTextView;
+@synthesize dataOutlineView=_dataOutlineView, dataTextView=_dataTextView;
 @synthesize drawer=_drawer;
 @synthesize querydataTableView=_querydataTableView, querydataTextView=_querydataTextView, headerTableView=_headerTableView, headerTextField=_headerTextField;
 @synthesize circularProgressIndicator=_circularProgressIndicator;
@@ -33,6 +31,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+
+    self->dataSource = [VJDocumentDefaultDataSource() retain];
    
     self.querydata = self.request.querydata;
     self.method = self.request.method;
@@ -152,6 +152,8 @@
     
     self.request = nil;
     self.drawer = nil;
+
+    [self->dataSource release];
     [super dealloc];
 }
 
@@ -314,7 +316,7 @@
 }
 
 - (NSPrintOperation *)printOperationWithSettings:(NSDictionary *)printSettings error:(NSError **)outError {
-    NSPrintOperation *printOperation = [NSPrintOperation printOperationWithView:self.jsonTextView];
+    NSPrintOperation *printOperation = [NSPrintOperation printOperationWithView:self.dataTextView];
     return printOperation;
 }
 
@@ -379,7 +381,7 @@
 - (void)refreshFinished {
     if (tempContent == nil) return;
     if ([tempContent isKindOfClass:[NSError class]]) {
-        self.content = [NSString stringWithFormat:@"Error on getting raw JSON text: %@", tempContent];
+        self.content = [NSString stringWithFormat:@"Error on getting raw data text: %@", tempContent];
     } else {
         self.content = tempContent;
         [self visualize:nil];
@@ -411,7 +413,7 @@
         [x release];
     }
     
-    x = [[JsonElement alloc] initWithObject:self.content.objectFromJSONString];
+    x = [[self->dataSource document:self structuredDataFromRawDataString:self.content] retain];
     @synchronized(self) {
         tempData = x;
     }
@@ -425,8 +427,8 @@
         tempData = nil;
     }
 
-    [self.jsonOutlineView reloadData];
-    self.jsonTextView.string = [self.data description];
+    [self.dataOutlineView reloadData];
+    self.dataTextView.string = [self->dataSource document:self prettyTextFromData:self.data];
 }
 
 - (void)toggleDrawer:(id)sender {
@@ -446,26 +448,26 @@
 
 - (NSInteger)outlineView:(NSOutlineView *)outlineView numberOfChildrenOfItem:(id)item {
     if (item == nil) item = self.data;
-    return [[item keys] count];
+    return (NSInteger)[self->dataSource document:self outlineChildrenCountForItem:item];
 }
 
 - (BOOL)outlineView:(NSOutlineView *)outlineView isItemExpandable:(id)item {
     if (item == nil) item = self.data;
-    return [item keys] != nil;
+    return [self->dataSource document:self outlineIsItemExpandable:item];
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView child:(NSInteger)index ofItem:(id)item {
     if (item == nil) item = self.data;
-    return [item childAtIndex:index];
+    return [self->dataSource document:self outlineChild:index ofItem:item];
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView objectValueForTableColumn:(NSTableColumn *)tableColumn byItem:(id)item {
     if (item == nil) item = self.data;
     NSString *title = [tableColumn.headerCell title];
     if ([title isEqualToString:@"node"]) {
-        return [item key];
+        return [self->dataSource document:self outlineTitleForItem:item];
     } else if ([title isEqualToString:@"description"]) {
-        return [item outlineDescription];
+        return [self->dataSource document:self outlineDescriptionForItem:item];
     } else {
         ICAssert(NO);
     }

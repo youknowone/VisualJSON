@@ -9,7 +9,26 @@
 @class VJTabController;
 @class VJRequest;
 
+@class VJDocument;
+
+@protocol VJDocumentDataSource <NSObject>
+
+- (id)document:(VJDocument *)document structuredDataFromRawDataString:(NSString *)rawData;
+- (NSString *)document:(VJDocument *)document prettyTextFromData:(id)data;
+
+- (NSUInteger)document:(VJDocument *)document outlineChildrenCountForItem:(id)item;
+- (BOOL)document:(VJDocument *)document outlineIsItemExpandable:(id)item;
+- (NSString *)document:(VJDocument *)document outlineTitleForItem:(id)item;
+- (NSString *)document:(VJDocument *)document outlineDescriptionForItem:(id)item;
+- (id)document:(VJDocument *)document outlineChild:(NSInteger)index ofItem:(id)item;
+
+@end
+
+FOUNDATION_EXTERN id<VJDocumentDataSource> VJDocumentDefaultDataSource();
+
 @interface VJDocument : NSPersistentDocument<NSMatrixDelegate> {
+    id<VJDocumentDataSource> dataSource;
+
     NSString *_header;
     NSString *_method;
     NSString *_querydata;
@@ -22,8 +41,8 @@
     NSTextField *_methodTextField;
     NSTextField *_querydataTextField;
     NSTextField *_contentTextField;
-    NSOutlineView *_jsonOutlineView;
-    NSTextView *_jsonTextView;
+    NSOutlineView *_dataOutlineView;
+    NSTextView *_dataTextView;
     
     NSDrawer *_drawer;
     NSTableView *_querydataTableView;
@@ -58,8 +77,8 @@
 @property(assign) IBOutlet NSTextField *querydataTextField;
 @property(assign) IBOutlet NSTextField *contentTextField;
 @property(assign) IBOutlet NSTextField *headerTextField;
-@property(assign) IBOutlet NSOutlineView *jsonOutlineView;
-@property(assign) IBOutlet NSTextView *jsonTextView;
+@property(assign) IBOutlet NSOutlineView *dataOutlineView;
+@property(assign) IBOutlet NSTextView *dataTextView;
 
 @property(assign) IBOutlet NSDrawer *drawer;
 @property(assign) IBOutlet NSTableView *querydataTableView;

@@ -13,3 +13,9 @@
 [submodule "osxbuildtool"]
 	path = osxbuildtool
 	url = git://github.com/youknowone/osxbuildtool.git
+[submodule "ObjectXML"]
+	path = ObjectXML
+	url = git://github.com/youknowone/ObjectXML.git
+[submodule "cdebug"]
+	path = cdebug
+	url = git://github.com/youknowone/cdebug.git

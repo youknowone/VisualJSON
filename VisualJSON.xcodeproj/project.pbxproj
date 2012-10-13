@@ -23,12 +23,23 @@
 		382554F5157BE3550099CC24 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 382554F4157BE3550099CC24 /* GetMetadataForFile.m */; };
 		382554F8157BE3550099CC24 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 382554F7157BE3550099CC24 /* MySpotlightImporter.m */; };
 		38255567157C94C50099CC24 /* JsonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 38255566157C94C50099CC24 /* JsonElement.m */; };
-		3825556D157C957E0099CC24 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 38255569157C957E0099CC24 /* CHANGELOG.md */; };
 		3825556E157C957E0099CC24 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3825556B157C957E0099CC24 /* JSONKit.m */; };
-		3825556F157C957E0099CC24 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3825556C157C957E0099CC24 /* README.md */; };
 		38255621157C9E1C0099CC24 /* IdealCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38255618157C9AE90099CC24 /* IdealCocoa.framework */; };
 		38416C0E160A240A0059A916 /* Icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 38416C0D160A240A0059A916 /* Icon.iconset */; };
 		385E84F71597839F001562F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 385E84F61597839F001562F6 /* AppDelegate.m */; };
+		3868F73D1629E8E700C31163 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382554BE157BE3550099CC24 /* Cocoa.framework */; };
+		3868F78E1629E8F900C31163 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 385E84F61597839F001562F6 /* AppDelegate.m */; };
+		3868F78F1629E8F900C31163 /* VJRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C034157DD7030034EDC4 /* VJRequest.m */; };
+		3868F7901629E8FE00C31163 /* VJDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 382554D1157BE3550099CC24 /* VJDocument.m */; };
+		3868F7911629E90200C31163 /* ObjectXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F72E1629E87F00C31163 /* ObjectXML.m */; };
+		3868F7971629EA9D00C31163 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 382554CA157BE3550099CC24 /* main.m */; };
+		3868F7981629EAB200C31163 /* VJDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */; };
+		3868F7991629EAC000C31163 /* IdealCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38255618157C9AE90099CC24 /* IdealCocoa.framework */; };
+		3868F79B1629EAE300C31163 /* IdealCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 38255618157C9AE90099CC24 /* IdealCocoa.framework */; };
+		3868F79E1629EDCF00C31163 /* VJJsonDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F79D1629EDCF00C31163 /* VJJsonDataSource.m */; };
+		3868F7A11629F12200C31163 /* VXXMLDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F7A01629F12200C31163 /* VXXMLDataSource.m */; };
+		3868F7A21629F23D00C31163 /* VJDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382554D3157BE3550099CC24 /* VJDocument.xib */; };
+		3868F7A31629F23D00C31163 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382554D6157BE3550099CC24 /* MainMenu.xib */; };
 		388227E515924E6F000AB63D /* IdealCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 38255618157C9AE90099CC24 /* IdealCocoa.framework */; };
 		38A1C035157DD7030034EDC4 /* VJRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C034157DD7030034EDC4 /* VJRequest.m */; };
 		38A1C038157E15240034EDC4 /* VJDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */; };
@@ -70,9 +81,27 @@
 			remoteGlobalIDString = 38C7A9711495181800381910;
 			remoteInfo = IdealCocoa;
 		};
+		3868F7951629EA8100C31163 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 38C7A9711495181800381910;
+			remoteInfo = IdealCocoa;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		3868F79A1629EACF00C31163 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3868F79B1629EAE300C31163 /* IdealCocoa.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		388227E415924E57000AB63D /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,7 +143,7 @@
 		382554F7157BE3550099CC24 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
 		382554F9157BE3550099CC24 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
 		382554FA157BE3550099CC24 /* VisualJSONImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VisualJSONImporter-Prefix.pch"; sourceTree = "<group>"; };
-		38255503157BE3730099CC24 /* VisualJSON.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = VisualJSON.entitlements; sourceTree = "<group>"; };
+		38255503157BE3730099CC24 /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Entitlements.entitlements; sourceTree = "<group>"; };
 		38255565157C94C50099CC24 /* JsonElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonElement.h; sourceTree = "<group>"; };
 		38255566157C94C50099CC24 /* JsonElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonElement.m; sourceTree = "<group>"; };
 		38255569157C957E0099CC24 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -125,6 +154,18 @@
 		38416C0D160A240A0059A916 /* Icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icon.iconset; sourceTree = "<group>"; };
 		385E84F51597839F001562F6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		385E84F61597839F001562F6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3868F72D1629E87E00C31163 /* ObjectXML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ObjectXML.h; path = ObjectXML/ObjectXML/ObjectXML.h; sourceTree = SOURCE_ROOT; };
+		3868F72E1629E87F00C31163 /* ObjectXML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ObjectXML.m; path = ObjectXML/ObjectXML/ObjectXML.m; sourceTree = SOURCE_ROOT; };
+		3868F7321629E8B800C31163 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3868F7331629E8B800C31163 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		3868F7341629E8B800C31163 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		3868F73B1629E8E700C31163 /* VisualXML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualXML.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3868F75C1629E8E800C31163 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3868F7941629EA0400C31163 /* VisualXML-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VisualXML-Info.plist"; sourceTree = "<group>"; };
+		3868F79C1629EDCF00C31163 /* VJJsonDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJJsonDataSource.h; sourceTree = "<group>"; };
+		3868F79D1629EDCF00C31163 /* VJJsonDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJJsonDataSource.m; sourceTree = "<group>"; };
+		3868F79F1629F12200C31163 /* VXXMLDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VXXMLDataSource.h; sourceTree = "<group>"; };
+		3868F7A01629F12200C31163 /* VXXMLDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VXXMLDataSource.m; sourceTree = "<group>"; };
 		38A1C033157DD7030034EDC4 /* VJRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJRequest.h; sourceTree = "<group>"; };
 		38A1C034157DD7030034EDC4 /* VJRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJRequest.m; sourceTree = "<group>"; };
 		38A1C037157E15240034EDC4 /* VJDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VJDocument.xcdatamodel; sourceTree = "<group>"; };
@@ -151,13 +192,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3868F7381629E8E700C31163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3868F7991629EAC000C31163 /* IdealCocoa.framework in Frameworks */,
+				3868F73D1629E8E700C31163 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		382554AF157BE3550099CC24 = {
 			isa = PBXGroup;
 			children = (
+				3868F7921629E95200C31163 /* Commons */,
 				382554C4157BE3550099CC24 /* VisualJSON */,
+				3868F7931629E9A700C31163 /* VisualXML */,
+				3868F7311629E8B800C31163 /* cdebug */,
+				3868F7301629E8AC00C31163 /* ObjectXML */,
 				38255568157C957E0099CC24 /* JSONKit */,
 				38255570157C9AE90099CC24 /* IdealCocoa */,
 				382554EC157BE3550099CC24 /* VisualJSONImporter */,
@@ -171,6 +225,7 @@
 			children = (
 				382554BA157BE3550099CC24 /* VisualJSON.app */,
 				382554E0157BE3550099CC24 /* VisualJSONImporter.mdimporter */,
+				3868F73B1629E8E700C31163 /* VisualXML.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,6 +238,7 @@
 				382554E6157BE3550099CC24 /* CoreFoundation.framework */,
 				382554E8157BE3550099CC24 /* CoreData.framework */,
 				382554EA157BE3550099CC24 /* Foundation.framework */,
+				3868F75C1629E8E800C31163 /* SenTestingKit.framework */,
 				382554C0157BE3550099CC24 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -201,18 +257,10 @@
 		382554C4157BE3550099CC24 /* VisualJSON */ = {
 			isa = PBXGroup;
 			children = (
-				385E84F51597839F001562F6 /* AppDelegate.h */,
-				385E84F61597839F001562F6 /* AppDelegate.m */,
-				38A1C033157DD7030034EDC4 /* VJRequest.h */,
-				38A1C034157DD7030034EDC4 /* VJRequest.m */,
-				38255503157BE3730099CC24 /* VisualJSON.entitlements */,
-				382554D0157BE3550099CC24 /* VJDocument.h */,
-				382554D1157BE3550099CC24 /* VJDocument.m */,
 				38255565157C94C50099CC24 /* JsonElement.h */,
 				38255566157C94C50099CC24 /* JsonElement.m */,
-				382554D3157BE3550099CC24 /* VJDocument.xib */,
-				382554D6157BE3550099CC24 /* MainMenu.xib */,
-				38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */,
+				3868F79C1629EDCF00C31163 /* VJJsonDataSource.h */,
+				3868F79D1629EDCF00C31163 /* VJJsonDataSource.m */,
 				382554C5157BE3550099CC24 /* Supporting Files */,
 			);
 			path = VisualJSON;
@@ -284,6 +332,54 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3868F7301629E8AC00C31163 /* ObjectXML */ = {
+			isa = PBXGroup;
+			children = (
+				3868F72D1629E87E00C31163 /* ObjectXML.h */,
+				3868F72E1629E87F00C31163 /* ObjectXML.m */,
+			);
+			name = ObjectXML;
+			path = VisualJSON;
+			sourceTree = "<group>";
+		};
+		3868F7311629E8B800C31163 /* cdebug */ = {
+			isa = PBXGroup;
+			children = (
+				3868F7321629E8B800C31163 /* LICENSE */,
+				3868F7331629E8B800C31163 /* README.md */,
+				3868F7341629E8B800C31163 /* debug.h */,
+			);
+			path = cdebug;
+			sourceTree = "<group>";
+		};
+		3868F7921629E95200C31163 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				385E84F51597839F001562F6 /* AppDelegate.h */,
+				385E84F61597839F001562F6 /* AppDelegate.m */,
+				38A1C033157DD7030034EDC4 /* VJRequest.h */,
+				38A1C034157DD7030034EDC4 /* VJRequest.m */,
+				38255503157BE3730099CC24 /* Entitlements.entitlements */,
+				382554D0157BE3550099CC24 /* VJDocument.h */,
+				382554D1157BE3550099CC24 /* VJDocument.m */,
+				38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */,
+				382554D3157BE3550099CC24 /* VJDocument.xib */,
+				382554D6157BE3550099CC24 /* MainMenu.xib */,
+			);
+			name = Commons;
+			path = VisualJSON;
+			sourceTree = "<group>";
+		};
+		3868F7931629E9A700C31163 /* VisualXML */ = {
+			isa = PBXGroup;
+			children = (
+				3868F7941629EA0400C31163 /* VisualXML-Info.plist */,
+				3868F79F1629F12200C31163 /* VXXMLDataSource.h */,
+				3868F7A01629F12200C31163 /* VXXMLDataSource.m */,
+			);
+			path = VisualXML;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -323,6 +419,25 @@
 			productReference = 382554E0157BE3550099CC24 /* VisualJSONImporter.mdimporter */;
 			productType = "com.apple.product-type.bundle";
 		};
+		3868F73A1629E8E700C31163 /* VisualXML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3868F7881629E8E800C31163 /* Build configuration list for PBXNativeTarget "VisualXML" */;
+			buildPhases = (
+				3868F7371629E8E700C31163 /* Sources */,
+				3868F7381629E8E700C31163 /* Frameworks */,
+				3868F7391629E8E700C31163 /* Resources */,
+				3868F79A1629EACF00C31163 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3868F7961629EA8100C31163 /* PBXTargetDependency */,
+			);
+			name = VisualXML;
+			productName = VisualXML;
+			productReference = 3868F73B1629E8E700C31163 /* VisualXML.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -331,7 +446,7 @@
 			attributes = {
 				CLASSPREFIX = VJ;
 				LastUpgradeCheck = 0430;
-				ORGANIZATIONNAME = "3rddev Inc.";
+				ORGANIZATIONNAME = youknowone.org;
 			};
 			buildConfigurationList = 382554B4157BE3550099CC24 /* Build configuration list for PBXProject "VisualJSON" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -353,6 +468,7 @@
 			targets = (
 				382554B9157BE3550099CC24 /* VisualJSON */,
 				382554DF157BE3550099CC24 /* VisualJSONImporter */,
+				3868F73A1629E8E700C31163 /* VisualXML */,
 			);
 		};
 /* End PBXProject section */
@@ -397,8 +513,6 @@
 				382554CF157BE3550099CC24 /* Credits.rtf in Resources */,
 				382554D5157BE3550099CC24 /* VJDocument.xib in Resources */,
 				382554D8157BE3550099CC24 /* MainMenu.xib in Resources */,
-				3825556D157C957E0099CC24 /* CHANGELOG.md in Resources */,
-				3825556F157C957E0099CC24 /* README.md in Resources */,
 				38416C0E160A240A0059A916 /* Icon.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +522,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				382554F1157BE3550099CC24 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3868F7391629E8E700C31163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3868F7A21629F23D00C31163 /* VJDocument.xib in Resources */,
+				3868F7A31629F23D00C31163 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +548,7 @@
 				38A1C035157DD7030034EDC4 /* VJRequest.m in Sources */,
 				38A1C038157E15240034EDC4 /* VJDocument.xcdatamodeld in Sources */,
 				385E84F71597839F001562F6 /* AppDelegate.m in Sources */,
+				3868F79E1629EDCF00C31163 /* VJJsonDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +562,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3868F7371629E8E700C31163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3868F7971629EA9D00C31163 /* main.m in Sources */,
+				3868F7901629E8FE00C31163 /* VJDocument.m in Sources */,
+				3868F78F1629E8F900C31163 /* VJRequest.m in Sources */,
+				3868F78E1629E8F900C31163 /* AppDelegate.m in Sources */,
+				3868F7911629E90200C31163 /* ObjectXML.m in Sources */,
+				3868F7981629EAB200C31163 /* VJDocument.xcdatamodeld in Sources */,
+				3868F7A11629F12200C31163 /* VXXMLDataSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -445,6 +583,11 @@
 			isa = PBXTargetDependency;
 			name = IdealCocoa;
 			targetProxy = 3825561F157C9E160099CC24 /* PBXContainerItemProxy */;
+		};
+		3868F7961629EA8100C31163 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IdealCocoa;
+			targetProxy = 3868F7951629EA8100C31163 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -570,7 +713,7 @@
 		38255501157BE3550099CC24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = VisualJSON/VisualJSON.entitlements;
+				CODE_SIGN_ENTITLEMENTS = VisualJSON/Entitlements.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
 				INFOPLIST_FILE = "VisualJSON/VisualJSON-Info.plist";
@@ -583,7 +726,7 @@
 		38255502157BE3550099CC24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = VisualJSON/VisualJSON.entitlements;
+				CODE_SIGN_ENTITLEMENTS = VisualJSON/Entitlements.entitlements;
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
@@ -591,6 +734,44 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3868F7891629E8E800C31163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
+				INFOPLIST_FILE = "VisualXML/VisualXML-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3868F78A1629E8E800C31163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
+				INFOPLIST_FILE = "VisualXML/VisualXML-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -624,6 +805,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		3868F7881629E8E800C31163 /* Build configuration list for PBXNativeTarget "VisualXML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3868F7891629E8E800C31163 /* Debug */,
+				3868F78A1629E8E800C31163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
