@@ -36,10 +36,12 @@
 		3868F7981629EAB200C31163 /* VJDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */; };
 		3868F7991629EAC000C31163 /* IdealCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38255618157C9AE90099CC24 /* IdealCocoa.framework */; };
 		3868F79B1629EAE300C31163 /* IdealCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 38255618157C9AE90099CC24 /* IdealCocoa.framework */; };
-		3868F79E1629EDCF00C31163 /* VJJsonDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F79D1629EDCF00C31163 /* VJJsonDataSource.m */; };
-		3868F7A11629F12200C31163 /* VXXMLDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F7A01629F12200C31163 /* VXXMLDataSource.m */; };
+		3868F79E1629EDCF00C31163 /* VJJsonDocumentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F79D1629EDCF00C31163 /* VJJsonDocumentDelegate.m */; };
+		3868F7A11629F12200C31163 /* VJXMLDocumentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F7A01629F12200C31163 /* VJXMLDocumentDelegate.m */; };
 		3868F7A21629F23D00C31163 /* VJDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382554D3157BE3550099CC24 /* VJDocument.xib */; };
 		3868F7A31629F23D00C31163 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382554D6157BE3550099CC24 /* MainMenu.xib */; };
+		3868F7A4162B1AAC00C31163 /* VJXMLDocumentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F7A01629F12200C31163 /* VJXMLDocumentDelegate.m */; };
+		3868F7A5162B1AC500C31163 /* ObjectXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F72E1629E87F00C31163 /* ObjectXML.m */; };
 		388227E515924E6F000AB63D /* IdealCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 38255618157C9AE90099CC24 /* IdealCocoa.framework */; };
 		38A1C035157DD7030034EDC4 /* VJRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C034157DD7030034EDC4 /* VJRequest.m */; };
 		38A1C038157E15240034EDC4 /* VJDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */; };
@@ -162,10 +164,10 @@
 		3868F73B1629E8E700C31163 /* VisualXML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualXML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3868F75C1629E8E800C31163 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		3868F7941629EA0400C31163 /* VisualXML-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VisualXML-Info.plist"; sourceTree = "<group>"; };
-		3868F79C1629EDCF00C31163 /* VJJsonDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJJsonDataSource.h; sourceTree = "<group>"; };
-		3868F79D1629EDCF00C31163 /* VJJsonDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJJsonDataSource.m; sourceTree = "<group>"; };
-		3868F79F1629F12200C31163 /* VXXMLDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VXXMLDataSource.h; sourceTree = "<group>"; };
-		3868F7A01629F12200C31163 /* VXXMLDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VXXMLDataSource.m; sourceTree = "<group>"; };
+		3868F79C1629EDCF00C31163 /* VJJsonDocumentDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJJsonDocumentDelegate.h; sourceTree = "<group>"; };
+		3868F79D1629EDCF00C31163 /* VJJsonDocumentDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJJsonDocumentDelegate.m; sourceTree = "<group>"; };
+		3868F79F1629F12200C31163 /* VJXMLDocumentDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJXMLDocumentDelegate.h; sourceTree = "<group>"; };
+		3868F7A01629F12200C31163 /* VJXMLDocumentDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJXMLDocumentDelegate.m; sourceTree = "<group>"; };
 		38A1C033157DD7030034EDC4 /* VJRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJRequest.h; sourceTree = "<group>"; };
 		38A1C034157DD7030034EDC4 /* VJRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJRequest.m; sourceTree = "<group>"; };
 		38A1C037157E15240034EDC4 /* VJDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VJDocument.xcdatamodel; sourceTree = "<group>"; };
@@ -259,8 +261,8 @@
 			children = (
 				38255565157C94C50099CC24 /* JsonElement.h */,
 				38255566157C94C50099CC24 /* JsonElement.m */,
-				3868F79C1629EDCF00C31163 /* VJJsonDataSource.h */,
-				3868F79D1629EDCF00C31163 /* VJJsonDataSource.m */,
+				3868F79C1629EDCF00C31163 /* VJJsonDocumentDelegate.h */,
+				3868F79D1629EDCF00C31163 /* VJJsonDocumentDelegate.m */,
 				382554C5157BE3550099CC24 /* Supporting Files */,
 			);
 			path = VisualJSON;
@@ -374,8 +376,8 @@
 			isa = PBXGroup;
 			children = (
 				3868F7941629EA0400C31163 /* VisualXML-Info.plist */,
-				3868F79F1629F12200C31163 /* VXXMLDataSource.h */,
-				3868F7A01629F12200C31163 /* VXXMLDataSource.m */,
+				3868F79F1629F12200C31163 /* VJXMLDocumentDelegate.h */,
+				3868F7A01629F12200C31163 /* VJXMLDocumentDelegate.m */,
 			);
 			path = VisualXML;
 			sourceTree = "<group>";
@@ -548,7 +550,9 @@
 				38A1C035157DD7030034EDC4 /* VJRequest.m in Sources */,
 				38A1C038157E15240034EDC4 /* VJDocument.xcdatamodeld in Sources */,
 				385E84F71597839F001562F6 /* AppDelegate.m in Sources */,
-				3868F79E1629EDCF00C31163 /* VJJsonDataSource.m in Sources */,
+				3868F79E1629EDCF00C31163 /* VJJsonDocumentDelegate.m in Sources */,
+				3868F7A4162B1AAC00C31163 /* VJXMLDocumentDelegate.m in Sources */,
+				3868F7A5162B1AC500C31163 /* ObjectXML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,7 +576,7 @@
 				3868F78E1629E8F900C31163 /* AppDelegate.m in Sources */,
 				3868F7911629E90200C31163 /* ObjectXML.m in Sources */,
 				3868F7981629EAB200C31163 /* VJDocument.xcdatamodeld in Sources */,
-				3868F7A11629F12200C31163 /* VXXMLDataSource.m in Sources */,
+				3868F7A11629F12200C31163 /* VJXMLDocumentDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

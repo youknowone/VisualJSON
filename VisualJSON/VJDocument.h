@@ -11,7 +11,9 @@
 
 @class VJDocument;
 
-@protocol VJDocumentDataSource <NSObject>
+@protocol VJDocumentDelegate <NSObject>
+
+- (BOOL)document:(VJDocument *)document dataIsValid:(NSString *)rawData;
 
 - (id)document:(VJDocument *)document structuredDataFromRawDataString:(NSString *)rawData;
 - (NSString *)document:(VJDocument *)document prettyTextFromData:(id)data;
@@ -24,10 +26,9 @@
 
 @end
 
-FOUNDATION_EXTERN id<VJDocumentDataSource> VJDocumentDefaultDataSource();
 
 @interface VJDocument : NSPersistentDocument<NSMatrixDelegate> {
-    id<VJDocumentDataSource> dataSource;
+    id<VJDocumentDelegate> _delegate;
 
     NSString *_header;
     NSString *_method;
@@ -61,6 +62,8 @@ FOUNDATION_EXTERN id<VJDocumentDataSource> VJDocumentDefaultDataSource();
     id tempData;
     NSThread *visualizeThread;
 }
+
+@property(retain) id delegate;
 
 @property(retain) NSString *address;
 @property(retain) NSString *header;

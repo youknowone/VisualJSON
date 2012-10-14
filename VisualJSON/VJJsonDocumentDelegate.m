@@ -1,5 +1,5 @@
 //
-//  VJJsonDataSource.m
+//  VJJsonDocumentDelegate.m
 //  VisualJSON
 //
 //  Created by youknowone on 12. 10. 14..
@@ -9,13 +9,27 @@
 #import "JSONKit.h"
 #import "JsonElement.h"
 
-#import "VJJsonDataSource.h"
+#import "VJJsonDocumentDelegate.h"
 
-id<VJDocumentDataSource> VJDocumentDefaultDataSource() {
-    return [[[VJJsonDataSource alloc] init] autorelease];
+id<VJDocumentDelegate> VJDocumentDefaultDataSource() {
+    return [[[VJJsonDocumentDelegate alloc] init] autorelease];
 }
 
-@implementation VJJsonDataSource
+@implementation VJJsonDocumentDelegate
+
+- (BOOL)document:(VJDocument *)document dataIsValid:(NSString *)rawData {
+    NSInteger index = 0;
+    unichar chr;
+    do {
+        if (index >= rawData.length) {
+            return NO;
+        }
+        chr = [rawData characterAtIndex:index];
+        index += 1;
+    } while ([[NSCharacterSet whitespaceAndNewlineCharacterSet] characterIsMember:chr]);
+
+    return chr == '[' || chr == '{';
+}
 
 - (id)document:(VJDocument *)document structuredDataFromRawDataString:(NSString *)rawData {
     return [JsonElement elementWithObject:rawData.objectFromJSONString];
@@ -43,6 +57,18 @@ id<VJDocumentDataSource> VJDocumentDefaultDataSource() {
 
 - (id)document:(VJDocument *)document outlineChild:(NSInteger)index ofItem:(id)item {
     return [item childAtIndex:index];
+}
+
+id VJJsonDocumentDelegateSharedObject = nil;
+
++ (void)initialize {
+    if (self == [VJJsonDocumentDelegate class]) {
+        VJJsonDocumentDelegateSharedObject = [[self alloc] init];
+    }
+}
+
++ (id)sharedObject {
+    return VJJsonDocumentDelegateSharedObject;
 }
 
 @end

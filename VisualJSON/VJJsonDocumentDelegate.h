@@ -1,5 +1,5 @@
 //
-//  VXXMLDataSource.h
+//  VJJsonDocumentDelegate.h
 //  VisualJSON
 //
 //  Created by youknowone on 12. 10. 14..
@@ -8,6 +8,8 @@
 
 #import "VJDocument.h"
 
-@interface VXXMLDataSource : NSObject<VJDocumentDataSource>
+@interface VJJsonDocumentDelegate : NSObject<VJDocumentDelegate>
+
++ (id)sharedObject;
 
 @end

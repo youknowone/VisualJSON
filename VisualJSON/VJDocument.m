@@ -9,6 +9,9 @@
 #import "VJDocument.h"
 #import "VJRequest.h"
 
+#import "VJJsonDocumentDelegate.h"
+#import "VJXMLDocumentDelegate.h"
+
 @interface VJDocument()
 
 - (BOOL)setMetadataForStoreAtURL:(NSURL *)URL;
@@ -17,6 +20,7 @@
 
 @implementation VJDocument
 
+@synthesize delegate=_delegate;
 @synthesize headerItems=_headerItems, querydataItems=_querydataItems;
 @synthesize addressTextField=_addressTextField, methodMatrix=_methodMatrix, methodTextField=_methodTextField, querydataTextField=_querydataTextField, contentTextField=_contentTextField;
 @synthesize dataOutlineView=_dataOutlineView, dataTextView=_dataTextView;
@@ -31,8 +35,6 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-
-    self->dataSource = [VJDocumentDefaultDataSource() retain];
    
     self.querydata = self.request.querydata;
     self.method = self.request.method;
@@ -153,7 +155,7 @@
     self.request = nil;
     self.drawer = nil;
 
-    [self->dataSource release];
+    self.delegate = nil;
     [super dealloc];
 }
 
@@ -412,8 +414,14 @@
     if (x) {
         [x release];
     }
+
+    if ([[VJXMLDocumentDelegate sharedObject] document:self dataIsValid:self.content]) {
+        self.delegate = [VJXMLDocumentDelegate sharedObject];
+    } else {
+        self.delegate = [VJJsonDocumentDelegate sharedObject];
+    }
     
-    x = [[self->dataSource document:self structuredDataFromRawDataString:self.content] retain];
+    x = [[self.delegate document:self structuredDataFromRawDataString:self.content] retain];
     @synchronized(self) {
         tempData = x;
     }
@@ -428,7 +436,7 @@
     }
 
     [self.dataOutlineView reloadData];
-    self.dataTextView.string = [self->dataSource document:self prettyTextFromData:self.data];
+    self.dataTextView.string = [self.delegate document:self prettyTextFromData:self.data];
 }
 
 - (void)toggleDrawer:(id)sender {
@@ -450,30 +458,30 @@
     if (item == nil) {
         return 1;
     }
-    return (NSInteger)[self->dataSource document:self outlineChildrenCountForItem:item];
+    return (NSInteger)[self.delegate document:self outlineChildrenCountForItem:item];
 }
 
 - (BOOL)outlineView:(NSOutlineView *)outlineView isItemExpandable:(id)item {
     if (item == nil) {
         return YES;
     }
-    return [self->dataSource document:self outlineIsItemExpandable:item];
+    return [self.delegate document:self outlineIsItemExpandable:item];
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView child:(NSInteger)index ofItem:(id)item {
     if (item == nil) {
         return self.data;
     }
-    return [self->dataSource document:self outlineChild:index ofItem:item];
+    return [self.delegate document:self outlineChild:index ofItem:item];
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView objectValueForTableColumn:(NSTableColumn *)tableColumn byItem:(id)item {
     if (item == nil) item = self.data;
     NSString *title = [tableColumn.headerCell title];
     if ([title isEqualToString:@"node"]) {
-        return [self->dataSource document:self outlineTitleForItem:item];
+        return [self.delegate document:self outlineTitleForItem:item];
     } else if ([title isEqualToString:@"description"]) {
-        return [self->dataSource document:self outlineDescriptionForItem:item];
+        return [self.delegate document:self outlineDescriptionForItem:item];
     } else {
         ICAssert(NO);
     }
