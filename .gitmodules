@@ -19,3 +19,6 @@
 [submodule "cdebug"]
 	path = cdebug
 	url = git://github.com/youknowone/cdebug.git
+[submodule "FoundationExtension"]
+	path = FoundationExtension
+	url = git://github.com/youknowone/FoundationExtension.git

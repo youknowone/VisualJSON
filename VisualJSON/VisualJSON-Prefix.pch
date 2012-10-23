@@ -2,8 +2,10 @@
 // Prefix header for all source files of the 'VisualJSON' target in the 'VisualJSON' project
 //
 
+#include "debug.h"
+
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
     #import <CoreData/CoreData.h>
-    #import <IdealCocoa/IdealCocoa.h>
+    #import <FoundationExtension/FoundationExtension.h>
 #endif

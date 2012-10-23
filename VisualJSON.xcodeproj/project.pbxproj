@@ -24,7 +24,6 @@
 		382554F8157BE3550099CC24 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 382554F7157BE3550099CC24 /* MySpotlightImporter.m */; };
 		38255567157C94C50099CC24 /* JsonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 38255566157C94C50099CC24 /* JsonElement.m */; };
 		3825556E157C957E0099CC24 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3825556B157C957E0099CC24 /* JSONKit.m */; };
-		38255621157C9E1C0099CC24 /* IdealCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38255618157C9AE90099CC24 /* IdealCocoa.framework */; };
 		38416C0E160A240A0059A916 /* Icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 38416C0D160A240A0059A916 /* Icon.iconset */; };
 		385E84F71597839F001562F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 385E84F61597839F001562F6 /* AppDelegate.m */; };
 		3868F73D1629E8E700C31163 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382554BE157BE3550099CC24 /* Cocoa.framework */; };
@@ -34,61 +33,53 @@
 		3868F7911629E90200C31163 /* ObjectXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F72E1629E87F00C31163 /* ObjectXML.m */; };
 		3868F7971629EA9D00C31163 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 382554CA157BE3550099CC24 /* main.m */; };
 		3868F7981629EAB200C31163 /* VJDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */; };
-		3868F7991629EAC000C31163 /* IdealCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38255618157C9AE90099CC24 /* IdealCocoa.framework */; };
-		3868F79B1629EAE300C31163 /* IdealCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 38255618157C9AE90099CC24 /* IdealCocoa.framework */; };
 		3868F79E1629EDCF00C31163 /* VJJsonDocumentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F79D1629EDCF00C31163 /* VJJsonDocumentDelegate.m */; };
 		3868F7A11629F12200C31163 /* VJXMLDocumentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F7A01629F12200C31163 /* VJXMLDocumentDelegate.m */; };
 		3868F7A21629F23D00C31163 /* VJDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382554D3157BE3550099CC24 /* VJDocument.xib */; };
 		3868F7A31629F23D00C31163 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382554D6157BE3550099CC24 /* MainMenu.xib */; };
 		3868F7A4162B1AAC00C31163 /* VJXMLDocumentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F7A01629F12200C31163 /* VJXMLDocumentDelegate.m */; };
 		3868F7A5162B1AC500C31163 /* ObjectXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F72E1629E87F00C31163 /* ObjectXML.m */; };
-		388227E515924E6F000AB63D /* IdealCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 38255618157C9AE90099CC24 /* IdealCocoa.framework */; };
 		38A1C035157DD7030034EDC4 /* VJRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C034157DD7030034EDC4 /* VJRequest.m */; };
 		38A1C038157E15240034EDC4 /* VJDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */; };
+		38F067941636BCAC002723AB /* FoundationExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F067871636BC74002723AB /* FoundationExtension.framework */; };
+		38F067951636BE6F002723AB /* FoundationExtension.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 38F067871636BC74002723AB /* FoundationExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		38255617157C9AE90099CC24 /* PBXContainerItemProxy */ = {
+		38F067861636BC74002723AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */;
+			containerPortal = 38F0677C1636BC73002723AB /* FoundationExtension.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 38C7A9721495181800381910;
-			remoteInfo = IdealCocoa;
+			remoteInfo = FoundationExtension;
 		};
-		38255619157C9AE90099CC24 /* PBXContainerItemProxy */ = {
+		38F067881636BC74002723AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */;
+			containerPortal = 38F0677C1636BC73002723AB /* FoundationExtension.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 38C7A9881495181800381910;
-			remoteInfo = IdealCocoaTests;
+			remoteInfo = FoundationExtensionTests;
 		};
-		3825561B157C9AE90099CC24 /* PBXContainerItemProxy */ = {
+		38F0678A1636BC74002723AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */;
+			containerPortal = 38F0677C1636BC73002723AB /* FoundationExtension.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 38730437133732DE004C8E89;
-			remoteInfo = IdealUIKit;
+			remoteGlobalIDString = 38C98B53161AE30300C4A389;
+			remoteInfo = UIKitExtension;
 		};
-		3825561D157C9AE90099CC24 /* PBXContainerItemProxy */ = {
+		38F0678C1636BC74002723AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */;
+			containerPortal = 38F0677C1636BC73002723AB /* FoundationExtension.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 38730441133732DE004C8E89;
-			remoteInfo = IdealUIKitTests;
+			remoteInfo = UIKitExtensionTests;
 		};
-		3825561F157C9E160099CC24 /* PBXContainerItemProxy */ = {
+		38F067921636BC9D002723AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */;
+			containerPortal = 38F0677C1636BC73002723AB /* FoundationExtension.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 38C7A9711495181800381910;
-			remoteInfo = IdealCocoa;
-		};
-		3868F7951629EA8100C31163 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 38C7A9711495181800381910;
-			remoteInfo = IdealCocoa;
+			remoteInfo = FoundationExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -99,7 +90,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3868F79B1629EAE300C31163 /* IdealCocoa.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,7 +100,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				388227E515924E6F000AB63D /* IdealCocoa.framework in Copy Frameworks */,
+				38F067951636BE6F002723AB /* FoundationExtension.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,7 +142,6 @@
 		3825556A157C957E0099CC24 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		3825556B157C957E0099CC24 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		3825556C157C957E0099CC24 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = IdealCocoa.xcodeproj; sourceTree = "<group>"; };
 		38416C0D160A240A0059A916 /* Icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icon.iconset; sourceTree = "<group>"; };
 		385E84F51597839F001562F6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		385E84F61597839F001562F6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -171,6 +160,7 @@
 		38A1C033157DD7030034EDC4 /* VJRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJRequest.h; sourceTree = "<group>"; };
 		38A1C034157DD7030034EDC4 /* VJRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJRequest.m; sourceTree = "<group>"; };
 		38A1C037157E15240034EDC4 /* VJDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VJDocument.xcdatamodel; sourceTree = "<group>"; };
+		38F0677C1636BC73002723AB /* FoundationExtension.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FoundationExtension.xcodeproj; path = FoundationExtension/FoundationExtension.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,8 +168,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38255621157C9E1C0099CC24 /* IdealCocoa.framework in Frameworks */,
 				382554BF157BE3550099CC24 /* Cocoa.framework in Frameworks */,
+				38F067941636BCAC002723AB /* FoundationExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +188,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3868F7991629EAC000C31163 /* IdealCocoa.framework in Frameworks */,
 				3868F73D1629E8E700C31163 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,7 +204,7 @@
 				3868F7311629E8B800C31163 /* cdebug */,
 				3868F7301629E8AC00C31163 /* ObjectXML */,
 				38255568157C957E0099CC24 /* JSONKit */,
-				38255570157C9AE90099CC24 /* IdealCocoa */,
+				38F0678E1636BC79002723AB /* FoundationExtension */,
 				382554EC157BE3550099CC24 /* VisualJSONImporter */,
 				382554BD157BE3550099CC24 /* Frameworks */,
 				382554BB157BE3550099CC24 /* Products */,
@@ -315,25 +304,6 @@
 			path = JSONKit;
 			sourceTree = SOURCE_ROOT;
 		};
-		38255570157C9AE90099CC24 /* IdealCocoa */ = {
-			isa = PBXGroup;
-			children = (
-				382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */,
-			);
-			path = IdealCocoa;
-			sourceTree = "<group>";
-		};
-		382555AA157C9AE90099CC24 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				38255618157C9AE90099CC24 /* IdealCocoa.framework */,
-				3825561A157C9AE90099CC24 /* IdealCocoaTests.octest */,
-				3825561C157C9AE90099CC24 /* libIdealUIKit.a */,
-				3825561E157C9AE90099CC24 /* IdealUIKitTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		3868F7301629E8AC00C31163 /* ObjectXML */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +352,25 @@
 			path = VisualXML;
 			sourceTree = "<group>";
 		};
+		38F0677D1636BC73002723AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38F067871636BC74002723AB /* FoundationExtension.framework */,
+				38F067891636BC74002723AB /* FoundationExtensionTests.octest */,
+				38F0678B1636BC74002723AB /* libUIKitExtension.a */,
+				38F0678D1636BC74002723AB /* UIKitExtensionTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38F0678E1636BC79002723AB /* FoundationExtension */ = {
+			isa = PBXGroup;
+			children = (
+				38F0677C1636BC73002723AB /* FoundationExtension.xcodeproj */,
+			);
+			name = FoundationExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -397,7 +386,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				38255620157C9E160099CC24 /* PBXTargetDependency */,
+				38F067931636BC9D002723AB /* PBXTargetDependency */,
 			);
 			name = VisualJSON;
 			productName = VisualJSON;
@@ -433,7 +422,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3868F7961629EA8100C31163 /* PBXTargetDependency */,
 			);
 			name = VisualXML;
 			productName = VisualXML;
@@ -462,8 +450,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 382555AA157C9AE90099CC24 /* Products */;
-					ProjectRef = 382555A9157C9AE90099CC24 /* IdealCocoa.xcodeproj */;
+					ProductGroup = 38F0677D1636BC73002723AB /* Products */;
+					ProjectRef = 38F0677C1636BC73002723AB /* FoundationExtension.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -476,32 +464,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		38255618157C9AE90099CC24 /* IdealCocoa.framework */ = {
+		38F067871636BC74002723AB /* FoundationExtension.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = IdealCocoa.framework;
-			remoteRef = 38255617157C9AE90099CC24 /* PBXContainerItemProxy */;
+			path = FoundationExtension.framework;
+			remoteRef = 38F067861636BC74002723AB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3825561A157C9AE90099CC24 /* IdealCocoaTests.octest */ = {
+		38F067891636BC74002723AB /* FoundationExtensionTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = IdealCocoaTests.octest;
-			remoteRef = 38255619157C9AE90099CC24 /* PBXContainerItemProxy */;
+			path = FoundationExtensionTests.octest;
+			remoteRef = 38F067881636BC74002723AB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3825561C157C9AE90099CC24 /* libIdealUIKit.a */ = {
+		38F0678B1636BC74002723AB /* libUIKitExtension.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libIdealUIKit.a;
-			remoteRef = 3825561B157C9AE90099CC24 /* PBXContainerItemProxy */;
+			path = libUIKitExtension.a;
+			remoteRef = 38F0678A1636BC74002723AB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3825561E157C9AE90099CC24 /* IdealUIKitTests.octest */ = {
+		38F0678D1636BC74002723AB /* UIKitExtensionTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = IdealUIKitTests.octest;
-			remoteRef = 3825561D157C9AE90099CC24 /* PBXContainerItemProxy */;
+			path = UIKitExtensionTests.octest;
+			remoteRef = 38F0678C1636BC74002723AB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -583,15 +571,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		38255620157C9E160099CC24 /* PBXTargetDependency */ = {
+		38F067931636BC9D002723AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = IdealCocoa;
-			targetProxy = 3825561F157C9E160099CC24 /* PBXContainerItemProxy */;
-		};
-		3868F7961629EA8100C31163 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = IdealCocoa;
-			targetProxy = 3868F7951629EA8100C31163 /* PBXContainerItemProxy */;
+			name = FoundationExtension;
+			targetProxy = 38F067921636BC9D002723AB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -658,7 +641,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = IdealCocoa;
+				HEADER_SEARCH_PATHS = FoundationExtension;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx10.7;
@@ -678,7 +661,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = IdealCocoa;
+				HEADER_SEARCH_PATHS = FoundationExtension;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx10.7;
 			};
@@ -817,6 +800,7 @@
 				3868F78A1629E8E800C31163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
