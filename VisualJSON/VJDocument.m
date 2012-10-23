@@ -549,6 +549,22 @@
     return nil;
 }
 
+- (void)tableView:(NSTableView *)aTableView setObjectValue:(id)object forTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    ICTuple *tuple = [self->document.headerItems objectAtIndex:row];
+    switch ([aTableView.tableColumns indexOfObjectIdenticalTo:tableColumn]) {
+        case 0:
+            tuple.first = object;
+            break;
+        case 1:
+            tuple.second = object;
+            break;
+        default:
+            ICAssert(NO);
+            break;
+    }
+    self->document.header = [self _headerFromHeaderItems];
+}
+
 @end
 
 #pragma mark -
