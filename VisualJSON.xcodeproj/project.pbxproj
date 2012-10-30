@@ -435,7 +435,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = VJ;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = youknowone.org;
 			};
 			buildConfigurationList = 382554B4157BE3550099CC24 /* Build configuration list for PBXProject "VisualJSON" */;
@@ -644,7 +644,7 @@
 				HEADER_SEARCH_PATHS = FoundationExtension;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -663,7 +663,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = FoundationExtension;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -671,6 +671,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSONImporter/VisualJSONImporter-Prefix.pch";
 				INFOPLIST_FILE = "VisualJSONImporter/VisualJSONImporter-Info.plist";
@@ -686,6 +687,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSONImporter/VisualJSONImporter-Prefix.pch";
 				INFOPLIST_FILE = "VisualJSONImporter/VisualJSONImporter-Info.plist";
@@ -701,6 +703,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = VisualJSON/Entitlements.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
 				INFOPLIST_FILE = "VisualJSON/VisualJSON-Info.plist";
@@ -715,6 +718,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = VisualJSON/Entitlements.entitlements;
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
 				INFOPLIST_FILE = "VisualJSON/VisualJSON-Info.plist";
