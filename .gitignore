@@ -12,3 +12,6 @@
 *.xcodeproj/*.perspectivev3
 *xcuserdata
 *.xcworkspace*
+
+Podfile.lock
+Pods

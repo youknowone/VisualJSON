@@ -76,7 +76,7 @@
             field = [item substringToIndex:delimeterRange.location];
             value = [item substringFromIndex:delimeterRange.location + delimeterRange.length];
         }
-        [headerItems addObject:[NSATuple tupleWithFirst:field second:value]];
+        [headerItems addObject:[NSAMutableTuple tupleWithFirst:field second:value]];
     }
     self->_headerItems = headerItems;
     
@@ -124,7 +124,7 @@
             field = nil;
             value = item;
         }
-        [items addObject:[NSATuple tupleWithFirst:field second:value]];
+        [items addObject:[NSAMutableTuple tupleWithFirst:field second:value]];
     }
     self->_querydataItems = items;
     
@@ -358,7 +358,7 @@
         NSURL *URL = [address hasPrefix:@"/"] ? address.fileURL : address.URL;
         NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:URL];
         
-        for (NSATuple *item in self.headerItems) {
+        for (NSAMutableTuple *item in self.headerItems) {
             if ([item.first length] == 0) continue;
             [req addValue:item.second forHTTPHeaderField:item.first];
         }
@@ -496,7 +496,7 @@
 
 - (NSString *)_headerFromHeaderItems {
     NSMutableArray *array = [[NSMutableArray alloc] init];
-    for (NSATuple *tuple in self->document.headerItems) {
+    for (NSAMutableTuple *tuple in self->document.headerItems) {
         NSString *item = tuple.first ? [NSString stringWithFormat:@"%@:%@", tuple.first, tuple.second] : tuple.second;
         [array addObject:item];
     }
@@ -510,7 +510,7 @@
 
 - (void)addRow:(id)sender {
     NSInteger index = tableView.selectedRow;
-    NSATuple *newItem = [NSATuple tupleWithFirst:@"field" second:@"value"];
+    NSAMutableTuple *newItem = [NSAMutableTuple tupleWithFirst:@"field" second:@"value"];
     if (index < 0) {
         [self->document.headerItems addObject:newItem];
     } else {
@@ -535,7 +535,7 @@
 }
 
 - (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    NSATuple *item = [self->document.headerItems objectAtIndex:row];
+    NSAMutableTuple *item = [self->document.headerItems objectAtIndex:row];
     switch ([aTableView.tableColumns indexOfObjectIdenticalTo:tableColumn]) {
         case 0:
             return item.first;
@@ -550,7 +550,7 @@
 }
 
 - (void)tableView:(NSTableView *)aTableView setObjectValue:(id)object forTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    NSATuple *tuple = [self->document.headerItems objectAtIndex:row];
+    NSAMutableTuple *tuple = [self->document.headerItems objectAtIndex:row];
     switch ([aTableView.tableColumns indexOfObjectIdenticalTo:tableColumn]) {
         case 0:
             tuple.first = object;
@@ -573,7 +573,7 @@
 
 - (NSString *)_querydataFromQuerydataItems {
     NSMutableArray *array = [[NSMutableArray alloc] init];
-    for (NSATuple *tuple in self->document.querydataItems) {
+    for (NSAMutableTuple *tuple in self->document.querydataItems) {
         NSString *item = tuple.first ? [NSString stringWithFormat:@"%@=%@", tuple.first, tuple.second] : tuple.second;
         [array addObject:item];
     }
@@ -587,7 +587,7 @@
 
 - (void)addRow:(id)sender {
     NSInteger index = tableView.selectedRow;
-    NSATuple *newItem = [NSATuple tupleWithFirst:nil second:@""];
+    NSAMutableTuple *newItem = [NSAMutableTuple tupleWithFirst:nil second:@""];
     if (index < 0) {
         [self->document.querydataItems addObject:newItem];
     } else {
@@ -618,7 +618,7 @@
 }
 
 - (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    NSATuple *item = [self->document.querydataItems objectAtIndex:row];
+    NSAMutableTuple *item = [self->document.querydataItems objectAtIndex:row];
     switch ([aTableView.tableColumns indexOfObjectIdenticalTo:tableColumn]) {
         case 0:
             return item.first;
@@ -633,7 +633,7 @@
 }
 
 - (void)tableView:(NSTableView *)aTableView setObjectValue:(id)object forTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    NSATuple *tuple = [self->document.querydataItems objectAtIndex:row];
+    NSAMutableTuple *tuple = [self->document.querydataItems objectAtIndex:row];
     switch ([aTableView.tableColumns indexOfObjectIdenticalTo:tableColumn]) {
         case 0:
             tuple.first = object;
