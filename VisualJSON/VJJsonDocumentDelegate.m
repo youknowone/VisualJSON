@@ -6,7 +6,6 @@
 //  Copyright (c) 2012 youknowone.org All rights reserved.
 //
 
-#import "JSONKit.h"
 #import "JsonElement.h"
 
 #import "VJJsonDocumentDelegate.h"
@@ -32,7 +31,10 @@ id<VJDocumentDelegate> VJDocumentDefaultDataSource() {
 }
 
 - (id)document:(VJDocument *)document structuredDataFromRawDataString:(NSString *)rawData {
-    return [JsonElement elementWithObject:rawData.objectFromJSONString];
+    NSError *error = nil;
+    id obj = [NSJSONSerialization JSONObjectWithData:[rawData dataUsingUTF8Encoding] options:NSJSONReadingAllowFragments error:&error];
+    // TODO: do something with error
+    return [JsonElement elementWithObject:obj];
 }
 
 - (NSString *)document:(VJDocument *)document prettyTextFromData:(id)data {
