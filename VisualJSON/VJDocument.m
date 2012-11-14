@@ -49,6 +49,7 @@
     if (address == nil) address = @"";
     self->_addressTextField.stringValue = address;
     
+    if ([self.request.address isEqualToString:address]) return;
     self.request.address = address;
 }
 
@@ -62,6 +63,7 @@
     [self->_header autorelease];
     self->_header = [header retain];
     
+    if ([self.request.header isEqualToString:header]) return;
     self.request.header = header;
     self.headerTextField.stringValue = header;
     
@@ -93,6 +95,8 @@
     [self->_method autorelease];
     self->_method = [method retain];
     
+    if ([self.request.method isEqualToString:method]) return;
+    
     self.request.method = method;
     self.methodTextField.stringValue = method;
     NSInteger index = [@[@"GET", @"POST", @"PUT", @"DELETE"] indexOfObject:method];
@@ -110,6 +114,7 @@
     [self->_querydata autorelease];
     self->_querydata = [data retain];
     
+    if ([self.request.querydata isEqualToString:data]) return;
     self.request.querydata = data;
     
     [self->_querydataItems release];
@@ -141,6 +146,7 @@
     if (content == nil) content = @"";
     self->_contentTextField.stringValue = content;
     
+    if ([self.request.content isEqualToString:content]) return;
     self.request.content = content;
 }
 

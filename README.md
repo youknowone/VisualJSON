@@ -29,6 +29,8 @@ Or clone this project.
 git clone git://github.com/youknowone/VisualJSON.git
 cd VisualJSON
 git submodule update --init
+pod install
+open VisualJSON.xcworkspace
 ```
 
 HACKING.md for tips ;)
