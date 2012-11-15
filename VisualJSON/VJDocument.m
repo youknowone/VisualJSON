@@ -12,6 +12,8 @@
 #import "VJJsonDocumentDelegate.h"
 #import "VJXMLDocumentDelegate.h"
 
+#import "VJDocumentHistory.h"
+
 @interface VJDocument()
 
 - (BOOL)setMetadataForStoreAtURL:(NSURL *)URL;
@@ -22,7 +24,7 @@
 
 @synthesize delegate=_delegate;
 @synthesize headerItems=_headerItems, querydataItems=_querydataItems;
-@synthesize addressTextField=_addressTextField, methodMatrix=_methodMatrix, methodTextField=_methodTextField, querydataTextField=_querydataTextField, contentTextField=_contentTextField;
+@synthesize addressComboBox=_addressComboBox, methodMatrix=_methodMatrix, methodTextField=_methodTextField, querydataTextField=_querydataTextField, contentTextField=_contentTextField;
 @synthesize dataOutlineView=_dataOutlineView, dataTextView=_dataTextView;
 @synthesize drawer=_drawer;
 @synthesize querydataTableView=_querydataTableView, querydataTextView=_querydataTextView, headerTableView=_headerTableView, headerTextField=_headerTextField;
@@ -42,12 +44,12 @@
 }
 
 - (NSString *)address {
-    return self->_addressTextField.stringValue;
+    return self->_addressComboBox.stringValue;
 }
 
 - (void)setAddress:(NSString *)address {
     if (address == nil) address = @"";
-    self->_addressTextField.stringValue = address;
+    self->_addressComboBox.stringValue = address;
     
     if ([self.request.address isEqualToString:address]) return;
     self.request.address = address;
@@ -353,7 +355,7 @@
             self->tempContent = nil;
             [x release];
         }
-        
+
         NSString *address = self.address;
         
         if (self.querydata.length && (self.method.length == 0 || [self.method isEqualToString:@"GET"])) {
@@ -398,6 +400,10 @@
     tempContent = nil;
     [x release];
     [self.circularProgressIndicator stopAnimation:nil];
+
+    [[VJDocumentHistory defaultHistory] addHistory:self.address];
+    [self.addressComboBox reloadData];
+    [[VJDocumentHistory defaultHistory] performSelectorInBackground:@selector(synchronize) withObject:NULL];
 }
 
 - (void)visualize:(id)sender {
@@ -456,6 +462,16 @@
 
 - (NSString *)title {
     return self.address;
+}
+
+#pragma mark - combobox delegate
+
+- (NSInteger)numberOfItemsInComboBox:(NSComboBox *)aComboBox {
+    return [[VJDocumentHistory defaultHistory] count];
+}
+
+- (id)comboBox:(NSComboBox *)aComboBox objectValueForItemAtIndex:(NSInteger)index {
+    return [[VJDocumentHistory defaultHistory] itemAtIndex:index].address;
 }
 
 #pragma mark - outline delegate for 'tree' view

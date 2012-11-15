@@ -36,6 +36,7 @@
 		3868F7A21629F23D00C31163 /* VJDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382554D3157BE3550099CC24 /* VJDocument.xib */; };
 		3868F7A31629F23D00C31163 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382554D6157BE3550099CC24 /* MainMenu.xib */; };
 		3868F7A4162B1AAC00C31163 /* VJXMLDocumentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F7A01629F12200C31163 /* VJXMLDocumentDelegate.m */; };
+		388DE10A165480EE00139B31 /* VJDocumentHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 388DE109165480EE00139B31 /* VJDocumentHistory.m */; };
 		38A1C035157DD7030034EDC4 /* VJRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C034157DD7030034EDC4 /* VJRequest.m */; };
 		38A1C038157E15240034EDC4 /* VJDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */; };
 		38B0C710164101F20044C73C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B0C70F164101F20044C73C /* libPods.a */; };
@@ -105,6 +106,8 @@
 		3868F79D1629EDCF00C31163 /* VJJsonDocumentDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJJsonDocumentDelegate.m; sourceTree = "<group>"; };
 		3868F79F1629F12200C31163 /* VJXMLDocumentDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJXMLDocumentDelegate.h; sourceTree = "<group>"; };
 		3868F7A01629F12200C31163 /* VJXMLDocumentDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJXMLDocumentDelegate.m; sourceTree = "<group>"; };
+		388DE108165480EE00139B31 /* VJDocumentHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJDocumentHistory.h; sourceTree = "<group>"; };
+		388DE109165480EE00139B31 /* VJDocumentHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJDocumentHistory.m; sourceTree = "<group>"; };
 		38A1C033157DD7030034EDC4 /* VJRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJRequest.h; sourceTree = "<group>"; };
 		38A1C034157DD7030034EDC4 /* VJRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJRequest.m; sourceTree = "<group>"; };
 		38A1C037157E15240034EDC4 /* VJDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VJDocument.xcdatamodel; sourceTree = "<group>"; };
@@ -250,6 +253,8 @@
 				38255503157BE3730099CC24 /* Entitlements.entitlements */,
 				382554D0157BE3550099CC24 /* VJDocument.h */,
 				382554D1157BE3550099CC24 /* VJDocument.m */,
+				388DE108165480EE00139B31 /* VJDocumentHistory.h */,
+				388DE109165480EE00139B31 /* VJDocumentHistory.m */,
 				38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */,
 				382554D3157BE3550099CC24 /* VJDocument.xib */,
 				382554D6157BE3550099CC24 /* MainMenu.xib */,
@@ -416,6 +421,7 @@
 				385E84F71597839F001562F6 /* AppDelegate.m in Sources */,
 				3868F79E1629EDCF00C31163 /* VJJsonDocumentDelegate.m in Sources */,
 				3868F7A4162B1AAC00C31163 /* VJXMLDocumentDelegate.m in Sources */,
+				388DE10A165480EE00139B31 /* VJDocumentHistory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

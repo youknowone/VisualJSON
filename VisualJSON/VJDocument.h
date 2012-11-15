@@ -27,7 +27,8 @@
 @end
 
 
-@interface VJDocument : NSPersistentDocument<NSMatrixDelegate> {
+
+@interface VJDocument : NSPersistentDocument<NSMatrixDelegate, NSComboBoxDelegate, NSComboBoxDataSource> {
     id<VJDocumentDelegate> _delegate;
 
     NSString *_header;
@@ -37,7 +38,7 @@
     NSMutableArray *_headerItems;
     NSMutableArray *_querydataItems;
     
-    NSTextField *_addressTextField;
+    NSComboBox *_addressComboBox;
     NSMatrix *_methodMatrix;
     NSTextField *_methodTextField;
     NSTextField *_querydataTextField;
@@ -74,7 +75,7 @@
 @property(readonly) NSMutableArray *headerItems;
 @property(readonly) NSMutableArray *querydataItems;
 
-@property(assign) IBOutlet NSTextField *addressTextField;
+@property(assign) IBOutlet NSComboBox *addressComboBox;
 @property(assign) IBOutlet NSMatrix *methodMatrix;
 @property(assign) IBOutlet NSTextField *methodTextField;
 @property(assign) IBOutlet NSTextField *querydataTextField;
