@@ -33,7 +33,9 @@ id<VJDocumentDelegate> VJDocumentDefaultDataSource() {
 - (id)document:(VJDocument *)document structuredDataFromRawDataString:(NSString *)rawData {
     NSError *error = nil;
     id obj = [NSJSONSerialization JSONObjectWithData:[rawData dataUsingUTF8Encoding] options:NSJSONReadingAllowFragments error:&error];
-    // TODO: do something with error
+    if (error != nil) {
+        obj = @{@"class": error.className, @"code": [NSNumber numberWithInteger:error.code], @"domain": error.domain, @"reason":error.localizedFailureReason};
+    }
     return [JsonElement elementWithObject:obj];
 }
 
