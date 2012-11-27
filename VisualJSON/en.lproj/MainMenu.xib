@@ -3325,7 +3325,7 @@
 					<string key="superclassName">NSPersistentDocument</string>
 					<dictionary class="NSMutableDictionary" key="actions">
 						<string key="addressTextFieldChanged:">id</string>
-						<string key="contentTextFieldChanged:">id</string>
+						<string key="contentTextViewChanged:">id</string>
 						<string key="headerTextFieldChanged:">id</string>
 						<string key="methodMatrixChanged:">id</string>
 						<string key="methodTextFieldChanged:">id</string>
@@ -3340,8 +3340,8 @@
 							<string key="name">addressTextFieldChanged:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBActionInfo" key="contentTextFieldChanged:">
-							<string key="name">contentTextFieldChanged:</string>
+						<object class="IBActionInfo" key="contentTextViewChanged:">
+							<string key="name">contentTextViewChanged:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="headerTextFieldChanged:">
@@ -3379,7 +3379,7 @@
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="addressTextField">NSTextField</string>
-						<string key="contentTextField">NSTextField</string>
+						<string key="contentTextView">NSTextField</string>
 						<string key="drawer">NSDrawer</string>
 						<string key="headerTableView">NSTableView</string>
 						<string key="headerTextField">NSTextField</string>
@@ -3396,8 +3396,8 @@
 							<string key="name">addressTextField</string>
 							<string key="candidateClassName">NSTextField</string>
 						</object>
-						<object class="IBToOneOutletInfo" key="contentTextField">
-							<string key="name">contentTextField</string>
+						<object class="IBToOneOutletInfo" key="contentTextView">
+							<string key="name">contentTextView</string>
 							<string key="candidateClassName">NSTextField</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="drawer">

@@ -20,11 +20,12 @@
 
 @end
 
+
 @implementation VJDocument
 
 @synthesize delegate=_delegate;
 @synthesize headerItems=_headerItems, querydataItems=_querydataItems;
-@synthesize addressComboBox=_addressComboBox, methodMatrix=_methodMatrix, methodTextField=_methodTextField, querydataTextField=_querydataTextField, contentTextField=_contentTextField;
+@synthesize addressComboBox=_addressComboBox, methodMatrix=_methodMatrix, methodTextField=_methodTextField, querydataTextField=_querydataTextField, contentTextView=_contentTextView;
 @synthesize dataOutlineView=_dataOutlineView, dataTextView=_dataTextView;
 @synthesize drawer=_drawer;
 @synthesize querydataTableView=_querydataTableView, querydataTextView=_querydataTextView, headerTableView=_headerTableView, headerTextField=_headerTextField;
@@ -141,12 +142,12 @@
 }
 
 - (NSString *)content {
-    return self->_contentTextField.stringValue;
+    return self->_contentTextView.string;
 }
 
 - (void)setContent:(NSString *)content {
     if (content == nil) content = @"";
-    self->_contentTextField.stringValue = content;
+    self->_contentTextView.string = content;
     
     if ([self.request.content isEqualToString:content]) return;
     self.request.content = content;
@@ -167,7 +168,7 @@
     [super dealloc];
 }
 
-- (void)addressTextFieldChanged:(id)sender {
+- (void)addressComboBoxChanged:(id)sender {
     self.address = [sender stringValue];
     [self refresh:sender];
 }
@@ -186,11 +187,6 @@
 - (void)querydataTextFieldChanged:(id)sender {
     self.querydata = [sender stringValue];
     [self refresh:sender];
-}
-
-- (void)contentTextFieldChanged:(id)sender {
-    self.content = [sender stringValue];
-    [self visualize:sender];
 }
 
 - (void)headerTextFieldChanged:(id)sender {
@@ -472,6 +468,13 @@
 
 - (id)comboBox:(NSComboBox *)aComboBox objectValueForItemAtIndex:(NSInteger)index {
     return [[VJDocumentHistory defaultHistory] itemAtIndex:index].address;
+}
+
+#pragma mark - text view changed
+
+- (void)textDidChange:(NSNotification *)notification {
+    self.content = self.contentTextView.string;
+    [self visualize:self.contentTextView];
 }
 
 #pragma mark - outline delegate for 'tree' view

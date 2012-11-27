@@ -28,7 +28,7 @@
 
 
 
-@interface VJDocument : NSPersistentDocument<NSMatrixDelegate, NSComboBoxDelegate, NSComboBoxDataSource> {
+@interface VJDocument : NSPersistentDocument<NSTextViewDelegate, NSMatrixDelegate, NSComboBoxDelegate, NSComboBoxDataSource> {
     id<VJDocumentDelegate> _delegate;
 
     NSString *_header;
@@ -42,7 +42,7 @@
     NSMatrix *_methodMatrix;
     NSTextField *_methodTextField;
     NSTextField *_querydataTextField;
-    NSTextField *_contentTextField;
+    NSTextView *_contentTextView;
     NSOutlineView *_dataOutlineView;
     NSTextView *_dataTextView;
     
@@ -79,7 +79,7 @@
 @property(assign) IBOutlet NSMatrix *methodMatrix;
 @property(assign) IBOutlet NSTextField *methodTextField;
 @property(assign) IBOutlet NSTextField *querydataTextField;
-@property(assign) IBOutlet NSTextField *contentTextField;
+@property(assign) IBOutlet NSTextView *contentTextView;
 @property(assign) IBOutlet NSTextField *headerTextField;
 @property(assign) IBOutlet NSOutlineView *dataOutlineView;
 @property(assign) IBOutlet NSTextView *dataTextView;
@@ -96,11 +96,10 @@
 
 - (IBAction)setDefaultHeader:(id)sender;
 
-- (IBAction)addressTextFieldChanged:(id)sender;
+- (IBAction)addressComboBoxChanged:(id)sender;
 - (IBAction)methodMatrixChanged:(id)sender;
 - (IBAction)methodTextFieldChanged:(id)sender;
 - (IBAction)querydataTextFieldChanged:(id)sender;
-- (IBAction)contentTextFieldChanged:(id)sender;
 - (IBAction)headerTextFieldChanged:(id)sender;
 
 - (IBAction)refresh:(id)sender;

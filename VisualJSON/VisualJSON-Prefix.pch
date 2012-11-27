@@ -5,7 +5,6 @@
 #include "debug.h"
 
 #ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
     #import <CoreData/CoreData.h>
-    #import <FoundationExtension/FoundationExtension.h>
+    #import <CocoaExtension/CocoaExtension.h>
 #endif
