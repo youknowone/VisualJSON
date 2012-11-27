@@ -15,3 +15,5 @@
 
 Podfile.lock
 Pods
+
+version.xcconfig

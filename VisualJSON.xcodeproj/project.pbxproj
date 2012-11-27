@@ -112,6 +112,7 @@
 		38A1C034157DD7030034EDC4 /* VJRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJRequest.m; sourceTree = "<group>"; };
 		38A1C037157E15240034EDC4 /* VJDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VJDocument.xcdatamodel; sourceTree = "<group>"; };
 		38B0C70F164101F20044C73C /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = Pods/build/Release/libPods.a; sourceTree = "<group>"; };
+		38CAB03A1664F46B00181B0D /* version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = version.xcconfig; sourceTree = "<group>"; };
 		C53C08C4F80849EB8B688C6C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -157,6 +158,7 @@
 				382554BD157BE3550099CC24 /* Frameworks */,
 				382554BB157BE3550099CC24 /* Products */,
 				C53C08C4F80849EB8B688C6C /* Pods.xcconfig */,
+				38CAB03A1664F46B00181B0D /* version.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -280,6 +282,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38255500157BE3550099CC24 /* Build configuration list for PBXNativeTarget "VisualJSON" */;
 			buildPhases = (
+				38CAB03C1664F48D00181B0D /* Generate Version xcconfig */,
 				382554B6157BE3550099CC24 /* Sources */,
 				382554B7157BE3550099CC24 /* Frameworks */,
 				382554B8157BE3550099CC24 /* Resources */,
@@ -406,6 +409,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
+		38CAB03C1664F48D00181B0D /* Generate Version xcconfig */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Version xcconfig";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd xcodepkgtool\necho \"APP_VERSION=`./version.sh`\" > version.xcconfig";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -496,6 +513,7 @@
 /* Begin XCBuildConfiguration section */
 		382554FB157BE3550099CC24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38CAB03A1664F46B00181B0D /* version.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
@@ -522,6 +540,7 @@
 		};
 		382554FC157BE3550099CC24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38CAB03A1664F46B00181B0D /* version.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
