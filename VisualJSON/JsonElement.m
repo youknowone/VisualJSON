@@ -154,6 +154,22 @@ NSDictionary *JsonElementInitializers = nil;
         [desc appendString:@"\""];
         [desc appendString:[self.object stringByReplacingOccurrencesOfString:@"\"" withString:@"\\\""]];
         [desc appendString:@"\""];
+    } else if ([self.object isKindOfClass:[NSNumber class]]) {
+        NSNumber *obj = self.object;
+        if ([obj.className isEqualToString:@"__NSCFNumber"] || [obj.className isEqualToString:@"NSDecimalNumber"]) {
+            NSString *defaultDescription = [self.object description];
+            [desc appendString:defaultDescription];
+            if (strcmp(obj.objCType, @encode(float)) == 0 || strcmp(obj.objCType, @encode(double)) == 0) {
+                if (![defaultDescription hasSubstring:@"."]) {
+                    [desc appendString:@".0"];
+                }
+            }
+        } else
+        if ([obj.className isEqualToString:@"__NSCFBoolean"]) {
+            [desc appendString:[self.object boolValue] ? @"true" : @"false"];
+        } else {
+            [desc appendString:[self.object description]]; // What case could be here!?
+        }
     } else {
         [desc appendString:[self.object description]];
     }
