@@ -33,7 +33,13 @@
 @synthesize data=_data;
 
 - (NSString *)defaultHeader {
+#if defined(JSON)
     return @"Accept:application/json#!;#!;Content-Type:application/json";
+#elif defined(XML)
+    return @"Accept:text/xml#!;#!;Content-Type:text/xml";
+#else
+    #error define JSON or XML
+#endif
 }
 
 - (void)awakeFromNib {
@@ -377,6 +383,9 @@
         NSData *data = [NSData dataWithContentsOfURLRequest:req error:&error];
         if (data != nil && error == nil) {
             tempContent = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            if (tempContent == nil) {
+                tempContent = [error retain];
+            }
         } else {
             tempContent = [error retain];
         }

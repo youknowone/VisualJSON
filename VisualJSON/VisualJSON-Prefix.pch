@@ -2,7 +2,7 @@
 // Prefix header for all source files of the 'VisualJSON' target in the 'VisualJSON' project
 //
 
-#include "debug.h"
+#include <cdebug/debug.h>
 
 #ifdef __OBJC__
     #import <CoreData/CoreData.h>

@@ -36,6 +36,11 @@
 		3868F7A21629F23D00C31163 /* VJDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382554D3157BE3550099CC24 /* VJDocument.xib */; };
 		3868F7A31629F23D00C31163 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382554D6157BE3550099CC24 /* MainMenu.xib */; };
 		3868F7A4162B1AAC00C31163 /* VJXMLDocumentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F7A01629F12200C31163 /* VJXMLDocumentDelegate.m */; };
+		387B1EBA16EBDEA80059722B /* VJJsonDocumentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F79D1629EDCF00C31163 /* VJJsonDocumentDelegate.m */; };
+		387B1EBB16EBDEB40059722B /* JsonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 38255566157C94C50099CC24 /* JsonElement.m */; };
+		387B1EBC16EBDEC30059722B /* VJDocumentHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 388DE109165480EE00139B31 /* VJDocumentHistory.m */; };
+		387B1EBE16EBDF640059722B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 387B1EBD16EBDF640059722B /* libPods.a */; };
+		387B1EC016EBE3EF0059722B /* Icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 387B1EBF16EBE3EF0059722B /* Icon.iconset */; };
 		388DE10A165480EE00139B31 /* VJDocumentHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 388DE109165480EE00139B31 /* VJDocumentHistory.m */; };
 		38A1C035157DD7030034EDC4 /* VJRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C034157DD7030034EDC4 /* VJRequest.m */; };
 		38A1C038157E15240034EDC4 /* VJDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */; };
@@ -106,6 +111,8 @@
 		3868F79D1629EDCF00C31163 /* VJJsonDocumentDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJJsonDocumentDelegate.m; sourceTree = "<group>"; };
 		3868F79F1629F12200C31163 /* VJXMLDocumentDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJXMLDocumentDelegate.h; sourceTree = "<group>"; };
 		3868F7A01629F12200C31163 /* VJXMLDocumentDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJXMLDocumentDelegate.m; sourceTree = "<group>"; };
+		387B1EBD16EBDF640059722B /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = Pods/build/Debug/libPods.a; sourceTree = "<group>"; };
+		387B1EBF16EBE3EF0059722B /* Icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icon.iconset; sourceTree = "<group>"; };
 		388DE108165480EE00139B31 /* VJDocumentHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJDocumentHistory.h; sourceTree = "<group>"; };
 		388DE109165480EE00139B31 /* VJDocumentHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJDocumentHistory.m; sourceTree = "<group>"; };
 		38A1C033157DD7030034EDC4 /* VJRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJRequest.h; sourceTree = "<group>"; };
@@ -141,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				387B1EBE16EBDF640059722B /* libPods.a in Frameworks */,
 				3868F73D1629E8E700C31163 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +159,7 @@
 		382554AF157BE3550099CC24 = {
 			isa = PBXGroup;
 			children = (
+				387B1EBD16EBDF640059722B /* libPods.a */,
 				3868F7921629E95200C31163 /* Commons */,
 				382554C4157BE3550099CC24 /* VisualJSON */,
 				3868F7931629E9A700C31163 /* VisualXML */,
@@ -271,8 +280,17 @@
 				3868F7941629EA0400C31163 /* VisualXML-Info.plist */,
 				3868F79F1629F12200C31163 /* VJXMLDocumentDelegate.h */,
 				3868F7A01629F12200C31163 /* VJXMLDocumentDelegate.m */,
+				387B1EC116EBE3F50059722B /* Supporting Files */,
 			);
 			path = VisualXML;
+			sourceTree = "<group>";
+		};
+		387B1EC116EBE3F50059722B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				387B1EBF16EBE3EF0059722B /* Icon.iconset */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +407,7 @@
 			files = (
 				3868F7A21629F23D00C31163 /* VJDocument.xib in Resources */,
 				3868F7A31629F23D00C31163 /* MainMenu.xib in Resources */,
+				387B1EC016EBE3EF0059722B /* Icon.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +481,9 @@
 				3868F78E1629E8F900C31163 /* AppDelegate.m in Sources */,
 				3868F7981629EAB200C31163 /* VJDocument.xcdatamodeld in Sources */,
 				3868F7A11629F12200C31163 /* VJXMLDocumentDelegate.m in Sources */,
+				387B1EBA16EBDEA80059722B /* VJJsonDocumentDelegate.m in Sources */,
+				387B1EBB16EBDEB40059722B /* JsonElement.m in Sources */,
+				387B1EBC16EBDEC30059722B /* VJDocumentHistory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +620,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = JSON;
 				INFOPLIST_FILE = "VisualJSON/VisualJSON-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -619,6 +642,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = JSON;
 				INFOPLIST_FILE = "VisualJSON/VisualJSON-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -634,8 +658,8 @@
 		};
 		3868F7891629E8E800C31163 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C53C08C4F80849EB8B688C6C /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -643,18 +667,21 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = XML;
 				INFOPLIST_FILE = "VisualXML/VisualXML-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Pods/build/Debug\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		3868F78A1629E8E800C31163 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C53C08C4F80849EB8B688C6C /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -662,10 +689,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = XML;
 				INFOPLIST_FILE = "VisualXML/VisualXML-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Pods/build/Debug\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

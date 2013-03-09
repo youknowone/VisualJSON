@@ -27,7 +27,8 @@
 }
 
 - (id)document:(VJDocument *)document structuredDataFromRawDataString:(NSString *)rawData {
-    return [OXNode nodeWithString:rawData];
+    OXNode *node = [OXNode nodeWithString:rawData];
+    return node;
 }
 
 - (NSString *)document:(VJDocument *)document prettyTextFromData:(id)data {
