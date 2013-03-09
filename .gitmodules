@@ -1,21 +1,6 @@
-[submodule "SBJson"]
-	path = SBJson
-	url = git://github.com/stig/json-framework.git
-[submodule "JSONKit"]
-	path = JSONKit
-	url = git://github.com/johnezang/JSONKit.git
 [submodule "gen_icon"]
 	path = gen_icon
 	url = git://gist.github.com/3800241.git
-[submodule "ObjectXML"]
-	path = ObjectXML
-	url = git://github.com/youknowone/ObjectXML.git
-[submodule "cdebug"]
-	path = cdebug
-	url = git://github.com/youknowone/cdebug.git
-[submodule "FoundationExtension"]
-	path = FoundationExtension
-	url = git://github.com/youknowone/FoundationExtension.git
 [submodule "xcodepkgtool"]
 	path = xcodepkgtool
 	url = git://github.com/youknowone/xcodepkgtool.git
