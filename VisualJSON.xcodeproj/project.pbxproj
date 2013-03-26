@@ -120,6 +120,7 @@
 		38A1C037157E15240034EDC4 /* VJDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VJDocument.xcdatamodel; sourceTree = "<group>"; };
 		38B0C70F164101F20044C73C /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = Pods/build/Release/libPods.a; sourceTree = "<group>"; };
 		38CAB03A1664F46B00181B0D /* version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = version.xcconfig; path = xcodepkgtool/version.xcconfig; sourceTree = "<group>"; };
+		38DB21241701FD96006E08D3 /* VisualXML.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = VisualXML.entitlements; sourceTree = "<group>"; };
 		C53C08C4F80849EB8B688C6C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -277,6 +278,7 @@
 		3868F7931629E9A700C31163 /* VisualXML */ = {
 			isa = PBXGroup;
 			children = (
+				38DB21241701FD96006E08D3 /* VisualXML.entitlements */,
 				3868F7941629EA0400C31163 /* VisualXML-Info.plist */,
 				3868F79F1629F12200C31163 /* VJXMLDocumentDelegate.h */,
 				3868F7A01629F12200C31163 /* VJXMLDocumentDelegate.m */,
@@ -664,6 +666,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = VisualXML/VisualXML.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
@@ -686,6 +689,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = VisualXML/VisualXML.entitlements;
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
