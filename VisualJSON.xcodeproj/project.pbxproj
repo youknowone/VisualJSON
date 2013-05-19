@@ -41,6 +41,7 @@
 		387B1EBC16EBDEC30059722B /* VJDocumentHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 388DE109165480EE00139B31 /* VJDocumentHistory.m */; };
 		387B1EBE16EBDF640059722B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 387B1EBD16EBDF640059722B /* libPods.a */; };
 		387B1EC016EBE3EF0059722B /* Icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 387B1EBF16EBE3EF0059722B /* Icon.iconset */; };
+		388720AD1745FD50006EFBAD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 388720AB1745FD50006EFBAD /* MainMenu.xib */; };
 		388DE10A165480EE00139B31 /* VJDocumentHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 388DE109165480EE00139B31 /* VJDocumentHistory.m */; };
 		38A1C035157DD7030034EDC4 /* VJRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C034157DD7030034EDC4 /* VJRequest.m */; };
 		38A1C038157E15240034EDC4 /* VJDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */; };
@@ -113,6 +114,7 @@
 		3868F7A01629F12200C31163 /* VJXMLDocumentDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJXMLDocumentDelegate.m; sourceTree = "<group>"; };
 		387B1EBD16EBDF640059722B /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = Pods/build/Debug/libPods.a; sourceTree = "<group>"; };
 		387B1EBF16EBE3EF0059722B /* Icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icon.iconset; sourceTree = "<group>"; };
+		388720AC1745FD50006EFBAD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		388DE108165480EE00139B31 /* VJDocumentHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJDocumentHistory.h; sourceTree = "<group>"; };
 		388DE109165480EE00139B31 /* VJDocumentHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJDocumentHistory.m; sourceTree = "<group>"; };
 		38A1C033157DD7030034EDC4 /* VJRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJRequest.h; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 		3868F7931629E9A700C31163 /* VisualXML */ = {
 			isa = PBXGroup;
 			children = (
+				388720AB1745FD50006EFBAD /* MainMenu.xib */,
 				38DB21241701FD96006E08D3 /* VisualXML.entitlements */,
 				3868F7941629EA0400C31163 /* VisualXML-Info.plist */,
 				3868F79F1629F12200C31163 /* VJXMLDocumentDelegate.h */,
@@ -410,6 +413,7 @@
 				3868F7A21629F23D00C31163 /* VJDocument.xib in Resources */,
 				3868F7A31629F23D00C31163 /* MainMenu.xib in Resources */,
 				387B1EC016EBE3EF0059722B /* Icon.iconset in Resources */,
+				388720AD1745FD50006EFBAD /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +534,14 @@
 				382554F0157BE3550099CC24 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		388720AB1745FD50006EFBAD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				388720AC1745FD50006EFBAD /* en */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
