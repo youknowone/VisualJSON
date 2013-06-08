@@ -34,7 +34,6 @@
 		3868F79E1629EDCF00C31163 /* VJJsonDocumentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F79D1629EDCF00C31163 /* VJJsonDocumentDelegate.m */; };
 		3868F7A11629F12200C31163 /* VJXMLDocumentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F7A01629F12200C31163 /* VJXMLDocumentDelegate.m */; };
 		3868F7A21629F23D00C31163 /* VJDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382554D3157BE3550099CC24 /* VJDocument.xib */; };
-		3868F7A31629F23D00C31163 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382554D6157BE3550099CC24 /* MainMenu.xib */; };
 		3868F7A4162B1AAC00C31163 /* VJXMLDocumentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F7A01629F12200C31163 /* VJXMLDocumentDelegate.m */; };
 		387B1EBA16EBDEA80059722B /* VJJsonDocumentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3868F79D1629EDCF00C31163 /* VJJsonDocumentDelegate.m */; };
 		387B1EBB16EBDEB40059722B /* JsonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 38255566157C94C50099CC24 /* JsonElement.m */; };
@@ -411,7 +410,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3868F7A21629F23D00C31163 /* VJDocument.xib in Resources */,
-				3868F7A31629F23D00C31163 /* MainMenu.xib in Resources */,
 				387B1EC016EBE3EF0059722B /* Icon.iconset in Resources */,
 				388720AD1745FD50006EFBAD /* MainMenu.xib in Resources */,
 			);
