@@ -122,19 +122,22 @@ NSDictionary *JsonElementInitializers = nil;
 }
 
 - (NSString *)outlineDescription {
+    NSString *result = nil;
     if (self.keys == nil) {
         if ([self.object isKindOfClass:[NSNumber class]]) {
-            return [self.object jsonRepresentation];
+            result = [self.object jsonRepresentation];
         } else {
-            return [self.object description];
+            result = [self.object description];
+        }
+    } else {
+        if ([self.object isKindOfClass:[NSArray class]]) {
+            result = [NSString stringWithFormat:@"Array(%lu): [%@]", [self.keys count], [self outlineArrayItems]];
+        } else if ([self.object isKindOfClass:[NSDictionary class]]) {
+            result = [NSString stringWithFormat:@"Dict(%lu): {%@}", [self.keys count], [self outlineDictionaryItems]];
         }
     }
-    if ([self.object isKindOfClass:[NSArray class]]) {
-        return [NSString stringWithFormat:@"Array(%lu): [%@]", [self.keys count], [self outlineArrayItems]];
-    } else if ([self.object isKindOfClass:[NSDictionary class]]) {
-        return [NSString stringWithFormat:@"Dict(%lu): {%@}", [self.keys count], [self outlineDictionaryItems]];
-    }
-    return [self.object description];
+    result = [result stringByReplacingOccurrencesOfString:@"\n" withString:@"⏎ "];
+    return result;
 }
 
 - (NSString *)description {
