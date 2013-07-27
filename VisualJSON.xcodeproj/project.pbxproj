@@ -45,6 +45,7 @@
 		38A1C035157DD7030034EDC4 /* VJRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C034157DD7030034EDC4 /* VJRequest.m */; };
 		38A1C038157E15240034EDC4 /* VJDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */; };
 		38B0C710164101F20044C73C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B0C70F164101F20044C73C /* libPods.a */; };
+		38C5D64117A37E590005C2BD /* VJJSONPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C5D64017A37E590005C2BD /* VJJSONPreferencesWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -120,6 +121,8 @@
 		38A1C034157DD7030034EDC4 /* VJRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJRequest.m; sourceTree = "<group>"; };
 		38A1C037157E15240034EDC4 /* VJDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VJDocument.xcdatamodel; sourceTree = "<group>"; };
 		38B0C70F164101F20044C73C /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = Pods/build/Release/libPods.a; sourceTree = "<group>"; };
+		38C5D63F17A37E590005C2BD /* VJJSONPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJJSONPreferencesWindowController.h; sourceTree = "<group>"; };
+		38C5D64017A37E590005C2BD /* VJJSONPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJJSONPreferencesWindowController.m; sourceTree = "<group>"; };
 		38CAB03A1664F46B00181B0D /* version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = version.xcconfig; path = xcodepkgtool/version.xcconfig; sourceTree = "<group>"; };
 		38DB21241701FD96006E08D3 /* VisualXML.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = VisualXML.entitlements; sourceTree = "<group>"; };
 		C53C08C4F80849EB8B688C6C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -211,7 +214,10 @@
 		382554C4157BE3550099CC24 /* VisualJSON */ = {
 			isa = PBXGroup;
 			children = (
+				382554D6157BE3550099CC24 /* MainMenu.xib */,
 				38255565157C94C50099CC24 /* JsonElement.h */,
+				38C5D63F17A37E590005C2BD /* VJJSONPreferencesWindowController.h */,
+				38C5D64017A37E590005C2BD /* VJJSONPreferencesWindowController.m */,
 				38255566157C94C50099CC24 /* JsonElement.m */,
 				3868F79C1629EDCF00C31163 /* VJJsonDocumentDelegate.h */,
 				3868F79D1629EDCF00C31163 /* VJJsonDocumentDelegate.m */,
@@ -270,7 +276,6 @@
 				388DE109165480EE00139B31 /* VJDocumentHistory.m */,
 				38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */,
 				382554D3157BE3550099CC24 /* VJDocument.xib */,
-				382554D6157BE3550099CC24 /* MainMenu.xib */,
 			);
 			name = Commons;
 			path = VisualJSON;
@@ -462,6 +467,7 @@
 				3868F79E1629EDCF00C31163 /* VJJsonDocumentDelegate.m in Sources */,
 				3868F7A4162B1AAC00C31163 /* VJXMLDocumentDelegate.m in Sources */,
 				388DE10A165480EE00139B31 /* VJDocumentHistory.m in Sources */,
+				38C5D64117A37E590005C2BD /* VJJSONPreferencesWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

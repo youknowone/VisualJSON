@@ -10,6 +10,10 @@
 
 @implementation AppDelegate
 
+- (void)showPreference:(id)sender {
+    [self.preferenceWindowController showWindow:sender];
+}
+
 - (void)openWebsite:(id)sender {
     NSURL *URL = @"http://youknowone.github.com/VisualJSON".URL;
     [[NSWorkspace sharedWorkspace] openURL:URL];

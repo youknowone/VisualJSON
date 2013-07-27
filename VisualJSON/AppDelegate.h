@@ -10,6 +10,10 @@
 
 @interface AppDelegate : NSObject
 
+@property(nonatomic,retain) IBOutlet NSWindowController *preferenceWindowController;
+
+- (IBAction)showPreference:(id)sender;
+
 - (IBAction)openWebsite:(id)sender;
 - (IBAction)openIssue:(id)sender;
 - (IBAction)openHelp:(id)sender;

@@ -126,15 +126,27 @@ NSDictionary *JsonElementInitializers = nil;
     if (self.keys == nil) {
         if ([self.object isKindOfClass:[NSNumber class]]) {
             result = [self.object jsonRepresentation];
-        } else {
-            result = [self.object description];
         }
     } else {
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        NSNumber *value = [userDefaults objectForKey:@"ShowBriefDescription"];
+        BOOL breif = value.boolValue;
         if ([self.object isKindOfClass:[NSArray class]]) {
-            result = [NSString stringWithFormat:@"Array(%lu): [%@]", [self.keys count], [self outlineArrayItems]];
+            if (breif) {
+                result = [NSString stringWithFormat:@"Array(%lu): [%@]", [self.keys count], [self outlineArrayItems]];
+            } else {
+                result = [NSString stringWithFormat:@"Array(%lu)", [self.keys count]];
+            }
         } else if ([self.object isKindOfClass:[NSDictionary class]]) {
-            result = [NSString stringWithFormat:@"Dict(%lu): {%@}", [self.keys count], [self outlineDictionaryItems]];
+            if (breif) {
+                result = [NSString stringWithFormat:@"Dict(%lu): {%@}", [self.keys count], [self outlineDictionaryItems]];
+            } else {
+                result = [NSString stringWithFormat:@"Dict(%lu)", [self.keys count]];
+            }
         }
+    }
+    if (result == nil) {
+        result = [self.object description];
     }
     result = [result stringByReplacingOccurrencesOfString:@"\n" withString:@"⏎ "];
     return result;
