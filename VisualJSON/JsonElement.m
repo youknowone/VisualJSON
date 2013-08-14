@@ -126,6 +126,8 @@ NSDictionary *JsonElementInitializers = nil;
     if (self.keys == nil) {
         if ([self.object isKindOfClass:[NSNumber class]]) {
             result = [self.object jsonRepresentation];
+        } else if ([self.object isKindOfClass:[NSNull class]]) {
+            result = @"null";
         }
     } else {
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -169,7 +171,8 @@ NSDictionary *JsonElementInitializers = nil;
         [desc appendString:@"[\n"];
         for (NSInteger i = 0; i < self.keys.count; i++) {
             [desc appendString:indent2];
-            [desc appendString:[[self childAtIndex:i] descriptionWithDepth:depth + 1]];
+            NSString *append = [[self childAtIndex:i] descriptionWithDepth:depth + 1];
+            [desc appendString:append ? append : @"null"];
             [desc appendString:@",\n"];
         }
         NSInteger deleteCount = 1 + (self.keys.count != 0);
@@ -185,7 +188,8 @@ NSDictionary *JsonElementInitializers = nil;
             [desc appendString:desc2];
             [desc appendString:@",\n"];
         }
-        [desc deleteCharactersInRange:NSMakeRange(desc.length-2, 2)];
+        NSInteger deleteCount = 1 + (self.keys.count != 0);
+        [desc deleteCharactersInRange:NSMakeRange(desc.length - deleteCount, deleteCount)];
         [desc appendString:@"\n"];
         [desc appendString:indent];
         [desc appendString:@"}"];
@@ -195,6 +199,8 @@ NSDictionary *JsonElementInitializers = nil;
         [desc appendString:@"\""];
     } else if ([self.object isKindOfClass:[NSNumber class]]) {
         [desc appendString:[self.object jsonRepresentation]];
+    } else if ([self.object isKindOfClass:[NSNull class]]) {
+        [desc appendString:@"null"];
     } else {
         [desc appendString:[self.object description]];
     }
