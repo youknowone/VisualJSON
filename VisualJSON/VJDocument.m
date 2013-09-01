@@ -14,6 +14,8 @@
 
 #import "VJDocumentHistory.h"
 
+#import <AFNetworking/AFURLConnectionOperation.h>
+
 @interface VJDocument()
 
 - (BOOL)setMetadataForStoreAtURL:(NSURL *)URL;
@@ -378,18 +380,45 @@
             [req setHTTPBody:self.querydata.dataUsingUTF8Encoding];
         }
         
-        // set content field with data
-        NSError *error = nil;
-        NSData *data = [NSData dataWithContentsOfURLRequest:req error:&error];
-        if (data != nil && error == nil) {
-            tempContent = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-            if (tempContent == nil) {
-                tempContent = [error retain];
-            }
-        } else {
-            tempContent = [error retain];
-        }
-        [self performSelectorOnMainThread:@selector(refreshFinished) withObject:nil waitUntilDone:NO];
+		AFURLConnectionOperation *operation = [[AFURLConnectionOperation alloc] initWithRequest:req];
+		
+		[operation setAuthenticationAgainstProtectionSpaceBlock:^BOOL(NSURLConnection *connection, NSURLProtectionSpace *protectionSpace) {
+			NSNumber *value = [[NSUserDefaults standardUserDefaults] objectForKey:@"ShouldAllowInvalidSSLCertificates"];
+			BOOL allowInvalid = value.boolValue;
+			
+			return allowInvalid;
+		}];
+		
+		[operation setAuthenticationChallengeBlock:^(NSURLConnection *connection, NSURLAuthenticationChallenge *challenge) {
+			NSNumber *value = [[NSUserDefaults standardUserDefaults] objectForKey:@"ShouldAllowInvalidSSLCertificates"];
+			BOOL allowInvalid = value.boolValue;
+			
+			if (allowInvalid) {
+				[challenge.sender useCredential:[NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust] forAuthenticationChallenge:challenge];
+			} else {
+				[challenge.sender cancelAuthenticationChallenge:challenge];
+			}
+		}];
+		
+		[operation setCompletionBlock:^{
+			// set content field with data
+			NSError *error = operation.error;
+			NSData *data = operation.responseData;
+			
+			if (data != nil && error == nil) {
+				tempContent = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+				if (tempContent == nil) {
+					tempContent = [error retain];
+				}
+			} else {
+				tempContent = [error retain];
+			}
+			
+			[self performSelectorOnMainThread:@selector(refreshFinished) withObject:nil waitUntilDone:NO];
+		}];
+		
+		[operation start];
+		
     }
 }
 
