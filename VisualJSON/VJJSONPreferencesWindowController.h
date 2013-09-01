@@ -12,6 +12,10 @@
 
 @property(nonatomic,strong) IBOutlet NSButton *showBriefCheckBox;
 
+@property(nonatomic,strong) IBOutlet NSButton *allowInvalidSSLCheckBox;
+
 - (IBAction)showBriefChanged:(id)sender;
+
+- (IBAction)setAllowsInvalidSSLCertificates:(id)sender;
 
 @end
