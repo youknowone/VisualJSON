@@ -367,7 +367,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = VJ;
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = youknowone.org;
 			};
 			buildConfigurationList = 382554B4157BE3550099CC24 /* Build configuration list for PBXProject "VisualJSON" */;
@@ -574,7 +574,7 @@
 				HEADER_SEARCH_PATHS = FoundationExtension;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -594,7 +594,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = FoundationExtension;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -646,7 +646,6 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -669,7 +668,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
