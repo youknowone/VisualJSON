@@ -377,6 +377,7 @@
         
         if (self.method && ![self.method isEqualToString:@"GET"]) {
             [req setHTTPMethod:self.method];
+            [req setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-type"];
             [req setHTTPBody:self.querydata.dataUsingUTF8Encoding];
         }
         
