@@ -6,9 +6,16 @@
 //  Copyright (c) 2012 youknowone.org All rights reserved.
 //
 
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
 #import "AppDelegate.h"
 
 @implementation AppDelegate
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    [Fabric with:@[CrashlyticsKit]];
+}
 
 - (void)showPreference:(id)sender {
     [self.preferenceWindowController showWindow:sender];

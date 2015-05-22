@@ -45,6 +45,20 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>${APP_VERSION}</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>1b5d8443c3eabba778b0d97bff234647af846181</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.developer-tools</string>
 	<key>LSMinimumSystemVersion</key>

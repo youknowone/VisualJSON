@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -46,6 +46,9 @@
 		38A1C038157E15240034EDC4 /* VJDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38A1C036157E15240034EDC4 /* VJDocument.xcdatamodeld */; };
 		38B0C710164101F20044C73C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B0C70F164101F20044C73C /* libPods.a */; };
 		38C5D64117A37E590005C2BD /* VJJSONPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C5D64017A37E590005C2BD /* VJJSONPreferencesWindowController.m */; };
+		38F2F7361B0F248B00372447 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F2F7351B0F248B00372447 /* SystemConfiguration.framework */; };
+		38F2F7381B0F248F00372447 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F2F7371B0F248F00372447 /* libz.dylib */; };
+		38F2F73A1B0F249300372447 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F2F7391B0F249300372447 /* libc++.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -103,6 +106,7 @@
 		38255565157C94C50099CC24 /* JsonElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonElement.h; sourceTree = "<group>"; };
 		38255566157C94C50099CC24 /* JsonElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonElement.m; sourceTree = "<group>"; };
 		38416C0D160A240A0059A916 /* Icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icon.iconset; sourceTree = "<group>"; };
+		3853EE579252452107E95A62 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		385E84F51597839F001562F6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		385E84F61597839F001562F6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3868F73B1629E8E700C31163 /* VisualXML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualXML.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,7 +129,10 @@
 		38C5D64017A37E590005C2BD /* VJJSONPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VJJSONPreferencesWindowController.m; sourceTree = "<group>"; };
 		38CAB03A1664F46B00181B0D /* version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = version.xcconfig; path = xcodepkgtool/version.xcconfig; sourceTree = "<group>"; };
 		38DB21241701FD96006E08D3 /* VisualXML.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = VisualXML.entitlements; sourceTree = "<group>"; };
-		C53C08C4F80849EB8B688C6C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		38F2F7351B0F248B00372447 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		38F2F7371B0F248F00372447 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		38F2F7391B0F249300372447 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		89CD6DE952405C01860EC83C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +140,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F2F73A1B0F249300372447 /* libc++.dylib in Frameworks */,
+				38F2F7381B0F248F00372447 /* libz.dylib in Frameworks */,
+				38F2F7361B0F248B00372447 /* SystemConfiguration.framework in Frameworks */,
 				382554BF157BE3550099CC24 /* Cocoa.framework in Frameworks */,
 				38B0C710164101F20044C73C /* libPods.a in Frameworks */,
 			);
@@ -171,8 +181,8 @@
 				382554EC157BE3550099CC24 /* VisualJSONImporter */,
 				382554BD157BE3550099CC24 /* Frameworks */,
 				382554BB157BE3550099CC24 /* Products */,
-				C53C08C4F80849EB8B688C6C /* Pods.xcconfig */,
 				38CAB03A1664F46B00181B0D /* version.xcconfig */,
+				B2DDA047631B1454C2AA9280 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,6 +199,9 @@
 		382554BD157BE3550099CC24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				38F2F7391B0F249300372447 /* libc++.dylib */,
+				38F2F7371B0F248F00372447 /* libz.dylib */,
+				38F2F7351B0F248B00372447 /* SystemConfiguration.framework */,
 				382554BE157BE3550099CC24 /* Cocoa.framework */,
 				382554E4157BE3550099CC24 /* CoreServices.framework */,
 				382554E6157BE3550099CC24 /* CoreFoundation.framework */,
@@ -302,6 +315,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B2DDA047631B1454C2AA9280 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3853EE579252452107E95A62 /* Pods.debug.xcconfig */,
+				89CD6DE952405C01860EC83C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -315,6 +337,7 @@
 				382554B8157BE3550099CC24 /* Resources */,
 				388227E415924E57000AB63D /* Copy Frameworks */,
 				346F49323B434C84B4E1D346 /* Copy Pods Resources */,
+				38F2F72E1B0F235000372447 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -367,11 +390,16 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = VJ;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = youknowone.org;
+				TargetAttributes = {
+					382554B9157BE3550099CC24 = {
+						DevelopmentTeam = 9384JEL3M9;
+					};
+				};
 			};
 			buildConfigurationList = 382554B4157BE3550099CC24 /* Build configuration list for PBXProject "VisualJSON" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -435,7 +463,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 		};
 		38CAB03C1664F48D00181B0D /* Generate Version xcconfig */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -450,6 +478,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "cd xcodepkgtool\necho \"APP_VERSION=`./version.sh`\" > version.xcconfig";
+		};
+		38F2F72E1B0F235000372447 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Pods/FabricOSX/Fabric.framework/run 1b5d8443c3eabba778b0d97bff234647af846181 34aaecdde99dce1f9408a963ba788143536760a1c73ce21b46a14f888c5d54c1";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -556,8 +598,8 @@
 			baseConfigurationReference = 38CAB03A1664F46B00181B0D /* version.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -583,7 +625,6 @@
 			baseConfigurationReference = 38CAB03A1664F46B00181B0D /* version.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -632,10 +673,15 @@
 		};
 		38255501157BE3550099CC24 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C53C08C4F80849EB8B688C6C /* Pods.xcconfig */;
+			baseConfigurationReference = 3853EE579252452107E95A62 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = VisualJSON/Entitlements.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = JSON;
@@ -652,11 +698,15 @@
 		};
 		38255502157BE3550099CC24 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C53C08C4F80849EB8B688C6C /* Pods.xcconfig */;
+			baseConfigurationReference = 89CD6DE952405C01860EC83C /* Pods.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = VisualJSON/Entitlements.entitlements;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = JSON;
@@ -674,7 +724,6 @@
 		};
 		3868F7891629E8E800C31163 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C53C08C4F80849EB8B688C6C /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -682,6 +731,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = VisualXML/VisualXML.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = XML;
@@ -697,7 +750,6 @@
 		};
 		3868F78A1629E8E800C31163 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C53C08C4F80849EB8B688C6C /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -706,6 +758,10 @@
 				CODE_SIGN_ENTITLEMENTS = VisualXML/VisualXML.entitlements;
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = XML;

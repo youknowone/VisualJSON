@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AppDelegate : NSObject
+@interface AppDelegate : NSObject<NSApplicationDelegate>
 
 @property(nonatomic,retain) IBOutlet NSWindowController *preferenceWindowController;
 
