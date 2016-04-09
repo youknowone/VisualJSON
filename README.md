@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/youknowone/VisualJSON.svg?branch=master)](https://travis-ci.org/youknowone/VisualJSON)
+
 Website: [http://youknowone.github.com/VisualJSON](http://youknowone.github.com/VisualJSON)
 
 VisualJSON is simple JSON pretty-viewer for Mac OS X.

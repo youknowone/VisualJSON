@@ -4,20 +4,21 @@
 # If tag is 'v1.3.1', set this 'v'
 tagprefix='v'
 
+workspace='VisualJSON.xcworkspace'
+
 # Deploy configuration name
 configuration='Release'
 
-# Target name
+# Scheme name
 # If your project have applicaiton target name 'YourApp', set this 'YourApp'
-target='VisualJSON'
+scheme='VisualJSON'
 
 # Application name
 # If your app name is not same to target name, change this.
 # If you set this 'MyApp', output is 'MyApp.app' and 'MyApp.pkg'
-appname="$target"
+appname="$scheme"
 
 # Codesign
 # You need '3rd Party Mac Developer Installer: Company Name' codesign to deploy your app to appstore
-#codesign="3rd Party Mac Developer Installer"
-codesign='3rd Party Mac Developer Installer: 3rddev Inc.'
+codesign="3rd Party Mac Developer Installer"
 
